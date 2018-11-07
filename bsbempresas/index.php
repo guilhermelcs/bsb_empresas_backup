@@ -23,95 +23,32 @@ get_header(); ?>
             <div class="col-12">
                 <h3 class="section--title pt-5 pb-2">Últimas Notícias</h3>
             </div>
-
-            <?php foreach(get_posts(['numberposts' => 1, 'post_type' => 'post']) as $post): ?>
-                <div class="col-12 col-md-6 d-flex latest-news-lg">
-                    <div>
+            <?php foreach(get_posts(['numberposts' => 1, 'post_type' => 'noticia']) as $post): ?>
+                <div class="col-12 col-md-6 latest-news-lg">
+                    <a href="<?php echo get_permalink($post) ?>">
                         <figure>
                             <img class="latest-news-img-lg img-responsive"
                                  src="<?php echo get_the_post_thumbnail_url($post->ID); ?>" alt="<?php echo get_the_title($post->ID); ?>">
-                            <figcaption class="figcaption-lg"><?php echo get_the_title($post->ID); ?></figcaption>
+                            <figcaption class="figcaption-lg"><?php echo get_the_excerpt($post->ID); ?></figcaption>
                         </figure>
-                    </div>
+                    </a>
                 </div>
             <?php endforeach; ?>
 
             <div class="col-12 col-md-6">
                 <div class="row">
-                    <?php foreach(get_posts(['numberposts' => 4, 'post_type' => 'post']) as $post): ?>
+                    <?php foreach(get_posts(['numberposts' => 4, 'post_type' => 'noticia']) as $post): ?>
                         <div class="col-12 col-md-6">
-                            <div>
+                            <a href="<?php echo get_permalink($post->ID); ?>" alt="<?php echo get_the_title($post->ID); ?>">
                                 <figure>
                                     <img class="img-responsive w-100" src="<?php echo get_the_post_thumbnail_url($post, 'qtc_news'); ?>" alt="<?php echo get_the_title($post->ID); ?>">
-                                    <figcaption class="">
-                                        <h6><?php echo get_the_title($post->ID); ?></h6>
+                                    <figcaption class="figcaption-md">
+                                        <h6><?php echo get_the_excerpt($post->ID); ?></h6>
                                     </figcaption>
                                 </figure>
-                            </div>
+                            </a>
                         </div>
                     <?php endforeach; ?>
-                </div>
-            </div>
-            <div class="col-12">
-                <hr>
-                End Of Session
-            </div>
-
-            <div class="col-12 col-md-6 d-flex latest-news-lg">
-                <div>
-                    <figure>
-                        <img class="latest-news-img-lg img-responsive"
-                             src="<?php bloginfo('template_url')?>/images/latest-news/news-lg.jpg"
-                             alt="latest-news-img-lg">
-                        <figcaption class="figcaption-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
-                            rhoncus magna urna, ut laoreet neque tristique sed. Fusce tempus efficitur felis eu sodales.
-                        </figcaption>
-                    </figure>
-                </div>
-            </div>
-            <div class="col-12 col-md-3 latest-news-md">
-                <div>
-                    <figure>
-                        <img class="latest-news-img-md img-responsive"
-                             src="<?php bloginfo('template_url')?>/images/latest-news/news-md.jpeg"
-                             alt="latest-news-img-md">
-                        <figcaption class="figcaption-md">Lorem ipsum dolor sit amet, consectur adipiscing elit. se do
-                            eiusmod tempo
-                        </figcaption>
-                    </figure>
-                </div>
-                <div>
-                    <figure>
-                        <img class="latest-news-img-md img-responsive"
-                             src="<?php bloginfo('template_url')?>/images/latest-news/news-md.jpeg"
-                             alt="latest-news-img-md">
-                        <figcaption class="figcaption-md">Lorem ipsum dolor sit amet, consectur adipiscing elit. se do
-                            eiusmod tempo
-                        </figcaption>
-                    </figure>
-                </div>
-            </div>
-
-            <div class="col-12 col-md-3 justify-content-center latest-news-md">
-                <div>
-                    <figure>
-                        <img class="latest-news-img-md img-responsive"
-                             src="<?php bloginfo('template_url')?>/images/latest-news/news-md.jpeg"
-                             alt="latest-news-img-md">
-                        <figcaption class="figcaption-md">Lorem ipsum dolor sit amet, consectur adipiscing elit. se do
-                            eiusmod tempo
-                        </figcaption>
-                    </figure>
-                </div>
-                <div>
-                    <figure>
-                        <img class="latest-news-img-md img-responsive"
-                             src="<?php bloginfo('template_url');?>/images/latest-news/news-md.jpeg"
-                             alt="latest-news-img-md">
-                        <figcaption class="figcaption-md">Lorem ipsum dolor sit amet, consectur adipiscing elit. se do
-                            eiusmod tempo
-                        </figcaption>
-                    </figure>
                 </div>
             </div>
         </div>
@@ -125,25 +62,28 @@ get_header(); ?>
             <div class="col-12 text-center">
                 <h2 class="section--title pb-5">Colunistas</h2>
             </div>
-            <div class="col-12 col-md-4">
-                <div class="text-center">
-                    <figure>
-                        <img class="columnist-img rounded-circle"
-                             src="<?php bloginfo('template_url');?>/images/columnists/michelle.jpg"
-                             alt="columnist-michelle">
-                        <figcaption class="text-dark columnist-title pt-3">Fulano De Tal</figcaption>
-                        <div class="columnist-description-box">
-                            <p class="columnist-subtitle">Lorem Ipsum Dolum</p>
-                            <p class="columnist-description px-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                Quisque augue elit, aliquet id
-                                egestas et, tristique non risus. Quisque at vehicula risus. Nunc maximus mi ac nulla
-                                commodo, et tristique ligula
-                                bibendum.
-                            </p>
-                        </div>
-                    </figure>
+            <?php foreach (get_posts(['numberposts' => 3, 'post_type' => 'colunista']) as $post): ?>
+                <div class="col-12 col-md-4">
+                    <div class="text-center">
+                        <figure>
+                            <img class="columnist-img rounded-circle"
+                                 src="<?php bloginfo('template_url');?>/images/columnists/michelle.jpg"
+                                 alt="columnist-michelle">
+                            <figcaption class="text-dark columnist-title pt-3"><?php get_the_title($post->ID); ?></figcaption>
+                            <div class="columnist-description-box">
+                                <p class="columnist-subtitle">Lorem Ipsum Dolum</p>
+                                <p class="columnist-description px-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    Quisque augue elit, aliquet id
+                                    egestas et, tristique non risus. Quisque at vehicula risus. Nunc maximus mi ac nulla
+                                    commodo, et tristique ligula
+                                    bibendum.
+                                </p>
+                            </div>
+                        </figure>
+                    </div>
                 </div>
-            </div>
+            <?php endforeach;?>
+
             <div class="col-12 col-md-4">
                 <div class="text-center">
                     <figure>

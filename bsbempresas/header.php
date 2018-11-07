@@ -30,16 +30,12 @@
             </div>
         </div>
     </div>
-
-    <div class="bg-dark">
-        <?php wp_nav_menu(['theme_location' => 'header-menu', 'container_class' => 'container', 'menu_class' => 'nav justify-content-center'])?>
-    </div>
-
-
     <?php wp_head(); ?>
 </head>
 
 <body <?php body_class(); ?>>
-
+    <div class="bg-dark">
+        <?php wp_nav_menu(['theme_location' => 'header-menu', 'container_class' => 'container', 'menu_class' => 'nav justify-content-center'])?>
+    </div>
 
 
