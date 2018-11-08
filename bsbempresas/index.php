@@ -142,28 +142,20 @@ get_header(); ?>
             <div class="col-12">
                 <h2 class="section-title pb-3">Artigos</h2>
             </div>
+            <?php foreach (get_posts(['numberposts' => 3, 'post_type' => 'artigos']) as $post): ?>
             <div class="col-12 col-md-12 d-flex align-items-center pb-4">
                 <div class="articles-img-box text-left">
                     <img class="articles-img rounded-circle"
-                         src="<?php bloginfo('template_url');?>/images/columnists/michelle.jpg" alt="columnist-michelle">
+                         src="<?php echo get_the_post_thumbnail_url($post->ID);?>"
+                         alt="<?php echo get_the_title($post->ID); ?>">
                 </div>
                 <div class="articles-text-box text-left">
-                    <h2 class="articles-title">Lorem Ipsum -</h2>
-                    <h3 class="articles-author">Fulano de tal</h3>
-                    <p class="articles-citation">"Dolore magnam akiquam quaera voluptatem"</p>
+                    <h2 class="articles-title"><?php echo get_the_title($post->ID); ?> -</h2>
+                    <h3 class="articles-author"><?php echo get_post_field('post_content', $post->ID);?></h3>
+                    <p class="articles-citation"><?php echo get_the_excerpt($post->ID); ?></p>
                 </div>
             </div>
-            <div class="col-12 col-md-12 d-flex align-items-center">
-                <div class="articles-img-box text-left">
-                    <img class="articles-img rounded-circle"
-                         src="<?php bloginfo('template_url');?>/images/columnists/michelle.jpg" alt="columnist-michelle">
-                </div>
-                <div class="articles-text-box text-left">
-                    <h2 class="articles-title">Lorem Ipsum -</h2>
-                    <h3 class="articles-author">Fulano de tal</h3>
-                    <p class="articles-citation">"Dolore magnam akiquam quaera voluptatem"</p>
-                </div>
-            </div>
+            <?php endforeach;?>
         </div>
     </div>
 </section>

@@ -241,7 +241,7 @@ function create_articles_post_type() {
         'not_found_in_trash' => 'Nenhum Artigo encontrado na lixeira',
         'menu_name'          => 'Artigos'
     );
-    register_post_type( 'artigo',
+    register_post_type( 'artigos',
         array(
             'labels' => $label,
             array(
