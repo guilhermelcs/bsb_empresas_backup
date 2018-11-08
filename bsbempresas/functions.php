@@ -165,7 +165,7 @@ function create_columnists_post_type() {
         'all_items'          => 'Todos os Colunistas',
         'view_item'          => 'Visualizar Colunista',
         'search_items'       => 'Buscar Colunista',
-        'not_found'          => 'Nenhum Colunista encontrada',
+        'not_found'          => 'Nenhum Colunista encontrado',
         'not_found_in_trash' => 'Nenhum Colunista encontrado na lixeira',
         'menu_name'          => 'Colunistas'
     );
@@ -175,6 +175,42 @@ function create_columnists_post_type() {
             array(
                 'name' => 'Colunistas',
                 'singular_name' => 'Colunista'
+            ),
+            'public' => true,
+            'has_archive' => true,
+            'supports' => array( 'title', 'editor', 'thumbnail', 'excerpt', 'comments' ),
+            'taxonomies'  => array( 'category' )
+        )
+    );
+}
+
+//Criando custom post type para Negócios
+
+add_action( 'init', 'create_business_post_type' );
+function create_business_post_type() {
+    $label = array(
+        'name' => 'Negócios',
+        'singular_name' => 'Negócio',
+        'author' => 'Autor',
+        'name'               => 'Negócios',
+        'singular_name'      => 'Negócio',
+        'add_new'            => 'Adicionar novo',
+        'add_new_item'       => 'Adicionar novo Negócio',
+        'edit_item'          => 'Editar Negócio',
+        'new_item'           => 'Novo Negócio',
+        'all_items'          => 'Todos os Negócios',
+        'view_item'          => 'Visualizar Negócio',
+        'search_items'       => 'Buscar Negócio',
+        'not_found'          => 'Nenhum Negócio encontrado',
+        'not_found_in_trash' => 'Nenhum Negócio encontrado na lixeira',
+        'menu_name'          => 'Negócios'
+    );
+    register_post_type( 'negocios',
+        array(
+            'labels' => $label,
+            array(
+                'name' => 'Negócios',
+                'singular_name' => 'Negócio'
             ),
             'public' => true,
             'has_archive' => true,

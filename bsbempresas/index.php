@@ -67,62 +67,18 @@ get_header(); ?>
                     <div class="text-center">
                         <figure>
                             <img class="columnist-img rounded-circle"
-                                 src="<?php bloginfo('template_url');?>/images/columnists/michelle.jpg"
-                                 alt="columnist-michelle">
-                            <figcaption class="text-dark columnist-title pt-3"><?php get_the_title($post->ID); ?></figcaption>
+                                 src="<?php echo get_the_post_thumbnail_url($post->ID);?>"
+                                 alt="<?php echo get_the_title($post->ID); ?>">
+                            <figcaption class="text-dark columnist-title pt-3"><?php echo get_the_title($post->ID); ?></figcaption>
                             <div class="columnist-description-box">
-                                <p class="columnist-subtitle">Lorem Ipsum Dolum</p>
-                                <p class="columnist-description px-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                    Quisque augue elit, aliquet id
-                                    egestas et, tristique non risus. Quisque at vehicula risus. Nunc maximus mi ac nulla
-                                    commodo, et tristique ligula
-                                    bibendum.
+                                <p class="columnist-subtitle"><?php echo get_the_excerpt($post->ID); ?></p>
+                                <p class="columnist-description px-2"><?php echo get_post_field('post_content', $post->ID);?>
                                 </p>
                             </div>
                         </figure>
                     </div>
                 </div>
             <?php endforeach;?>
-
-            <div class="col-12 col-md-4">
-                <div class="text-center">
-                    <figure>
-                        <img class="columnist-img rounded-circle"
-                             src="<?php bloginfo('template_url');?>/images/columnists/glen.jpeg" alt="columnist-glen">
-                        <figcaption class="columnist-title text-dark text-dark pt-3">Fulano De Tal</figcaption>
-                        <p class="columnist-subtitle">Lorem Ipsum Dolum</p>
-                        <div class="columnist-description-box">
-                            <p class="columnist-description px-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                Quisque augue elit, aliquet id
-                                egestas et, tristique non risus. Quisque at vehicula risus. Nunc maximus mi ac nulla
-                                commodo, et tristique ligula
-                                bibendum.
-                            </p>
-                        </div>
-                    </figure>
-                </div>
-            </div>
-            <div class="col-12 col-md-4">
-                <div class="text-center">
-                    <figure>
-                        <img class="columnist-img rounded-circle"
-                             src="<?php bloginfo('template_url');?>/images/columnists/fritz.jpeg" alt="columnist-fritz">
-                        <figcaption class="columnist-title text-dark text-dark pt-3">Fulano De Tal</figcaption>
-                        <p class="columnist-subtitle">Lorem Ipsum Dolum</p>
-                        <div class="columnist-description-box">
-                            <p class="columnist-description px-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                Quisque augue elit, aliquet id
-                                egestas et, tristique non risus. Quisque at vehicula risus. Nunc maximus mi ac nulla
-                                commodo, et tristique ligula
-                                bibendum.
-                            </p>
-                        </div>
-                    </figure>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
 
 <!--Business Section-->
 <section id="business-section">
@@ -131,61 +87,23 @@ get_header(); ?>
             <div class="col-12">
                 <h2 class="section-title pb-3">Negócios</h2>
             </div>
+            <?php foreach (get_posts(['numberposts' => 3, 'post_type' => 'negocios']) as $post): ?>
             <div class="col-12 col-md-4">
                 <div class="text-center">
                     <figure class="business-wrapper">
                         <div class="business-img-box">
                             <img class="business-img rounded"
-                                 src="<?php bloginfo('template_url');?>/images/columnists/michelle.jpg"
-                                 alt="business-michelle">
+                                src="<?php echo get_the_post_thumbnail_url($post->ID);?>"
+                                 alt="<?php echo get_the_title($post->ID); ?>">
                         </div>
-                        <figcaption class="business-title text-dark pt-3">Fulano De Tal</figcaption>
-                        <p class="business-subtitle">Lorem Ipsum Dolum</p>
-                        <p class="business-description px-4 pb-4">Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit. Quisque augue elit, aliquet id
-                            egestas et, tristique non risus. Quisque at vehicula risus. Nunc maximus mi ac nulla
-                            commodo, et tristique ligula
-                            bibendum.
+                        <figcaption class="business-title text-dark pt-3"><?php echo get_the_title($post->ID); ?></figcaption>
+                        <p class="business-subtitle"><?php echo get_the_excerpt($post->ID); ?></p>
+                        <p class="business-description px-4 pb-4"><?php echo get_post_field('post_content', $post->ID);?>
                         </p>
                     </figure>
                 </div>
             </div>
-            <div class="col-12 col-md-4">
-                <div class="text-center">
-                    <figure class="business-wrapper">
-                        <div class="business-img-box">
-                            <img class="business-img rounded"
-                                 src="<?php bloginfo('template_url');?>/images/columnists/glen.jpeg" alt="business-glen">
-                        </div>
-                        <figcaption class="business-title text-dark pt-3">Fulano De Tal</figcaption>
-                        <p class="business-subtitle">Lorem Ipsum Dolum</p>
-                        <p class="business-description px-4 pb-4">Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit. Quisque augue elit, aliquet id
-                            egestas et, tristique non risus. Quisque at vehicula risus. Nunc maximus mi ac nulla
-                            commodo, et tristique ligula
-                            bibendum.
-                        </p>
-                    </figure>
-                </div>
-            </div>
-            <div class="col-12 col-md-4">
-                <div class="business-card-wrapper text-center">
-                    <figure class="business-wrapper">
-                        <div class="business-img-box">
-                            <img class="business-img rounded"
-                                 src="<?php bloginfo('template_url');?>/images/columnists/juan.jpg" alt="business-juan">
-                        </div>
-                        <figcaption class="business-title text-dark pt-3">Fulano De Tal</figcaption>
-                        <p class="business-subtitle">Lorem Ipsum Dolum</p>
-                        <p class="business-description px-4 pb-4">Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit. Quisque augue elit, aliquet id
-                            egestas et, tristique non risus. Quisque at vehicula risus. Nunc maximus mi ac nulla
-                            commodo, et tristique ligula
-                            bibendum.
-                        </p>
-                    </figure>
-                </div>
-            </div>
+            <?php endforeach;?>
         </div>
     </div>
 </section>
