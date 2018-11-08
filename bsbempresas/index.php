@@ -115,61 +115,22 @@ get_header(); ?>
             <div class="col-12">
                 <h2 class="section-title pb-3">Entrevistas</h2>
             </div>
+            <?php foreach (get_posts(['numberposts' => 3, 'post_type' => 'entrevista']) as $post): ?>
             <div class="col-12 col-md-4">
                 <div class="text-center">
                     <figure class="business-wrapper">
                         <div class="business-img-box">
                             <img class="interviews-img rounded img-thumbnail"
-                                 src="<?php bloginfo('template_url');?>/images/columnists/michelle.jpg"
-                                 alt="business-michelle">
+                                 src="<?php echo get_the_post_thumbnail_url($post->ID);?>"
+                                 alt="<?php echo get_the_title($post->ID); ?>">
                         </div>
-                        <figcaption class="business-title text-dark pt-3">Fulano De Tal</figcaption>
-                        <p class="business-subtitle">Lorem Ipsum Dolum</p>
-                        <p class="business-description px-4 pb-4">Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit. Quisque augue elit, aliquet id
-                            egestas et, tristique non risus. Quisque at vehicula risus. Nunc maximus mi ac nulla
-                            commodo, et tristique ligula
-                            bibendum.
-                        </p>
+                        <figcaption class="business-title text-dark pt-3"><?php echo get_the_title($post->ID); ?></figcaption>
+                        <p class="business-subtitle"><?php echo get_the_excerpt($post->ID); ?></p>
+                        <p class="business-description px-4 pb-4"><?php echo get_post_field('post_content', $post->ID);?></p>
                     </figure>
                 </div>
             </div>
-            <div class="col-12 col-md-4">
-                <div class="text-center">
-                    <figure class="business-wrapper">
-                        <div class="business-img-box">
-                            <img class="interviews-img rounded img-thumbnail"
-                                 src="<?php bloginfo('template_url');?>/images/columnists/glen.jpeg" alt="business-glen">
-                        </div>
-                        <figcaption class="business-title text-dark pt-3">Fulano De Tal</figcaption>
-                        <p class="business-subtitle">Lorem Ipsum Dolum</p>
-                        <p class="business-description px-4 pb-4">Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit. Quisque augue elit, aliquet id
-                            egestas et, tristique non risus. Quisque at vehicula risus. Nunc maximus mi ac nulla
-                            commodo, et tristique ligula
-                            bibendum.
-                        </p>
-                    </figure>
-                </div>
-            </div>
-            <div class="col-12 col-md-4">
-                <div class="business-card-wrapper text-center">
-                    <figure class="business-wrapper">
-                        <div class="business-img-box">
-                            <img class="interviews-img rounded img-thumbnail"
-                                 src="<?php bloginfo('template_url');?>/images/columnists/juan.jpg" alt="business-juan">
-                        </div>
-                        <figcaption class="business-title text-dark pt-3">Fulano De Tal</figcaption>
-                        <p class="business-subtitle">Lorem Ipsum Dolum</p>
-                        <p class="business-description px-4 pb-4">Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit. Quisque augue elit, aliquet id
-                            egestas et, tristique non risus. Quisque at vehicula risus. Nunc maximus mi ac nulla
-                            commodo, et tristique ligula
-                            bibendum.
-                        </p>
-                    </figure>
-                </div>
-            </div>
+            <?php endforeach;?>
         </div>
     </div>
 </section>
