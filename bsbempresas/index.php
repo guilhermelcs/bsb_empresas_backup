@@ -65,7 +65,7 @@ get_header(); ?>
             <?php foreach (get_posts(['numberposts' => 3, 'post_type' => 'colunista']) as $post): ?>
                 <div class="col-12 col-md-4">
                     <div class="text-center">
-                        <a href="<?php echo get_permalink($post->ID)?>">
+                        <a href="<?php echo get_permalink($post->ID);?>">
                             <figure>
                                 <img class="columnist-img rounded-circle"
                                      src="<?php echo get_the_post_thumbnail_url($post->ID);?>"
@@ -73,8 +73,7 @@ get_header(); ?>
                                 <figcaption class="text-dark columnist-title pt-3"><?php echo get_the_title($post->ID); ?></figcaption>
                                 <div class="columnist-description-box">
                                     <p class="columnist-subtitle"><?php echo get_the_excerpt($post->ID); ?></p>
-                                    <p class="columnist-description px-2"><?php echo get_post_field('post_content', $post->ID);?>
-                                    </p>
+                                    <p class="columnist-description px-2"><?php echo get_post_field('post_content', $post->ID);?></p>
                                 </div>
                             </figure>
                         </a>
@@ -92,17 +91,19 @@ get_header(); ?>
             <?php foreach (get_posts(['numberposts' => 3, 'post_type' => 'negocios']) as $post): ?>
                 <div class="col-12 col-md-4">
                     <div class="text-center">
-                        <figure class="business-wrapper">
-                            <div class="business-img-box">
-                                <img class="business-img rounded"
-                                    src="<?php echo get_the_post_thumbnail_url($post->ID);?>"
-                                     alt="<?php echo get_the_title($post->ID); ?>">
-                            </div>
-                            <figcaption class="business-title text-dark pt-3"><?php echo get_the_title($post->ID); ?></figcaption>
-                            <p class="business-subtitle"><?php echo get_the_excerpt($post->ID); ?></p>
-                            <p class="business-description px-4 pb-4"><?php echo get_post_field('post_content', $post->ID);?>
-                            </p>
-                        </figure>
+                        <a href="<?php echo get_permalink($post->ID);?>">
+                            <figure class="business-wrapper">
+                                <div class="business-img-box">
+                                    <img class="business-img rounded"
+                                        src="<?php echo get_the_post_thumbnail_url($post->ID);?>"
+                                         alt="<?php echo get_the_title($post->ID); ?>">
+                                </div>
+                                <figcaption class="business-title text-dark pt-3"><?php echo get_the_title($post->ID); ?></figcaption>
+                                <p class="business-subtitle"><?php echo get_the_excerpt($post->ID); ?></p>
+                                <p class="business-description px-4 pb-4"><?php echo get_post_field('post_content', $post->ID);?>
+                                </p>
+                            </figure>
+                        </a>
                     </div>
                 </div>
             <?php endforeach;?>
@@ -120,16 +121,18 @@ get_header(); ?>
             <?php foreach (get_posts(['numberposts' => 3, 'post_type' => 'entrevista']) as $post): ?>
                 <div class="col-12 col-md-4">
                     <div class="text-center">
-                        <figure class="business-wrapper">
-                            <div class="business-img-box">
-                                <img class="interviews-img rounded img-thumbnail"
-                                     src="<?php echo get_the_post_thumbnail_url($post->ID);?>"
-                                     alt="<?php echo get_the_title($post->ID); ?>">
-                            </div>
-                            <figcaption class="business-title text-dark pt-3"><?php echo get_the_title($post->ID); ?></figcaption>
-                            <p class="business-subtitle"><?php echo get_the_excerpt($post->ID); ?></p>
-                            <p class="business-description px-4 pb-4"><?php echo get_post_field('post_content', $post->ID);?></p>
-                        </figure>
+                        <a href="<?php echo get_permalink($post->ID);?>">
+                            <figure class="business-wrapper">
+                                <div class="business-img-box">
+                                    <img class="interviews-img rounded img-thumbnail"
+                                         src="<?php echo get_the_post_thumbnail_url($post->ID);?>"
+                                         alt="<?php echo get_the_title($post->ID); ?>">
+                                </div>
+                                <figcaption class="business-title text-dark pt-3"><?php echo get_the_title($post->ID); ?></figcaption>
+                                <p class="business-subtitle"><?php echo get_the_excerpt($post->ID); ?></p>
+                                <p class="business-description px-4 pb-4"><?php echo get_post_field('post_content', $post->ID);?></p>
+                            </figure>
+                        </a>
                     </div>
                 </div>
             <?php endforeach;?>
@@ -146,16 +149,18 @@ get_header(); ?>
             </div>
             <?php foreach (get_posts(['numberposts' => 3, 'post_type' => 'artigos']) as $post): ?>
                 <div class="col-12 col-md-12 d-flex align-items-center pb-4">
-                    <div class="articles-img-box text-left">
-                        <img class="articles-img rounded-circle"
-                             src="<?php echo get_the_post_thumbnail_url($post->ID);?>"
-                             alt="<?php echo get_the_title($post->ID); ?>">
-                    </div>
-                    <div class="articles-text-box text-left">
-                        <h2 class="articles-title"><?php echo get_the_title($post->ID); ?> -</h2>
-                        <h3 class="articles-author"><?php echo get_post_field('post_content', $post->ID);?></h3>
-                        <p class="articles-citation"><?php echo get_the_excerpt($post->ID); ?></p>
-                    </div>
+                        <div class="articles-img-box text-left">
+                            <img class="articles-img rounded-circle"
+                                 src="<?php echo get_the_post_thumbnail_url($post->ID);?>"
+                                 alt="<?php echo get_the_title($post->ID); ?>">
+                        </div>
+                        <a href="<?php echo get_permalink($post->ID)?>">
+                            <div class="articles-text-box text-left">
+                                <h2 class="articles-title"><?php echo get_the_title($post->ID); ?> -</h2>
+                                <h3 class="articles-author"><?php echo get_post_field('post_content', $post->ID);?></h3>
+                                <p class="articles-citation"><?php echo get_the_excerpt($post->ID); ?></p>
+                            </div>
+                        </a>
                 </div>
             <?php endforeach;?>
         </div>
@@ -232,35 +237,28 @@ get_header(); ?>
                 }
             </script>
 <!--Weekend Section-->
-<!--<section id="videos-section">
+<section id="weekend-section">
     <div class="container mt-3">
         <div class="row">
             <div class="col-12">
                 <h2 class="section-title pb-3">Fim de Semana</h2>
             </div>
-            <div class="col-6 col-md-3 d-flex pb-4 mb-5">
-                <div class="weekend-img-box">
-                    <img src="wp-content/themes/bsbempresas/images/columnists/michelle.jpg">
+            <?php foreach (get_posts(['numberpost' => 4, 'post_type' => 'fim_de_semana']) as $post): ?>
+                <div class="col-6 col-md-3 pb-4 mb-5">
+                    <figure class="weekend-img-box">
+                        <a href="<?php echo get_permalink($post->ID)?>">
+                            <img class="weekend-img" src="<?php echo get_the_post_thumbnail_url($post->ID);?>"
+                                 alt="<?php echo get_the_title($post->ID); ?>">
+                        </a>
+                        <figcaption class="weekend-figcaption">
+                            <a href="<?php echo get_permalink($post->ID)?>"><?php echo get_the_excerpt($post->ID); ?></a>
+                        </figcaption>
+                    </figure>
                 </div>
-            </div>
-            <div class="col-6 col-md-3 d-flex pb-4 mb-5">
-                <div class="weekend-img-box">
-                    <img src="wp-content/themes/bsbempresas/images/columnists/michelle.jpg">
-                </div>
-            </div>
-            <div class="col-6 col-md-3 d-flex pb-4 mb-5">
-                <div class="weekend-img-box">
-                    <img src="wp-content/themes/bsbempresas/images/columnists/michelle.jpg">
-                </div>
-            </div>
-            <div class="col-6 col-md-3 d-flex pb-4 mb-5">
-                <div class="weekend-img-box">
-                    <img src="wp-content/themes/bsbempresas/images/columnists/michelle.jpg">
-                </div>
-            </div>
+             <?php endforeach?>
         </div>
     </div>
-</section>-->
+</section>
 
 <!--Footer Section-->
 <footer class="bg-dark pt-5 pb-3">

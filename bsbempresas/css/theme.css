@@ -14,7 +14,7 @@ a {
 
 a:hover {
     color: #393939;
-    font-style: none;
+    font-style: normal;
     text-decoration: none;
 }
 /*Id's Styles*/
@@ -264,7 +264,6 @@ padding-bottom: 20px;
 
 .articles-text-box {
     display: inline-block;
-    width: 75%;
     background: #ffffff;
     padding: 15px;
     border-radius: 10px;
@@ -331,5 +330,14 @@ padding-bottom: 20px;
 /*Weekend Section*/
 
 .weekend-img-box {
-    padding-right: 20px;
+    padding-right: 10px;
+}
+
+.weekend-img {
+    width: 100%;
+}
+
+.weekend-figcaption {
+    padding-top: 10px;
+    font-size: 15px;
 }
