@@ -35,40 +35,6 @@ function register_qtc_menus() {
 }
 add_action( 'init', 'register_qtc_menus' );
 
-//Criando custom type para Eventos
-
-add_action( 'init', 'create_events_post_type' );
-function create_events_post_type() {
-    $label = array(
-        'name' => 'Eventos',
-        'singular_name' => 'Eventos',
-        'author' => 'Autor',
-        'name'   => 'Eventos',
-        'singular_name'      => 'Evento',
-        'add_new'            => 'Adicionar novo',
-        'add_new_item'       => 'Adicionar novo Evento',
-        'edit_item'          => 'Editar Evento',
-        'new_item'           => 'Novo Evento',
-        'all_items'          => 'Todos os Eventos',
-        'view_item'          => 'Visualizar Evento',
-        'search_items'       => 'Buscar Eventos',
-        'not_found'          => 'Nenhum evento encontrado',
-        'not_found_in_trash' => 'Nenhum evento encontrado na lixeira',
-        'menu_name'          => 'Eventos'
-        );
-    register_post_type( 'events',
-        array(
-            'labels' => $label,
-                array(
-                'name' => __( 'Events' ),
-                'singular_name' => __( 'Events' ),
-            ),
-            'public' => true,
-            'supports' => array( 'title', 'editor', 'author', 'thumbnail', 'excerpt', 'comments' ),
-            'taxonomies'  => array( 'category' )
-        )
-    );
-}
 
 register_sidebar(array(
     'name'=> 'Rodapé 1',
@@ -330,6 +296,41 @@ function create_fim_de_semana_post_type() {
         )
     );
 
+}
+
+//Criando custom type para Eventos
+
+add_action( 'init', 'create_events_post_type' );
+function create_events_post_type() {
+    $label = array(
+        'name' => 'Eventos',
+        'singular_name' => 'Eventos',
+        'author' => 'Autor',
+        'name'   => 'Eventos',
+        'singular_name'      => 'Evento',
+        'add_new'            => 'Adicionar novo',
+        'add_new_item'       => 'Adicionar novo Evento',
+        'edit_item'          => 'Editar Evento',
+        'new_item'           => 'Novo Evento',
+        'all_items'          => 'Todos os Eventos',
+        'view_item'          => 'Visualizar Evento',
+        'search_items'       => 'Buscar Eventos',
+        'not_found'          => 'Nenhum evento encontrado',
+        'not_found_in_trash' => 'Nenhum evento encontrado na lixeira',
+        'menu_name'          => 'Eventos'
+    );
+    register_post_type( 'eventos',
+        array(
+            'labels' => $label,
+            array(
+                'name' => __( 'Events' ),
+                'singular_name' => __( 'Events' ),
+            ),
+            'public' => true,
+            'supports' => array( 'title', 'editor', 'author', 'thumbnail', 'excerpt', 'comments' ),
+            'taxonomies'  => array( 'category' )
+        )
+    );
 }
 
 

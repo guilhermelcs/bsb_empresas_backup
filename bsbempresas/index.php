@@ -182,7 +182,6 @@ get_header(); ?>
             ?>
             <div class="col-8 col-md-8 d-flex align-items-center pb-4 mb-5">
                 <div class="video-box">
-                    <?php echo get_field('qtc_video_url', $post->ID); ?>
                     <?php foreach (get_posts(['numberpost' => 1, 'post_type' => 'videos']) as $post):
                         $cont++;
                         $featured_video_id = $post->ID;
@@ -199,8 +198,7 @@ get_header(); ?>
             </div>
             <div class="col-4 col-md-4 text-left pb-4">
                 <div class="next-videos-box bg-dark">
-                    <?php foreach (get_posts(['numberpost' => 10, 'post_type' => 'videos']) as $post):
-                        if($post->ID != $featured_video_id): ?>
+                    <?php foreach (get_posts(['numberpost' => 10, 'offset' => 1, 'post_type' => 'videos']) as $post): ?>
                         <figure>
                             <a href="<?php echo get_field('qtc_video_url', $post->ID); ?>" data-video
                                data-poster="<?php echo get_the_post_thumbnail_url($post->ID); ?>">
@@ -209,10 +207,9 @@ get_header(); ?>
                                 <figcaption class="next-videos-titles"><?php echo get_the_title($post->ID);?></figcaption>
                             </a>
                         </figure>
-                        <?php endif;?>
                     <?php endforeach;?>
-                    </div>
                 </div>
+            </div>
         </div>
     </div>
 </section>
@@ -236,6 +233,7 @@ get_header(); ?>
                     });
                 }
             </script>
+
 <!--Weekend Section-->
 <section id="weekend-section">
     <div class="container mt-3">
@@ -255,8 +253,61 @@ get_header(); ?>
                         </figcaption>
                     </figure>
                 </div>
-             <?php endforeach?>
+            <?php endforeach?>
         </div>
+    </div>
+</section>
+
+<!--Events Section-->
+<section id="events-section">
+    <div class="container mt-3">
+        <div class="row">
+            <div class="col-12">
+                <h2 class="section-title pb-3">Eventos</h2>
+            </div>
+            <?php
+                $featured_event_id = 0;
+                $cont = 0;
+                $count_events_posts = wp_count_posts('eventos');
+                $published_events_posts = $count_events_posts->publish;
+            ?>
+            <?php foreach (get_posts(['numberpost' => 1, 'post_type' => 'eventos']) as $post):
+                $cont++;
+                $featured_video_id = $post->ID;
+            ?>
+                <?php if($cont == $published_events_posts) :?>
+                    <div class="col-6 col-md-8 pb-4 mb-5">
+                         <div class="featured-events-img-box">
+                             <figure class="">
+                                 <a href="<?php echo get_permalink($post->ID)?>">
+                                     <img class="events-img" src="<?php echo get_the_post_thumbnail_url($post->ID);?>"
+                                          alt="<?php echo get_the_title($post->ID); ?>">
+                                 </a>
+                             </figure>
+                         </div>
+                    </div>
+                    <div class="col-6 col-md-4 pb-4 mb-5">
+                        <a href="<?php echo get_permalink($post->ID)?>">
+                            <h2 class="events-title"><?php echo get_the_title($post->ID)?></h2>
+                            <p class="events-description"><?php echo get_the_excerpt($post->ID)?></p>
+                        </a>
+                    </div>
+            <?php endif; endforeach;?>
+            <?php foreach (get_posts(['numberposts' => 4, 'post_type' => 'eventos']) as $post): ?>
+                <div class="col-6 col-md-3">
+                    <div class="events-box">
+                            <figure>
+                                <a href="<?php echo get_permalink($post->ID)?>">
+                                    <img class="events-img" src="<?php echo get_the_post_thumbnail_url($post->ID);?>"
+                                         alt="<?php echo get_the_title($post->ID); ?>">
+                                </a>
+                                <a href="<?php echo get_permalink($post->ID)?>">
+                                    <figcaption><h2 class="sub-events-title"><?php echo get_the_title($post->ID)?></h2></figcaption>
+                                </a>
+                            </figure>
+                    </div>
+                </div>
+            <?php endforeach; ?>
     </div>
 </section>
 

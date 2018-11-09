@@ -341,3 +341,32 @@ padding-bottom: 20px;
     padding-top: 10px;
     font-size: 15px;
 }
+
+/*Events Section*/
+
+.featured-events-img-box {
+    height: 100%;
+}
+
+.events-img {
+    width: 100%;
+}
+
+.events-title {
+    padding-top: 20px;
+    font-size: 42px;
+    color: #393939;
+}
+
+.events-description {
+    padding-top: 20px;
+    font-size: 18px;
+    color: #707070;
+}
+
+.sub-events-title {
+    padding-top: 8px;
+    font-size: 24px;
+    font-weight: 500;
+    color: #393939;
+}
