@@ -26,8 +26,6 @@ get_header(); ?>
                     </div>
                 </div>
             </div>
-
-
 		</main><!-- .site-main -->
 	</div><!-- .content-area -->
 
