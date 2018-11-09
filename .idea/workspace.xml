@@ -2,11 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c2fb8635-bcdc-45e7-b5b4-53f0389ba76b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/bsbempresas/single-eventos.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bsbempresas/css/theme.css" beforeDir="false" afterPath="$PROJECT_DIR$/bsbempresas/css/theme.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bsbempresas/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/bsbempresas/functions.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bsbempresas/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/bsbempresas/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bsbempresas/single-entrevista.php" beforeDir="false" afterPath="$PROJECT_DIR$/bsbempresas/single-entrevista.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bsbempresas/single.php" beforeDir="false" afterPath="$PROJECT_DIR$/bsbempresas/single-noticia.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,6 +18,7 @@
     <session id="-1194657358">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+          <entry key="project.closed" value="1" />
           <entry key="project.open.time.10" value="1" />
           <entry key="project.open.time.7" value="1" />
           <entry key="project.opened" value="2" />
@@ -25,26 +26,28 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="css" value="1" />
-          <entry key="php" value="10" />
+          <entry key="css" value="3" />
+          <entry key="php" value="13" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CSS" value="1" />
-          <entry key="PHP" value="10" />
+          <entry key="CSS" value="3" />
+          <entry key="PHP" value="13" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="css" value="177" />
-          <entry key="php" value="1453" />
+          <entry key="css" value="735" />
+          <entry key="php" value="2025" />
+          <entry key="txt" value="89" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="CSS" value="177" />
-          <entry key="PHP" value="1453" />
+          <entry key="CSS" value="735" />
+          <entry key="PHP" value="2025" />
+          <entry key="PLAIN_TEXT" value="89" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.php.composer.actions" />
@@ -59,24 +62,24 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/bsbempresas/single-artigos.php">
+        <entry file="file://$PROJECT_DIR$/bsbempresas/page.php">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/bsbempresas/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="31" column="5" lean-forward="true" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
+            <state relative-caret-position="135">
+              <caret line="163" column="91" selection-start-line="163" selection-start-column="91" selection-end-line="163" selection-end-column="91" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/bsbempresas/page.php">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/bsbempresas/index.php">
+        <entry file="file://$PROJECT_DIR$/bsbempresas/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="295" column="57" selection-start-line="295" selection-start-column="57" selection-end-line="295" selection-end-column="57" />
+            <state relative-caret-position="495">
+              <caret line="113" lean-forward="true" selection-start-line="113" selection-end-line="113" />
             </state>
           </provider>
         </entry>
@@ -91,17 +94,45 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/bsbempresas/single-noticia.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="30" column="26" selection-end-line="60" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/bsbempresas/css/theme.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="347" column="16" selection-start-line="347" selection-start-column="16" selection-end-line="347" selection-end-column="16" />
+            <state relative-caret-position="469">
+              <caret line="402" column="1" lean-forward="true" selection-end-line="402" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/bsbempresas/single-entrevista.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="810">
+              <caret line="60" lean-forward="true" selection-start-line="60" selection-end-line="60" />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>new</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="guilhermelcs &lt;guilherme.evandf@gmail.com&gt;" />
+      </list>
+    </option>
     <option name="ROOT_SYNC" value="SYNC" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -109,8 +140,12 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/bsbempresas/functions.php" />
-        <option value="$PROJECT_DIR$/bsbempresas/css/theme.css" />
         <option value="$PROJECT_DIR$/bsbempresas/index.php" />
+        <option value="$PROJECT_DIR$/bsbempresas/style.css" />
+        <option value="$PROJECT_DIR$/bsbempresas/css/single-noticia-style.css" />
+        <option value="$PROJECT_DIR$/bsbempresas/single-noticia.php" />
+        <option value="$PROJECT_DIR$/bsbempresas/css/theme.css" />
+        <option value="$PROJECT_DIR$/bsbempresas/single-entrevista.php" />
       </list>
     </option>
   </component>
@@ -167,6 +202,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/bsbempresas/css" />
       <recent name="$PROJECT_DIR$/bsbempresas" />
     </key>
   </component>
@@ -193,20 +229,27 @@
       <option name="presentableId" value="Default" />
       <updated>1541590370605</updated>
       <workItem from="1541590375594" duration="1529000" />
-      <workItem from="1541782466686" duration="12307000" />
+      <workItem from="1541782466686" duration="21514000" />
     </task>
+    <task id="LOCAL-00001" summary="Added the events single page, and made it dynamic for wordpress">
+      <created>1541796788617</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1541796788617</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13836000" />
+    <option name="totallyTimeSpent" value="23043000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1366" height="768" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info content_ui="combo" id="Project" order="2" weight="0.19469696" />
+      <window_info active="true" content_ui="combo" id="Project" order="2" visible="true" weight="0.19469696" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -252,6 +295,10 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Added the events single page, and made it dynamic for wordpress" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added the events single page, and made it dynamic for wordpress" />
+  </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/bsbempresas/header.php">
       <provider selected="true" editor-type-id="text-editor" />
@@ -274,10 +321,24 @@
         <state relative-caret-position="-90" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bsbempresas/css/theme.css">
+    <entry file="file://$PROJECT_DIR$/bsbempresas/css/single-noticia-style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="9" selection-start-column="9" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bsbempresas/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="113" lean-forward="true" selection-start-line="113" selection-end-line="113" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bsbempresas/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
-          <caret line="347" column="16" selection-start-line="347" selection-start-column="16" selection-end-line="347" selection-end-column="16" />
+          <caret line="163" column="91" selection-start-line="163" selection-start-column="91" selection-end-line="163" selection-end-column="91" />
         </state>
       </provider>
     </entry>
@@ -288,10 +349,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bsbempresas/index.php">
+    <entry file="file://$PROJECT_DIR$/bsbempresas/css/theme.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="295" column="57" selection-start-line="295" selection-start-column="57" selection-end-line="295" selection-end-column="57" />
+        <state relative-caret-position="469">
+          <caret line="402" column="1" lean-forward="true" selection-end-line="402" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bsbempresas/single-noticia.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="30" column="26" selection-end-line="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bsbempresas/single-entrevista.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="810">
+          <caret line="60" lean-forward="true" selection-start-line="60" selection-end-line="60" />
         </state>
       </provider>
     </entry>

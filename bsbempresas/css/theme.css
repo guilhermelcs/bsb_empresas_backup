@@ -66,7 +66,7 @@ padding-right: 15px;
 
 
 #business-section {
-    background: #f1f1f1;
+    background: #ffffff;
 }
 
 #articles-section {
@@ -369,4 +369,35 @@ padding-bottom: 20px;
     font-size: 24px;
     font-weight: 500;
     color: #393939;
+}
+
+/*SINGLE PAGES STYLES*/
+/*Single Noticia*/
+
+.single-noticia h1 {
+    color: #333333;
+    text-align: center;
+    font-size: 42px;
+    padding: 15px
+}
+
+.single-noticia .news-img-box {
+    height: 70vh;
+    overflow: hidden;
+    padding: 15px 15px 30px 15px;
+}
+
+.single-noticia img {
+    height: 100%;
+    width: auto;
+}
+
+.excerpt-field p {
+    padding-top: 15px !important;
+    font-size: 14px !important;
+}
+
+.single-noticia p {
+    padding: 15px;
+    font-size: 20px;
 }

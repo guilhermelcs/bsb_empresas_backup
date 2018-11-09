@@ -55,6 +55,36 @@ get_header(); ?>
     </div>
 </section>
 
+<!--Interviews Section-->
+<section id="interviews-section">
+    <div class="container mt-3">
+        <div class="row">
+            <div class="col-12">
+                <h2 class="section-title pb-3">Entrevistas</h2>
+            </div>
+            <?php foreach (get_posts(['numberposts' => 3, 'post_type' => 'entrevista']) as $post): ?>
+                <div class="col-12 col-md-4">
+                    <div class="text-center">
+                        <a href="<?php echo get_permalink($post->ID);?>">
+                            <figure class="business-wrapper">
+                                <div class="business-img-box">
+                                    <img class="interviews-img rounded img-thumbnail"
+                                         src="<?php echo get_the_post_thumbnail_url($post->ID);?>"
+                                         alt="<?php echo get_the_title($post->ID); ?>">
+                                </div>
+                                <figcaption class="business-title text-dark pt-3"><?php echo get_the_title($post->ID); ?></figcaption>
+                                <p class="business-subtitle"><?php echo get_the_excerpt($post->ID); ?></p>
+                                <p class="business-description px-4 pb-4"><?php echo get_post_field('post_content', $post->ID);?></p>
+                            </figure>
+                        </a>
+                    </div>
+                </div>
+            <?php endforeach;?>
+        </div>
+    </div>
+</section>
+
+
 <!--Columnists Section-->
 <section id="columnists-section" class="pt-5">
     <div class="container mt-3">
@@ -80,6 +110,9 @@ get_header(); ?>
                     </div>
                 </div>
             <?php endforeach;?>
+        </div>
+    </div>
+</section>
 
 <!--Business Section-->
 <section id="business-section">
@@ -111,35 +144,6 @@ get_header(); ?>
     </div>
 </section>
 
-<!--Interviews Section-->
-<section id="interviews-section">
-    <div class="container mt-3">
-        <div class="row">
-            <div class="col-12">
-                <h2 class="section-title pb-3">Entrevistas</h2>
-            </div>
-            <?php foreach (get_posts(['numberposts' => 3, 'post_type' => 'entrevista']) as $post): ?>
-                <div class="col-12 col-md-4">
-                    <div class="text-center">
-                        <a href="<?php echo get_permalink($post->ID);?>">
-                            <figure class="business-wrapper">
-                                <div class="business-img-box">
-                                    <img class="interviews-img rounded img-thumbnail"
-                                         src="<?php echo get_the_post_thumbnail_url($post->ID);?>"
-                                         alt="<?php echo get_the_title($post->ID); ?>">
-                                </div>
-                                <figcaption class="business-title text-dark pt-3"><?php echo get_the_title($post->ID); ?></figcaption>
-                                <p class="business-subtitle"><?php echo get_the_excerpt($post->ID); ?></p>
-                                <p class="business-description px-4 pb-4"><?php echo get_post_field('post_content', $post->ID);?></p>
-                            </figure>
-                        </a>
-                    </div>
-                </div>
-            <?php endforeach;?>
-        </div>
-    </div>
-</section>
-
 <!--Articles Section-->
 <section id="articles-section">
     <div class="container mt-3">
@@ -157,7 +161,7 @@ get_header(); ?>
                         <a href="<?php echo get_permalink($post->ID)?>">
                             <div class="articles-text-box text-left">
                                 <h2 class="articles-title"><?php echo get_the_title($post->ID); ?> -</h2>
-                                <h3 class="articles-author"><?php echo get_post_field('post_content', $post->ID);?></h3>
+                                <h3 class="articles-author"><?php the_field('article_author', $post->ID);?></h3>
                                 <p class="articles-citation"><?php echo get_the_excerpt($post->ID); ?></p>
                             </div>
                         </a>
@@ -168,7 +172,7 @@ get_header(); ?>
 </section>
 
 <!--Videos Section-->
-<section id="videos-section">
+<section id="videos-section" class="bg-dark">
     <div class="container mt-3">
         <div class="row">
             <div class="col-12">
@@ -197,7 +201,7 @@ get_header(); ?>
                 </div>
             </div>
             <div class="col-4 col-md-4 text-left pb-4">
-                <div class="next-videos-box bg-dark">
+                <div class="next-videos-box bg-secondary rounded">
                     <?php foreach (get_posts(['numberpost' => 10, 'offset' => 1, 'post_type' => 'videos']) as $post): ?>
                         <figure>
                             <a href="<?php echo get_field('qtc_video_url', $post->ID); ?>" data-video
@@ -259,7 +263,7 @@ get_header(); ?>
 </section>
 
 <!--Events Section-->
-<section id="events-section">
+<section id="events-section" class="pb-5">
     <div class="container mt-3">
         <div class="row">
             <div class="col-12">

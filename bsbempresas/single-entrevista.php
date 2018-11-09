@@ -9,37 +9,52 @@
 
 get_header(); ?>
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+<div id="primary" class="content-area">
+    <main id="main" class="site-main" role="main">
 
-		<?php
-		// Start the loop.
-		while ( have_posts() ) : the_post(); ?>
-            <div class="container p-5">
-                <div class="row">
-                    <div class="col-12">
-                        <?php echo the_post_thumbnail(); ?>
-                    </div>
-                    <div class="col-12">
-                        <h1> <?php echo the_title(); ?></h1>
-                        <?php echo the_content(); ?>
+        <?php
+        // Start the loop.
+        while ( have_posts() ) : the_post(); ?>
+
+        <div class="container p-5">
+            <div class="row">
+                <div class="col-12">
+                    <h1> <?php echo the_title(); ?></h1>
+                </div>
+                <div class="col-12">
+                    <div class="text-center">
+                        <figure class="news-img-box">
+                            <?php echo the_post_thumbnail(); ?>
+                            <div class="excerpt-field"><?php the_excerpt(); ?></div>
+                        </figure>
                     </div>
                 </div>
+                <div class="col-12">
+                    <?php echo the_content(); ?>
+                </div>
             </div>
-		</main><!-- .site-main -->
-	</div><!-- .content-area -->
+        </div>
+
+
+    </main><!-- .site-main -->
+</div><!-- .content-area -->
 
 <?php
 
-    endwhile;
-    // Previous/next post navigation.
-    the_post_navigation( array(
-        'next_text' => '<span class="meta-nav" aria-hidden="true">' . __( 'Next', 'twentyfifteen' ) . '</span> ' .
-            '<span class="screen-reader-text">' . __( 'Next post:', 'twentyfifteen' ) . '</span> ' .
-            '<span class="post-title">%title</span>',
-        'prev_text' => '<span class="meta-nav" aria-hidden="true">' . __( 'Previous', 'twentyfifteen' ) . '</span> ' .
-            '<span class="screen-reader-text">' . __( 'Previous post:', 'twentyfifteen' ) . '</span> ' .
-            '<span class="post-title">%title</span>',
-    ) );
+endwhile; ?>
 
-    get_footer(); ?>
+<div class="navigation">
+
+    <?php previous_post_link('<div class="alignleft">Ver também: %link</div>', '%title'); ?>
+    <?php if(!get_adjacent_post(false, '', true)) {
+        echo '<div class="alignleft"><a href="/#">Voltar à página inicial</a></div>';
+    } ?>
+
+    <?php next_post_link('<div class="alignright">Ver também: %link</div>', '%title'); ?>
+    <?php if(!get_adjacent_post(false, '', false)) {
+        echo '<div class="alignright"><a href="/#">Voltar à página inicial</a></div>';
+    } ?>
+
+</div>
+
+<?php get_footer(); ?>
