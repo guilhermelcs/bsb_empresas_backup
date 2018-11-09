@@ -257,6 +257,43 @@ function create_articles_post_type() {
 
 }
 
+//Criando custom post type para Vídeos
+
+add_action( 'init', 'create_videos_post_type' );
+function create_videos_post_type() {
+    $label = array(
+        'name' => 'Vídeos',
+        'singular_name' => 'Vídeo',
+        'author' => 'Autor',
+        'name'               => 'Vídeos',
+        'singular_name'      => 'Vídeo',
+        'add_new'            => 'Adicionar novo',
+        'add_new_item'       => 'Adicionar novo Vídeo',
+        'edit_item'          => 'Editar Vídeo',
+        'new_item'           => 'Novo Vídeo',
+        'all_items'          => 'Todos os Vídeos',
+        'view_item'          => 'Visualizar Vídeo',
+        'search_items'       => 'Buscar Vídeo',
+        'not_found'          => 'Nenhum Vídeo encontrado',
+        'not_found_in_trash' => 'Nenhum Vídeo encontrado na lixeira',
+        'menu_name'          => 'Vídeos'
+    );
+    register_post_type( 'videos',
+        array(
+            'labels' => $label,
+            array(
+                'name' => 'Vídeos',
+                'singular_name' => 'Vídeo'
+            ),
+            'public' => true,
+            'has_archive' => true,
+            'supports' => array( 'title', 'editor', 'author', 'thumbnail', 'excerpt', 'comments', 'categories' ),
+            'taxonomies'  => array( 'category' )
+        )
+    );
+
+}
+
 
 
 

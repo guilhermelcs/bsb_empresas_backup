@@ -7,6 +7,16 @@ body {
 h1, h2, h3 {
 color: #171717;
 }
+
+a {
+    color: #171717;
+}
+
+a:hover {
+    color: #393939;
+    font-style: none;
+    text-decoration: none;
+}
 /*Id's Styles*/
 #header-bg {
 background-color: #ffce00;
@@ -290,9 +300,14 @@ padding-bottom: 20px;
     height: 460px;
 }
 
+.video_lg {
+    width: 100%;
+}
+
 .video_title {
     padding-top: 5px;
-    font-size: 24px;
+    font-size: 28px;
+    color: #393939;
 }
 
 .next-videos-box {

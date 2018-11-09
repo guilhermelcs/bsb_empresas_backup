@@ -65,17 +65,19 @@ get_header(); ?>
             <?php foreach (get_posts(['numberposts' => 3, 'post_type' => 'colunista']) as $post): ?>
                 <div class="col-12 col-md-4">
                     <div class="text-center">
-                        <figure>
-                            <img class="columnist-img rounded-circle"
-                                 src="<?php echo get_the_post_thumbnail_url($post->ID);?>"
-                                 alt="<?php echo get_the_title($post->ID); ?>">
-                            <figcaption class="text-dark columnist-title pt-3"><?php echo get_the_title($post->ID); ?></figcaption>
-                            <div class="columnist-description-box">
-                                <p class="columnist-subtitle"><?php echo get_the_excerpt($post->ID); ?></p>
-                                <p class="columnist-description px-2"><?php echo get_post_field('post_content', $post->ID);?>
-                                </p>
-                            </div>
-                        </figure>
+                        <a href="<?php echo get_permalink($post->ID)?>">
+                            <figure>
+                                <img class="columnist-img rounded-circle"
+                                     src="<?php echo get_the_post_thumbnail_url($post->ID);?>"
+                                     alt="<?php echo get_the_title($post->ID); ?>">
+                                <figcaption class="text-dark columnist-title pt-3"><?php echo get_the_title($post->ID); ?></figcaption>
+                                <div class="columnist-description-box">
+                                    <p class="columnist-subtitle"><?php echo get_the_excerpt($post->ID); ?></p>
+                                    <p class="columnist-description px-2"><?php echo get_post_field('post_content', $post->ID);?>
+                                    </p>
+                                </div>
+                            </figure>
+                        </a>
                     </div>
                 </div>
             <?php endforeach;?>
@@ -88,21 +90,21 @@ get_header(); ?>
                 <h2 class="section-title pb-3">Negócios</h2>
             </div>
             <?php foreach (get_posts(['numberposts' => 3, 'post_type' => 'negocios']) as $post): ?>
-            <div class="col-12 col-md-4">
-                <div class="text-center">
-                    <figure class="business-wrapper">
-                        <div class="business-img-box">
-                            <img class="business-img rounded"
-                                src="<?php echo get_the_post_thumbnail_url($post->ID);?>"
-                                 alt="<?php echo get_the_title($post->ID); ?>">
-                        </div>
-                        <figcaption class="business-title text-dark pt-3"><?php echo get_the_title($post->ID); ?></figcaption>
-                        <p class="business-subtitle"><?php echo get_the_excerpt($post->ID); ?></p>
-                        <p class="business-description px-4 pb-4"><?php echo get_post_field('post_content', $post->ID);?>
-                        </p>
-                    </figure>
+                <div class="col-12 col-md-4">
+                    <div class="text-center">
+                        <figure class="business-wrapper">
+                            <div class="business-img-box">
+                                <img class="business-img rounded"
+                                    src="<?php echo get_the_post_thumbnail_url($post->ID);?>"
+                                     alt="<?php echo get_the_title($post->ID); ?>">
+                            </div>
+                            <figcaption class="business-title text-dark pt-3"><?php echo get_the_title($post->ID); ?></figcaption>
+                            <p class="business-subtitle"><?php echo get_the_excerpt($post->ID); ?></p>
+                            <p class="business-description px-4 pb-4"><?php echo get_post_field('post_content', $post->ID);?>
+                            </p>
+                        </figure>
+                    </div>
                 </div>
-            </div>
             <?php endforeach;?>
         </div>
     </div>
@@ -116,20 +118,20 @@ get_header(); ?>
                 <h2 class="section-title pb-3">Entrevistas</h2>
             </div>
             <?php foreach (get_posts(['numberposts' => 3, 'post_type' => 'entrevista']) as $post): ?>
-            <div class="col-12 col-md-4">
-                <div class="text-center">
-                    <figure class="business-wrapper">
-                        <div class="business-img-box">
-                            <img class="interviews-img rounded img-thumbnail"
-                                 src="<?php echo get_the_post_thumbnail_url($post->ID);?>"
-                                 alt="<?php echo get_the_title($post->ID); ?>">
-                        </div>
-                        <figcaption class="business-title text-dark pt-3"><?php echo get_the_title($post->ID); ?></figcaption>
-                        <p class="business-subtitle"><?php echo get_the_excerpt($post->ID); ?></p>
-                        <p class="business-description px-4 pb-4"><?php echo get_post_field('post_content', $post->ID);?></p>
-                    </figure>
+                <div class="col-12 col-md-4">
+                    <div class="text-center">
+                        <figure class="business-wrapper">
+                            <div class="business-img-box">
+                                <img class="interviews-img rounded img-thumbnail"
+                                     src="<?php echo get_the_post_thumbnail_url($post->ID);?>"
+                                     alt="<?php echo get_the_title($post->ID); ?>">
+                            </div>
+                            <figcaption class="business-title text-dark pt-3"><?php echo get_the_title($post->ID); ?></figcaption>
+                            <p class="business-subtitle"><?php echo get_the_excerpt($post->ID); ?></p>
+                            <p class="business-description px-4 pb-4"><?php echo get_post_field('post_content', $post->ID);?></p>
+                        </figure>
+                    </div>
                 </div>
-            </div>
             <?php endforeach;?>
         </div>
     </div>
@@ -143,18 +145,18 @@ get_header(); ?>
                 <h2 class="section-title pb-3">Artigos</h2>
             </div>
             <?php foreach (get_posts(['numberposts' => 3, 'post_type' => 'artigos']) as $post): ?>
-            <div class="col-12 col-md-12 d-flex align-items-center pb-4">
-                <div class="articles-img-box text-left">
-                    <img class="articles-img rounded-circle"
-                         src="<?php echo get_the_post_thumbnail_url($post->ID);?>"
-                         alt="<?php echo get_the_title($post->ID); ?>">
+                <div class="col-12 col-md-12 d-flex align-items-center pb-4">
+                    <div class="articles-img-box text-left">
+                        <img class="articles-img rounded-circle"
+                             src="<?php echo get_the_post_thumbnail_url($post->ID);?>"
+                             alt="<?php echo get_the_title($post->ID); ?>">
+                    </div>
+                    <div class="articles-text-box text-left">
+                        <h2 class="articles-title"><?php echo get_the_title($post->ID); ?> -</h2>
+                        <h3 class="articles-author"><?php echo get_post_field('post_content', $post->ID);?></h3>
+                        <p class="articles-citation"><?php echo get_the_excerpt($post->ID); ?></p>
+                    </div>
                 </div>
-                <div class="articles-text-box text-left">
-                    <h2 class="articles-title"><?php echo get_the_title($post->ID); ?> -</h2>
-                    <h3 class="articles-author"><?php echo get_post_field('post_content', $post->ID);?></h3>
-                    <p class="articles-citation"><?php echo get_the_excerpt($post->ID); ?></p>
-                </div>
-            </div>
             <?php endforeach;?>
         </div>
     </div>
@@ -167,49 +169,68 @@ get_header(); ?>
             <div class="col-12">
                 <h2 class="section-title pb-3">Vídeos</h2>
             </div>
+            <?php
+                $featured_video_id = 0;
+                $cont = 0;
+                $count_videos_posts = wp_count_posts('videos');
+                $published_videos_posts = $count_videos_posts->publish;
+            ?>
             <div class="col-8 col-md-8 d-flex align-items-center pb-4 mb-5">
                 <div class="video-box">
-                    <figure>
-                        <video width="100%" controls>
-                            <source src="<?php bloginfo('template_url');?>/videos/dde-introduction.mp4" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
-                        <figcaption class="video_title">Lorem Ipsum Dolor Sit Amet</figcaption>
-                    </figure>
+                    <?php echo get_field('qtc_video_url', $post->ID); ?>
+                    <?php foreach (get_posts(['numberpost' => 1, 'post_type' => 'videos']) as $post):
+                        $cont++;
+                        $featured_video_id = $post->ID;
+                        if($cont == $published_videos_posts): ?>
+                            <figure>
+                                <video
+                                    class="video-js video-js-skin" id="qtcPlayer" controls width="740" height="460"
+                                    data-url="<?php echo get_field('qtc_video_url', $post->ID); ?>">
+                                </video>
+                                <figcaption class="video_title"><?php echo get_the_title($post->ID);?></figcaption>
+                            </figure>
+                    <?php endif; endforeach;?>
                 </div>
             </div>
             <div class="col-4 col-md-4 text-left pb-4">
                 <div class="next-videos-box bg-dark">
-                    <figure>
-                        <a href="">
-                            <img src="<?php bloginfo('template_url');?>/videos/thumbnails/next-video-thumbnail.jpg" class="next-videos-img">
-                            <figcaption class="next-videos-titles">Morbi sit amet convallis tellus, vel porta augue. </figcaption>
-                        </a>
-                    </figure>
-                    <figure>
-                        <a href="">
-                            <img src="<?php bloginfo('template_url');?>/videos/thumbnails/next-video-thumbnail.jpg" class="next-videos-img">
-                            <figcaption class="next-videos-titles">Morbi sit amet convallis tellus, vel porta augue. </figcaption>
-                        </a>
-                    </figure>
-                    <figure>
-                        <a href="">
-                            <img src="<?php bloginfo('template_url');?>/videos/thumbnails/next-video-thumbnail.jpg" class="next-videos-img">
-                            <figcaption class="next-videos-titles">Morbi sit amet convallis tellus, vel porta augue. </figcaption>
-                        </a>
-                    </figure>
-                    <figure>
-                        <a href="">
-                            <img src="<?php bloginfo('template_url');?>videos/thumbnails/next-video-thumbnail.jpg" class="next-videos-img">
-                            <figcaption class="next-videos-titles">Morbi sit amet convallis tellus, vel porta augue. </figcaption>
-                        </a>
-                    </figure>
+                    <?php foreach (get_posts(['numberpost' => 10, 'post_type' => 'videos']) as $post):
+                        if($post->ID != $featured_video_id): ?>
+                        <figure>
+                            <a href="<?php echo get_field('qtc_video_url', $post->ID); ?>" data-video
+                               data-poster="<?php echo get_the_post_thumbnail_url($post->ID); ?>">
+                                <img class="next-videos-img" src="<?php echo get_the_post_thumbnail_url($post->ID);?>"
+                                     alt="<?php echo get_the_title($post->ID); ?>">
+                                <figcaption class="next-videos-titles"><?php echo get_the_title($post->ID);?></figcaption>
+                            </a>
+                        </figure>
+                        <?php endif;?>
+                    <?php endforeach;?>
+                    </div>
                 </div>
-            </div>
         </div>
     </div>
 </section>
-
+            <script type="text/javascript">
+                window.onload = function () {
+                    videojs("qtcPlayer", {
+                        controls: true,
+                        techOrder: ["youtube", "html5"],
+                        youtube: { "customVars": { "showinfo": 0, "iv_load_policy" : 3 }},
+                        sources: [
+                            { "type": "video/youtube", "src": $('#qtcPlayer').data("url") }
+                        ]
+                    }, function() {
+                        var mPlayer = this
+                        $("a[data-video]").on("click", function (e) {
+                            e.preventDefault();
+                            mPlayer.poster( $(this).data("poster"))
+                            mPlayer.src({ type: "video/youtube", src: $(this).attr("href") });
+                            mPlayer.play();
+                        });
+                    });
+                }
+            </script>
 <!--Weekend Section-->
 <!--<section id="videos-section">
     <div class="container mt-3">

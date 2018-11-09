@@ -30,7 +30,13 @@
             </div>
         </div>
     </div>
+
+
     <?php wp_head(); ?>
+
+    <link href="https://vjs.zencdn.net/7.3.0/video-js.css" rel="stylesheet">
+
+
 </head>
 
 <body <?php body_class(); ?>>
