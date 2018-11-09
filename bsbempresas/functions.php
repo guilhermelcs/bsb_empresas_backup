@@ -43,18 +43,18 @@ function create_events_post_type() {
         'name' => 'Eventos',
         'singular_name' => 'Eventos',
         'author' => 'Autor',
-        'name'               => 'Eventos',
-                    'singular_name'      => 'Evento',
-                    'add_new'            => 'Adicionar novo',
-                    'add_new_item'       => 'Adicionar novo Evento',
-                    'edit_item'          => 'Editar Evento',
-                    'new_item'           => 'Novo Evento',
-                    'all_items'          => 'Todos os Eventos',
-                    'view_item'          => 'Visualizar Evento',
-                    'search_items'       => 'Buscar Eventos',
-                    'not_found'          => 'Nenhum evento encontrado',
-                    'not_found_in_trash' => 'Nenhum evento encontrado na lixeira',
-                    'menu_name'          => 'Eventos'
+        'name'   => 'Eventos',
+        'singular_name'      => 'Evento',
+        'add_new'            => 'Adicionar novo',
+        'add_new_item'       => 'Adicionar novo Evento',
+        'edit_item'          => 'Editar Evento',
+        'new_item'           => 'Novo Evento',
+        'all_items'          => 'Todos os Eventos',
+        'view_item'          => 'Visualizar Evento',
+        'search_items'       => 'Buscar Eventos',
+        'not_found'          => 'Nenhum evento encontrado',
+        'not_found_in_trash' => 'Nenhum evento encontrado na lixeira',
+        'menu_name'          => 'Eventos'
         );
     register_post_type( 'events',
         array(
@@ -284,6 +284,44 @@ function create_videos_post_type() {
             array(
                 'name' => 'Vídeos',
                 'singular_name' => 'Vídeo'
+            ),
+            'public' => true,
+            'has_archive' => true,
+            'supports' => array( 'title', 'editor', 'author', 'thumbnail', 'excerpt', 'comments', 'categories' ),
+            'taxonomies'  => array( 'category' )
+        )
+    );
+
+}
+
+
+//Criando custom post type para Fim de Semana
+
+add_action( 'init', 'create_fim_de_semana_post_type' );
+function create_fim_de_semana_post_type() {
+    $label = array(
+        'name' => 'Fim-de-semana',
+        'singular_name' => 'Fim-de-semana',
+        'author' => 'Autor',
+        'name'               => 'Fim-de-semana',
+        'singular_name'      => 'Fim-de-semana',
+        'add_new'            => 'Adicionar novo',
+        'add_new_item'       => 'Adicionar novo Fim-de-semana',
+        'edit_item'          => 'Editar Fim-de-semana',
+        'new_item'           => 'Novo Fim-de-semana',
+        'all_items'          => 'Todos os Fins-de-semana',
+        'view_item'          => 'Visualizar Fim-de-semana',
+        'search_items'       => 'Buscar Fim-de-semana',
+        'not_found'          => 'Nenhum Fim-de-semana encontrado',
+        'not_found_in_trash' => 'Nenhum Fim-de-semana encontrado na lixeira',
+        'menu_name'          => 'Fim-de-semana'
+    );
+    register_post_type( 'fim_de_semana',
+        array(
+            'labels' => $label,
+            array(
+                'name' => 'Fim-de-semana',
+                'singular_name' => 'Fim-de-semana'
             ),
             'public' => true,
             'has_archive' => true,
