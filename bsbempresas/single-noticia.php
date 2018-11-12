@@ -29,10 +29,25 @@ get_header(); ?>
                             </figure>
                         </div>
                     </div>
-                    <div class="col-12">
+                    <div class="col-12 pb-5">
                         <?php echo the_content(); ?>
                     </div>
                 </div>
+
+                <div class="navigation">
+
+                    <?php previous_post_link('<button class="btn btn-primary py-2">Ver também: %link</button>', '%title'); ?>
+                    <?php if(!get_adjacent_post(false, '', true)) {
+                        echo '<a href="/#"><button class="btn btn-warning py-2">Voltar à página inicial</button></a>';
+                    } ?>
+
+                    <?php next_post_link('<button class="btn btn-secondary py-2">Ver também: %link</button>', '%title'); ?>
+                    <?php if(!get_adjacent_post(false, '', false)) {
+                        echo '<a href="/#"><button class="btn btn-warning py-2">Voltar à página inicial</button></a>';
+                    } ?>
+
+                </div>
+
             </div>
 
 
@@ -40,21 +55,5 @@ get_header(); ?>
 	</div><!-- .content-area -->
 
 <?php
-
     endwhile; ?>
-
-<div class="navigation">
-
-    <?php previous_post_link('<div class="alignleft">Ver também: %link</div>', '%title'); ?>
-    <?php if(!get_adjacent_post(false, '', true)) {
-        echo '<div class="alignleft"><a href="/#">Voltar à página inicial</a></div>';
-    } ?>
-
-    <?php next_post_link('<div class="alignright">Ver também: %link</div>', '%title'); ?>
-    <?php if(!get_adjacent_post(false, '', false)) {
-        echo '<div class="alignright"><a href="/#">Voltar à página inicial</a></div>';
-    } ?>
-
-</div>
-
    <?php get_footer(); ?>
