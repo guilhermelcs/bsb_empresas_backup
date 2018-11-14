@@ -327,6 +327,7 @@ function create_events_post_type() {
                 'singular_name' => __( 'Events' ),
             ),
             'public' => true,
+            'has_archive' => true,
             'supports' => array( 'title', 'editor', 'author', 'thumbnail', 'excerpt', 'comments' ),
             'taxonomies'  => array( 'category' )
         )

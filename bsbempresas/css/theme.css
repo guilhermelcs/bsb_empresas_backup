@@ -584,3 +584,21 @@ figure.events-img-box img {
     font-size: 20px;
 }
 
+
+/*Noticia Archive*/
+
+.latest-news-title {
+    padding-top: 50px;
+}
+
+.news_post_data {
+    font-size: 14px;
+    font-weight: 300;
+    color: #777777;
+}
+
+.news_figure img {
+    width: 100%;
+    height: auto;
+}
+
