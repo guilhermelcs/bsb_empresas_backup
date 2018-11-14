@@ -148,11 +148,11 @@ get_header(); ?>
 <section id="articles-section">
     <div class="container mt-3">
         <div class="row">
-            <div class="col-12">
+            <div class="col-12 text-center">
                 <h2 class="section-title pb-3">Artigos</h2>
             </div>
             <?php foreach (get_posts(['numberposts' => 3, 'post_type' => 'artigos']) as $post): ?>
-                <div class="col-12 col-md-12 d-flex align-items-center pb-4">
+                <div class="col-12 col-md-12 d-flex align-items-center justify-content-center pb-4">
                         <div class="articles-img-box text-left">
                             <img class="articles-img rounded-circle"
                                  src="<?php echo get_the_post_thumbnail_url($post->ID);?>"
@@ -176,7 +176,7 @@ get_header(); ?>
     <div class="container mt-3">
         <div class="row">
             <div class="col-12">
-                <h2 class="section-title pb-3">Vídeos</h2>
+                <h2 class="section-title text-light pb-3">Vídeos</h2>
             </div>
             <?php
                 $featured_video_id = 0;
@@ -247,7 +247,7 @@ get_header(); ?>
             </div>
             <?php foreach (get_posts(['numberpost' => 4, 'post_type' => 'fim_de_semana']) as $post): ?>
                 <div class="col-6 col-md-3 pb-4 mb-5">
-                    <figure class="weekend-img-box">
+                    <figure class="weekend-img-box px-4">
                         <a href="<?php echo get_permalink($post->ID)?>">
                             <img class="weekend-img" src="<?php echo get_the_post_thumbnail_url($post->ID);?>"
                                  alt="<?php echo get_the_title($post->ID); ?>">
