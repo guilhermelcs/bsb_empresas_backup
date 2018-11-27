@@ -1,6 +1,6 @@
 /*Global Styles*/
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-weight: normal;
     color: #777;
 }
@@ -27,9 +27,69 @@ a:hover {
 }
 
 /*Id's Styles*/
-#header-bg {
-background-color: #ffce00;
+/*Sidebar Menu*/
+#sidebar-menu {
+    overflow: hidden;
+    position: absolute;
+    display: none;
+    height: 80vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 1);
+    top: 152px;
+    left: 100px;
+    z-index: 888;
+}
 
+#sidebar-in {
+    cursor: pointer;
+    position: absolute;
+    top: 162px;
+    left: 140px;
+}
+
+#sidebar-out img{
+    position: absolute;
+    cursor: pointer;
+    top: 10px;
+    right: 10px;
+    width: 20px;
+}
+
+.texto-menu {
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.texto-submenu {
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 300;
+    cursor: pointer;
+}
+
+.dropdown-arrow {
+    width: 23px;
+}
+
+.nav-item {
+    width: 100%;
+}
+
+.dropdown-content {
+    display: none;
+    position: relative;
+    min-width: 160px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+#header-bg {
+    background-color: #ffce00;
+    height: 120px;
 }
 
 #header-logo {
@@ -37,6 +97,8 @@ width: 30%;
 }
 ul#menu-menu-principal {
     padding: 15px 0;
+    border-bottom: 1px solid black;
+    box-shadow: 0 1px 10px #777777;}
 }
 ul#menu-menu-principal  li {
     list-style: none;
@@ -45,7 +107,7 @@ ul#menu-menu-principal  li {
 
 ul#menu-menu-principal li a {
     text-decoration: none;
-    color: #ffffff;
+    color: #000000;
     padding: .5rem 1rem;
     text-transform: uppercase;
     font-weight: 600;
@@ -61,46 +123,54 @@ ul#menu-menu-principal li a:hover {
     background: #eee;
 }
 
+#magazine-wrapper {
+    position: relative;
+}
+
 #header-magazine {
-width: 50%;
-display: inline-block;
+    position: absolute;
+    height: 60%;
+    display: inline-block;
+    bottom: 30px;
+    right: 0;
 }
 
 #magazine-text {
-font-size: 20px;
-font-weight: 600;
-display: inline-block;
-padding-right: 15px;
+    font-size: 20px;
+    font-weight: 600;
+    display: inline-block;
+    padding-right: 15px;
 }
 
 
 #business-section {
-    background: #ffffff;
+    background: #f4f4f4;
 }
 
 #articles-section {
     padding-bottom: 50px;
-    background: #f1f1f1;
+    background: #f4f4f4;
 }
+
 #footer-logo {
-width: 90%;
+    width: 90%;
 }
 
 #footer-sign-link {
-font-size: 24px;
-color: #c7c7c7;
+    font-size: 24px;
+    color: #c7c7c7;
 }
 
 #footer-sign-link :hover{
-font-style: normal;
-color: #908990;
+    font-style: normal;
+    color: #908990;
 }
 
 #footer-magazine {
-padding-left: 15px;
-display: block;
-width: 50%;
-padding-bottom: 20px;
+    padding-left: 15px;
+    display: block;
+    width: 50%;
+    padding-bottom: 20px;
 }
 
 /*---Classes Styles---*/
@@ -114,6 +184,15 @@ padding-bottom: 20px;
     font-size: 1.75rem;
     font-weight: 500;
     color: #000000;
+}
+
+/*Above-Sections Divider*/
+.section-divider {
+    width: 100%;
+}
+.down-arrow {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
 }
 
 /*Latest-News-Section*/
@@ -339,7 +418,7 @@ padding-bottom: 20px;
 /*Weekend Section*/
 
 .weekend-img-box {
-    padding-right: 10px;
+    padding-right: 15px;
 }
 
 .weekend-img {
@@ -358,7 +437,7 @@ padding-bottom: 20px;
 }
 
 .events-img {
-    width: 100%;
+    width: 80%;
 }
 
 .events-title {
@@ -548,7 +627,7 @@ figure.artigos-img-box img {
     padding: 15px 15px 30px 15px;
 }
 
-figure.weekend-img-box img {
+.single-fim_de_semana figure.weekend-img-box img {
     height: 100%;
     width: auto;
 }

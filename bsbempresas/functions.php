@@ -6,6 +6,13 @@
  * Time: 11:01
  */
 
+function wpb_add_google_fonts() {
+
+    wp_enqueue_style( 'wpb-google-fonts', 'https://fonts.googleapis.com/css?family=Poppins:300,400,600,700', false );
+}
+
+add_action( 'wp_enqueue_scripts', 'wpb_add_google_fonts' );
+
 function qtc_setup_theme() {
 
     add_theme_support('title-tag');
