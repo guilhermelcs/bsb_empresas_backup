@@ -44,9 +44,13 @@
 
 
 <div id="menu-wrapper">
-    <span id="sidebar-in" class="pt-1"><img src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTYuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgd2lkdGg9IjMycHgiIGhlaWdodD0iMzJweCIgdmlld0JveD0iMCAwIDM0NC4zMzkgMzQ0LjMzOSIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgMzQ0LjMzOSAzNDQuMzM5OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+CjxnPgoJPGc+CgkJPGc+CgkJCTxyZWN0IHk9IjQ2LjA2IiB3aWR0aD0iMzQ0LjMzOSIgaGVpZ2h0PSIyOS41MiIgZmlsbD0iIzAwMDAwMCIvPgoJCTwvZz4KCQk8Zz4KCQkJPHJlY3QgeT0iMTU2LjUwNiIgd2lkdGg9IjM0NC4zMzkiIGhlaWdodD0iMjkuNTIiIGZpbGw9IiMwMDAwMDAiLz4KCQk8L2c+CgkJPGc+CgkJCTxyZWN0IHk9IjI2OC43NDgiIHdpZHRoPSIzNDQuMzM5IiBoZWlnaHQ9IjI5LjUzMSIgZmlsbD0iIzAwMDAwMCIvPgoJCTwvZz4KCTwvZz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8L3N2Zz4K" /></span>
     <div class="container">
         <ul id="menu-principal" class="nav justify-content-center">
+            <li class="menu-item">
+                <a href="#qtc-open-menu">
+                    <img class="mr-3" src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHZlcnNpb249IjEuMSIgdmlld0JveD0iMCAwIDIyNi4yMTYgMjI2LjIxNiIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgMjI2LjIxNiAyMjYuMjE2IiB3aWR0aD0iMjRweCIgaGVpZ2h0PSIyNHB4Ij4KICA8Zz4KICAgIDxnPgogICAgICA8cGF0aCBkPSJNOC43MDEsNDMuNTAzaDIwOC44MTRjNS4yMiwwLDguNzAxLTMuNDgsOC43MDEtOC43MDFzLTMuNDgtOC43MDEtOC43MDEtOC43MDFIOC43MDFDMy40OCwyNi4xMDIsMCwyOS41ODIsMCwzNC44MDIgICAgUzMuNDgsNDMuNTAzLDguNzAxLDQzLjUwM3oiIGZpbGw9IiMwMDAwMDAiLz4KICAgICAgPHBhdGggZD0ibTIxNy41MTUsMTA0LjQwN2gtMjA4LjgxNGMtNS4yMiwwLTguNzAxLDMuNDgtOC43MDEsOC43MDFzMy40OCw4LjcwMSA4LjcwMSw4LjcwMWgyMDguODE0YzUuMjIsMCA4LjcwMS0zLjQ4IDguNzAxLTguNzAxcy0zLjQ4MS04LjcwMS04LjcwMS04LjcwMXoiIGZpbGw9IiMwMDAwMDAiLz4KICAgICAgPHBhdGggZD0ibTIxNy41MTUsMTgyLjcxM2gtMjA4LjgxNGMtNS4yMiwwLTguNzAxLDMuNDgtOC43MDEsOC43MDFzMy40OCw4LjcwMSA4LjcwMSw4LjcwMWgyMDguODE0YzUuMjIsMCA4LjcwMS0zLjQ4IDguNzAxLTguNzAxcy0zLjQ4MS04LjcwMS04LjcwMS04LjcwMXoiIGZpbGw9IiMwMDAwMDAiLz4KICAgIDwvZz4KICA8L2c+Cjwvc3ZnPgo=" />
+                </a>
+            </li>
             <?php foreach (get_menu_items_by_registered_slug('header-menu') as $item): ?>
                 <li class="menu-item">
                     <a href="<?php echo $item->url ?>" target="<?php echo $item->target ?>"

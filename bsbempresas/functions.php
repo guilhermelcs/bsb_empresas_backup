@@ -50,12 +50,11 @@ function register_qtc_menus() {
     register_nav_menus(
         array(
             'header-menu' => __( 'Header Menu' ),
-            'extra-menu' => __( 'Extra Menu' )
+            'lateral-menu' => __( 'Lateral Menu' )
         )
     );
 }
 add_action( 'init', 'register_qtc_menus' );
-
 
 register_sidebar(array(
     'name'=> 'Rodapé 1',

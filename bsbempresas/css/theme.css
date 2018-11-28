@@ -29,43 +29,28 @@ a:hover {
 /*Id's Styles*/
 /*Sidebar Menu*/
 #sidebar-menu {
-    overflow: hidden;
-    position: absolute;
-    display: none;
-    height: 80vh;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 1);
-    top: 152px;
-    left: 100px;
+    top: 0;
+    opacity: 0;
+    width: 400px;
+    left: -400px;
     z-index: 888;
+    height: 100vh;
+    position: fixed;
+    overflow-x: hidden;
+    transition: left .3s, opacity 7s;
+    background-color: #161616;
 }
 
-#sidebar-in {
-    cursor: pointer;
-    position: absolute;
-    top: 162px;
-    left: 140px;
+#sidebar-menu.show {
+    left: 0 !important;
+    opacity: 1 !important;
+    transition: all .3s;
 }
 
-#sidebar-out img{
-    position: absolute;
-    cursor: pointer;
-    top: 10px;
-    right: 10px;
-    width: 20px;
-}
-
-.texto-menu {
+#sidebar-menu li a {
     color: #ffffff;
     font-size: 18px;
     font-weight: 600;
-    cursor: pointer;
-}
-
-.texto-submenu {
-    color: #ffffff;
-    font-size: 18px;
-    font-weight: 300;
     cursor: pointer;
 }
 
