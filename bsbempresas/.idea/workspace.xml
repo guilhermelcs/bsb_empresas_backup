@@ -1,15 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5aa90539-bba6-4941-b191-dbe8635c4841" name="Default Changelist" comment="Various layout adaptions">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/theme.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/theme.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/footer.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/functions.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/header.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/sidebar_scripts.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/sidebar_scripts.js" afterDir="false" />
-    </list>
+    <list default="true" id="5aa90539-bba6-4941-b191-dbe8635c4841" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,7 +51,7 @@
           <entry key="css" value="5499" />
           <entry key="js" value="806" />
           <entry key="php" value="16917" />
-          <entry key="txt" value="386" />
+          <entry key="txt" value="454" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -67,7 +59,7 @@
           <entry key="CSS" value="5499" />
           <entry key="JavaScript" value="806" />
           <entry key="PHP" value="16917" />
-          <entry key="PLAIN_TEXT" value="386" />
+          <entry key="PLAIN_TEXT" value="454" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.php.rename.constructor" />
@@ -239,8 +231,8 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 7.2" />
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="55" />
-    <option name="y" value="57" />
+    <option name="x" value="1731" />
+    <option name="y" value="19" />
     <option name="width" value="966" />
     <option name="height" value="648" />
   </component>
@@ -282,6 +274,17 @@
               <item name="bsbempresas" type="b2602c69:ProjectViewProjectNode" />
               <item name="bsbempresas" type="462c0819:PsiDirectoryNode" />
               <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bsbempresas" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bsbempresas" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bsbempresas" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bsbempresas" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
+              <item name="header" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="bsbempresas" type="b2602c69:ProjectViewProjectNode" />
@@ -361,7 +364,7 @@
       <workItem from="1543255002322" duration="16792000" />
       <workItem from="1543324529143" duration="72000" />
       <workItem from="1543324893736" duration="7015000" />
-      <workItem from="1543405968906" duration="13252000" />
+      <workItem from="1543405968906" duration="14551000" />
     </task>
     <task id="LOCAL-00001" summary="Added functions, dynamism to the news section">
       <created>1541628580667</created>
@@ -426,15 +429,21 @@
       <option name="project" value="LOCAL" />
       <updated>1543416998991</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Fixed sidebar position bug, also added css e scripts to it">
+      <created>1543424987672</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1543424987672</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="259338000" />
+    <option name="totallyTimeSpent" value="260637000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1366" height="768" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16666667" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -493,7 +502,8 @@
     <MESSAGE value="Creation of archive page for latest news" />
     <MESSAGE value="Various layouts adaptions" />
     <MESSAGE value="Various layout adaptions" />
-    <option name="LAST_COMMIT_MESSAGE" value="Various layout adaptions" />
+    <MESSAGE value="Fixed sidebar position bug, also added css e scripts to it" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed sidebar position bug, also added css e scripts to it" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/screenshot.png">
