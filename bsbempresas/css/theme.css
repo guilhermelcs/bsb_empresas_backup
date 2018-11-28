@@ -1,6 +1,6 @@
 /*Global Styles*/
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-weight: normal;
     color: #777;
 }
@@ -88,24 +88,28 @@ a:hover {
 }
 
 #header-bg {
-    background-color: #ffce00;
+    background-color: #ffffff;
     height: 120px;
 }
 
 #header-logo {
-width: 30%;
+    width: 30%;
 }
-ul#menu-menu-principal {
+
+#menu-wrapper {
+    border-top: 1px solid #c7c7c7;
+    border-bottom: 1px solid #c7c7c7;
+}
+
+ul#menu-principal {
     padding: 15px 0;
-    border-bottom: 1px solid black;
-    box-shadow: 0 1px 10px #777777;}
 }
-ul#menu-menu-principal  li {
+ul#menu-principal  li {
     list-style: none;
     display: inline-block;
 }
 
-ul#menu-menu-principal li a {
+ul#menu-principal li a {
     text-decoration: none;
     color: #000000;
     padding: .5rem 1rem;
@@ -114,7 +118,7 @@ ul#menu-menu-principal li a {
     font-size: 14px;
 }
 
-ul#menu-menu-principal li a:hover {
+ul#menu-principal li a:hover {
     color: #ffce00;
     transition: 0.5s;
 }
@@ -131,7 +135,7 @@ ul#menu-menu-principal li a:hover {
     position: absolute;
     height: 60%;
     display: inline-block;
-    bottom: 30px;
+    bottom: 0px;
     right: 0;
 }
 

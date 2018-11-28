@@ -7,8 +7,22 @@
  */
 
 function wpb_add_google_fonts() {
+    wp_enqueue_style( 'wpb-google-fonts', 'https://fonts.googleapis.com/css?family=Raleway:400,500,600', false );
+}
 
-    wp_enqueue_style( 'wpb-google-fonts', 'https://fonts.googleapis.com/css?family=Poppins:300,400,600,700', false );
+//Funcao que varre o menu e lista seus itens
+function get_menu_items_by_registered_slug($menu_slug, $args = []) {
+
+    $menu_items = array();
+
+    if ( ( $locations = get_nav_menu_locations() ) && isset( $locations[ $menu_slug ] ) ) {
+        $menu = get_term( $locations[ $menu_slug ] );
+        $menu_items = wp_get_nav_menu_items($menu->term_id);
+    }
+
+    return apply_filters( 'wp_get_nav_menu_items', $menu_items, $menu, $args );
+    // return $menu_items;
+
 }
 
 add_action( 'wp_enqueue_scripts', 'wpb_add_google_fonts' );
