@@ -7,8 +7,11 @@
  */
 
 function wpb_add_google_fonts() {
-    wp_enqueue_style( 'wpb-google-fonts', 'https://fonts.googleapis.com/css?family=Raleway:400,500,600', false );
+    wp_enqueue_style( 'wpb-google-fonts', 'https://fonts.googleapis.com/css?family=Raleway:400,700,800', false );
+    wp_enqueue_style( 'wpb-google-fonts', 'https://use.typekit.net/zmz2hey.css', false );
 }
+
+add_action( 'wp_enqueue_scripts', 'wpb_add_google_fonts' );
 
 //Funcao que varre o menu e lista seus itens
 function get_menu_items_by_registered_slug($menu_slug, $args = []) {
@@ -25,7 +28,6 @@ function get_menu_items_by_registered_slug($menu_slug, $args = []) {
 
 }
 
-add_action( 'wp_enqueue_scripts', 'wpb_add_google_fonts' );
 
 function qtc_setup_theme() {
 

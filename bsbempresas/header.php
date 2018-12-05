@@ -26,17 +26,17 @@
 <div id="header-bg">
     <div class="container" style="height: 100%;">
         <div class="row" style="height: 100%;">
-            <div class="col-8 d-flex align-items-center">
-                <div class="text-right pr-5">
-                    <img id="header-logo" src="<?php bloginfo('template_url')?>/images/header/logo.png"
-                         alt="logo-bsb-empresas"
-                    />
-                </div>
-            </div>
             <div id="magazine-wrapper" class="col-4">
                 <a href="http://leituraestrategica.com.br" target="_blank">
                     <img id="header-magazine" src="<?php bloginfo('template_url')?>/images/header/capa.jpg" alt="magazine-img"/>
                 </a>
+            </div>
+            <div class="col-8 d-flex align-items-center">
+                <div class="text-left pl-5">
+                    <img id="header-logo" src="<?php bloginfo('template_url')?>/images/header/logo.png"
+                         alt="logo-bsb-empresas"
+                    />
+                </div>
             </div>
         </div>
     </div>
@@ -44,9 +44,9 @@
 
 
 <div id="menu-wrapper">
-    <div class="container">
+    <div class="container-fluid">
         <ul id="menu-principal" class="nav justify-content-center">
-            <li class="menu-item">
+            <li class="menu-item justify-self-start">
                 <a href="#qtc-open-menu">
                     <img class="mr-3" src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHZlcnNpb249IjEuMSIgdmlld0JveD0iMCAwIDIyNi4yMTYgMjI2LjIxNiIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgMjI2LjIxNiAyMjYuMjE2IiB3aWR0aD0iMjRweCIgaGVpZ2h0PSIyNHB4Ij4KICA8Zz4KICAgIDxnPgogICAgICA8cGF0aCBkPSJNOC43MDEsNDMuNTAzaDIwOC44MTRjNS4yMiwwLDguNzAxLTMuNDgsOC43MDEtOC43MDFzLTMuNDgtOC43MDEtOC43MDEtOC43MDFIOC43MDFDMy40OCwyNi4xMDIsMCwyOS41ODIsMCwzNC44MDIgICAgUzMuNDgsNDMuNTAzLDguNzAxLDQzLjUwM3oiIGZpbGw9IiMwMDAwMDAiLz4KICAgICAgPHBhdGggZD0ibTIxNy41MTUsMTA0LjQwN2gtMjA4LjgxNGMtNS4yMiwwLTguNzAxLDMuNDgtOC43MDEsOC43MDFzMy40OCw4LjcwMSA4LjcwMSw4LjcwMWgyMDguODE0YzUuMjIsMCA4LjcwMS0zLjQ4IDguNzAxLTguNzAxcy0zLjQ4MS04LjcwMS04LjcwMS04LjcwMXoiIGZpbGw9IiMwMDAwMDAiLz4KICAgICAgPHBhdGggZD0ibTIxNy41MTUsMTgyLjcxM2gtMjA4LjgxNGMtNS4yMiwwLTguNzAxLDMuNDgtOC43MDEsOC43MDFzMy40OCw4LjcwMSA4LjcwMSw4LjcwMWgyMDguODE0YzUuMjIsMCA4LjcwMS0zLjQ4IDguNzAxLTguNzAxcy0zLjQ4MS04LjcwMS04LjcwMS04LjcwMXoiIGZpbGw9IiMwMDAwMDAiLz4KICAgIDwvZz4KICA8L2c+Cjwvc3ZnPgo=" />
                 </a>

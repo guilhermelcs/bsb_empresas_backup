@@ -4,8 +4,13 @@ body {
     font-weight: normal;
     color: #777;
 }
-h1, h2, h3 {
-color: #171717;
+
+figcaption {
+    font-family: adobe-caslon-pro, serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #171717;
 }
 
 a {
@@ -43,8 +48,7 @@ a:hover {
 
 #sidebar-menu.show {
     left: 0 !important;
-    opacity: 1 !important;
-    transition: all .3s;
+    opacity: 1 !important;    transition: all .3s;
 }
 
 #sidebar-menu li a {
@@ -74,11 +78,11 @@ a:hover {
 
 #header-bg {
     background-color: #ffffff;
-    height: 120px;
+    height: 23vh;
 }
 
 #header-logo {
-    width: 30%;
+    width: 100%;
 }
 
 #menu-wrapper {
@@ -96,15 +100,16 @@ ul#menu-principal  li {
 
 ul#menu-principal li a {
     text-decoration: none;
-    color: #000000;
-    padding: .5rem 1rem;
     text-transform: uppercase;
-    font-weight: 600;
-    font-size: 14px;
+    font-weight: 900;
+    font-size: 12px;
+    letter-spacing: 1px;
+    color: #151515;
+    padding: .5rem 1rem;
 }
 
 ul#menu-principal li a:hover {
-    color: #ffce00;
+    color: #777777;
     transition: 0.5s;
 }
 
@@ -118,10 +123,10 @@ ul#menu-principal li a:hover {
 
 #header-magazine {
     position: absolute;
-    height: 60%;
+    width: 28%;
     display: inline-block;
     bottom: 0px;
-    right: 0;
+    left: 0;
 }
 
 #magazine-text {
@@ -133,12 +138,16 @@ ul#menu-principal li a:hover {
 
 
 #business-section {
-    background: #f4f4f4;
+    background: #ffffff;
+    margin-top: -150px;
+}
+
+#interviews-section {
+
 }
 
 #articles-section {
-    padding-bottom: 50px;
-    background: #f4f4f4;
+    background: #ffffff;
 }
 
 #footer-logo {
@@ -165,14 +174,84 @@ ul#menu-principal li a:hover {
 /*---Classes Styles---*/
 
 /*Global*/
-.section-title {
-    display: inline-block;
-    padding-right: 10px;
-    padding-bottom: 50px;
+h2.section-title {
+    font-size: 1.55rem;
+    font-weight: 900;
+    text-align: center;
+    text-transform: uppercase;
+    position: relative;
+    margin-bottom: 20px;
+    color: #111;
+    z-index: 1;
+}
+
+h2.section-title::before {
+    border-top: 1px dotted #a5a5a5;
+    content:"";
+    margin: 0 auto;
+    position: absolute;
+    top: 73%; left: 0; right: 0; bottom: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+h2 span {
+    background: #ffffff;
+    padding: 15px 35px;
+}
+
+h2.video-title span {
+    background: #333a40;
+    padding: 15px 35px;
+}
+
+h2.video-title {
+    font-size: 1.55rem;
+    font-weight: 900;
+    text-align: center;
+    text-transform: uppercase;
+    position: relative;
+    margin-bottom: 20px;
+    color: #ffffff;
+    z-index: 1;
+}
+
+h2.video_title::before {
+    border-top: 1px dotted #a5a5a5;
+    content:"";
+    margin: 0 auto;
+    position: absolute;
+    top: 73%; left: 0; right: 0; bottom: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+h2.section-title::before {
+    border-top: 1px dotted #a5a5a5;
+    content:"";
+    margin: 0 auto;
+    position: absolute;
+    top: 73%; left: 0; right: 0; bottom: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+h2.giant-section-title {
+    font-size: 1.65rem;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+    position: relative;
     padding-top: 80px;
-    font-size: 1.75rem;
-    font-weight: 500;
-    color: #000000;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    color: #111;
+    z-index: 1;
+}
+
+h2.giant-section-title  span {
+    background: #ffffff;
+    padding: 25px 65px;
 }
 
 /*Above-Sections Divider*/
@@ -186,17 +265,139 @@ ul#menu-principal li a:hover {
 
 /*Latest-News-Section*/
 
-.latest-news-lg {
-    padding: 0px 10px auto 10px;
+a.banner {
+    background-size: cover !important;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.banner {
+    overflow: hidden;
+    height: 55vh;
 }
 
-.latest-news-md {
-    padding: 0px 10px auto 10px;
+a.giant-banner {
+    background-size: cover !important;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: default;
+    pointer-events: none;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.big-banner {
+    overflow: hidden;
+    height: 50vh;
+}
+
+a.big-banner {
+    background-size: cover !important;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: default;
+    pointer-events: none;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.giant-banner {
+    overflow: hidden;
+    height: 100vh;
+}
+
+a.banner:hover {
+    transform: scale(1.07);
+    transition: all .5s;
+}
+
+.latest-news-lg {
+    overflow: hidden;
+    height: 80vh;
+}
+
+a.latest-news-lg {
+    display: block;
+    background-size: cover !important;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: block;
+    width: 100%;
+    transition: .2s;
+    /*height: 100%;*/
+}
+
+a.latest-news-lg:hover {
+    transition: .5s;
+    -webkit-transform: scale(1.08);
+}
+
+.latest-news-lg h2 {
+    position: absolute;
+    font-size: 30px;
+    color: #ffffff;
+    text-shadow: 0 2px 2px rgba(0,0,0,.8);
+    bottom: 0;
+}
+
+.title-backdrop {
+    position: absolute;
+    overflow: visible;
+    padding: 15px;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.83));
+    height: 10vh;
+    width: 100%;
+    bottom: 0;
+    z-index: 999;
+}
+
+a .title-backdrop h2:hover {
+    color: #c0c0c0;
+}
+
+.latest-news-md{
+    overflow: hidden;
+    height: 40vh;
+}
+
+a.latest-news-md {
+    display: block;
+    background-size: cover !important;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: block;
+    width: 100%;
+    transition: .2s;
+}
+
+a.latest-news-md:hover {
+    transition: .5s;
+    -webkit-transform: scale(1.08);
+}
+
+.latest-news-md h2 {
+    position: absolute;
+    font-size: 26px;
+    color: #ffffff;
+    text-shadow: 0 2px 2px rgba(0,0,0,.8);
+    bottom: 0;
+}
+
+
+.figcaption-md {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.4;
 }
 
 .latest-news-img-lg {
     max-width: 100%;
-    width: 100%;
     height: auto;
 }
 
@@ -206,29 +407,24 @@ ul#menu-principal li a:hover {
     height: auto;
 }
 
-.figcaption-md {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    font-size: large;
-    line-height: 1.4;
-}
-
 .figcaption-lg {
     padding-top: 10px;
-    font-size: x-large;
+    font-size: 24px;
+    font-weight: 700;
+
 }
 
 /*Columnist-Section*/
 
 .columnist-img {
     max-width: 100%;
-    width: 60%;
+    width: 100%;
     height: auto;
 }
 
 .columnist-title {
     font-size: 20px;
-    font-weight: 600;
+    font-weight: 700;
 }
 
 .columnist-subtitle {
@@ -243,6 +439,11 @@ ul#menu-principal li a:hover {
 .columnist-description {
     color: #707070;
     text-align: justify;
+}
+
+ul .columnist-wrapper li {
+    display: inline-block;
+    width: 20%;
 }
 
 /*Business-Section*/
@@ -273,18 +474,88 @@ ul#menu-principal li a:hover {
     transition: 1s;
 }
 
-.business-title {
+.business-lg {
+    overflow: hidden;
+    height: 55vh;
+}
+
+a.business-lg {
+    display: block;
+    background-size: cover !important;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: block;
+    width: 100%;
+    transition: .2s;
+    /*height: 100%;*/
+}
+
+a.business-lg:hover {
+    transition: .5s;
+    -webkit-transform: scale(1.08);
+}
+
+.business-lg h2 {
+    position: absolute;
+    font-size: 30px;
+    color: #ffffff;
+    text-shadow: 0 2px 2px rgba(0,0,0,.8);
+}
+
+
+.business-md{
+    overflow: hidden;
+    height: 35vh;
+}
+
+a.business-md {
+    display: block;
+    background-size: cover !important;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: block;
+    width: 100%;
+    transition: .2s;
+}
+
+/*a.business-md:hover {*/
+    /*transition: .5s;*/
+    /*-webkit-transform: scale(1.08);*/
+/*}*/
+
+.business-md h2 {
+    position: absolute;
+    font-size: 26px;
+    color: #ffffff;
+    text-shadow: 0 2px 2px rgba(0,0,0,.8);
+    bottom: 0;
+}
+
+.business-title a h2 {
+    color: #1d1d1d;
+    font-size: 35px;
+    padding-left: 15px;
+}
+
+.business-title a h3 {
+    color: #333333;
+    font-size: 23px;
+    padding-left: 15px;
+    padding-top: 15px;
+}
+
+figcaption a div h3 {
     font-size: 20px;
+    font-weight: 500;
+    color: #1d1d1d;
+}
+
+.figcaption-md {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 24px;
     font-weight: 600;
-}
-
-.business-subtitle {
-    font-weight: 100;
-}
-
-.business-description {
-    color: #707070;
-    text-align: justify;
+    line-height: 1.4;
 }
 
 /*Interviews-Section*/
