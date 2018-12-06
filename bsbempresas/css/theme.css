@@ -117,26 +117,6 @@ ul#menu-principal li a:hover {
     background: #eee;
 }
 
-#magazine-wrapper {
-    position: relative;
-}
-
-#header-magazine {
-    position: absolute;
-    width: 28%;
-    display: inline-block;
-    bottom: 0px;
-    left: 0;
-}
-
-#magazine-text {
-    font-size: 20px;
-    font-weight: 600;
-    display: inline-block;
-    padding-right: 15px;
-}
-
-
 #business-section {
     background: #ffffff;
     margin-top: -150px;
@@ -148,6 +128,10 @@ ul#menu-principal li a:hover {
 
 #articles-section {
     background: #ffffff;
+}
+
+#videos-section {
+    background-color: #000000;
 }
 
 #footer-logo {
@@ -201,7 +185,7 @@ h2 span {
 }
 
 h2.video-title span {
-    background: #333a40;
+    background-color: #000000;
     padding: 15px 35px;
 }
 
@@ -254,13 +238,32 @@ h2.giant-section-title  span {
     padding: 25px 65px;
 }
 
-/*Above-Sections Divider*/
-.section-divider {
-    width: 100%;
+.magazine-wrapper {
+    width: 10%;
+    height: 100%;
 }
-.down-arrow {
-    transform: rotate(45deg);
-    -webkit-transform: rotate(45deg);
+
+#magazine-img {
+    height: 100%;
+}
+
+
+.magazine-text{
+    color: #4e4e4e;
+    font-size: 18px;
+}
+
+a.subscribe-button {
+    color: #ce0000;
+    border: 1px solid #ce0000;
+    padding: 5px;
+    transition: .5s;
+}
+
+a.subscribe-button:hover {
+    transition: .5s;
+    background-color: #ce0000;
+    color: #ffffff;
 }
 
 /*Latest-News-Section*/
@@ -310,10 +313,6 @@ a.big-banner {
     height: 100vh;
 }
 
-a.banner:hover {
-    transform: scale(1.07);
-    transition: all .5s;
-}
 
 .latest-news-lg {
     overflow: hidden;
@@ -338,9 +337,11 @@ a.latest-news-lg:hover {
 
 .latest-news-lg h2 {
     position: absolute;
-    font-size: 30px;
+    font-size: 33px;
+    font-weight: 800;
     color: #ffffff;
-    text-shadow: 0 2px 2px rgba(0,0,0,.8);
+    text-shadow: 0 2px 4px rgba(0,0,0,.8);
+    padding-right: 15px;
     bottom: 0;
 }
 
@@ -381,9 +382,10 @@ a.latest-news-md:hover {
 
 .latest-news-md h2 {
     position: absolute;
-    font-size: 26px;
+    font-size: 28px;
+    font-weight: 600;
     color: #ffffff;
-    text-shadow: 0 2px 2px rgba(0,0,0,.8);
+    text-shadow: 0 2px 4px rgba(0,0,0,.8);
     bottom: 0;
 }
 
@@ -657,6 +659,17 @@ figcaption a div h3 {
     color: #393939;
 }
 
+.video-title {
+    font-size: 40px !important;
+    font-weight: 500 !important;
+}
+
+.video-subtitle {
+    font-size: 22px;
+    font-weight: lighter !important;
+    color: #ffffff;
+}
+
 .next-videos-box {
     padding: 10px;
     height: 460px;
@@ -673,6 +686,26 @@ figcaption a div h3 {
     padding-top: 8px;
     font-size: 14px;
     font-weight: 100;
+}
+
+.play-icon {
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    right: 5px;
+    overflow: hidden;
+}
+
+div .play-icon img {
+    width: 25px;
+    height: 25px;
+    padding: 0;
+}
+
+a.videos-button {
+    padding: 10px 25px;
+    color: #ffffff;
+    border: 1px solid #ffffff;
 }
 
 /*Weekend Section*/

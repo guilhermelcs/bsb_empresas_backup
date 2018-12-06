@@ -1,87 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5aa90539-bba6-4941-b191-dbe8635c4841" name="Default Changelist" comment="Made complexes e deep changes to page's layout">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/header/novo logo-04.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sidebar-menu.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/bsbempresas.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/bsbempresas.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="5aa90539-bba6-4941-b191-dbe8635c4841" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/404.php" beforeDir="false" afterPath="$PROJECT_DIR$/404.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/archive-noticia.php" beforeDir="false" afterPath="$PROJECT_DIR$/archive-noticia.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/archive.php" beforeDir="false" afterPath="$PROJECT_DIR$/archive.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/editor-style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/editor-style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/ie.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/ie.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/ie7.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/ie7.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/theme.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/theme.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/footer.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/functions-asdasda.php" beforeDir="false" afterPath="$PROJECT_DIR$/functions-asdasda.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/functions.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/genericons/COPYING.txt" beforeDir="false" afterPath="$PROJECT_DIR$/genericons/COPYING.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/genericons/Genericons.eot" beforeDir="false" afterPath="$PROJECT_DIR$/genericons/Genericons.eot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/genericons/Genericons.svg" beforeDir="false" afterPath="$PROJECT_DIR$/genericons/Genericons.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/genericons/Genericons.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/genericons/Genericons.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/genericons/Genericons.woff" beforeDir="false" afterPath="$PROJECT_DIR$/genericons/Genericons.woff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/genericons/LICENSE.txt" beforeDir="false" afterPath="$PROJECT_DIR$/genericons/LICENSE.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/genericons/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/genericons/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/genericons/genericons.css" beforeDir="false" afterPath="$PROJECT_DIR$/genericons/genericons.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/header.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/columnists/fritz.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/images/columnists/fritz.jpeg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/columnists/glen.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/images/columnists/glen.jpeg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/columnists/juan.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/columnists/juan.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/columnists/michelle.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/columnists/michelle.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/footer/logo_light.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/footer/logo_light.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/header/.idea/header.iml" beforeDir="false" afterPath="$PROJECT_DIR$/images/header/.idea/header.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/header/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/images/header/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/header/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/images/header/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/header/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/images/header/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/header/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/images/header/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/header/capa.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/header/capa.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/images/header/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/header/logo.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/header/magazine-img.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/header/magazine-img.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/header/section-divider.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/header/section-divider.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/header/whiteandgray_background.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/header/whiteandgray_background.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/header/whiteandgray_background_v2.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/header/whiteandgray_background_v2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/header/whiteandgray_background_v3.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/header/whiteandgray_background_v3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/latest-news/news-lg.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/latest-news/news-lg.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/latest-news/news-md.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/images/latest-news/news-md.jpeg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/latest-news/thumbnail_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/latest-news/thumbnail_1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/latest-news/thumbnail_2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/latest-news/thumbnail_2.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/latest-news/thumbnail_3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/latest-news/thumbnail_3.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/latest-news/thumbnail_4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/latest-news/thumbnail_4.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inc/back-compat.php" beforeDir="false" afterPath="$PROJECT_DIR$/inc/back-compat.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inc/custom-header.php" beforeDir="false" afterPath="$PROJECT_DIR$/inc/custom-header.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inc/customizer.php" beforeDir="false" afterPath="$PROJECT_DIR$/inc/customizer.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inc/template-tags.php" beforeDir="false" afterPath="$PROJECT_DIR$/inc/template-tags.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/color-scheme-control.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/color-scheme-control.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/customize-preview.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/customize-preview.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/functions.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/functions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/html5.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/html5.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/keyboard-image-navigation.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/keyboard-image-navigation.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/sidebar_scripts.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/sidebar_scripts.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/skip-link-focus-fix.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/skip-link-focus-fix.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/youtube.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/youtube.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/readme.txt" beforeDir="false" afterPath="$PROJECT_DIR$/readme.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rtl.css" beforeDir="false" afterPath="$PROJECT_DIR$/rtl.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenshot.png" beforeDir="false" afterPath="$PROJECT_DIR$/screenshot.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/search.php" beforeDir="false" afterPath="$PROJECT_DIR$/search.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sidebar.php" beforeDir="false" afterPath="$PROJECT_DIR$/sidebar.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/single-artigos.php" beforeDir="false" afterPath="$PROJECT_DIR$/single-artigos.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/single-colunista.php" beforeDir="false" afterPath="$PROJECT_DIR$/single-colunista.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/single-entrevista.php" beforeDir="false" afterPath="$PROJECT_DIR$/single-entrevista.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/single-eventos.php" beforeDir="false" afterPath="$PROJECT_DIR$/single-eventos.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/single-fim_de_semana.php" beforeDir="false" afterPath="$PROJECT_DIR$/single-fim_de_semana.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/single-negocios.php" beforeDir="false" afterPath="$PROJECT_DIR$/single-negocios.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/single-noticia.php" beforeDir="false" afterPath="$PROJECT_DIR$/single-noticia.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/videos/dde-introduction.mp4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/videos/thumbnails/next-video-thumbnail.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/videos/thumbnails/next-video-thumbnail.jpg" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -103,8 +28,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/header.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="30" column="128" selection-start-line="30" selection-start-column="128" selection-end-line="30" selection-end-column="128" />
+            <state relative-caret-position="420">
+              <caret line="65" column="40" selection-start-line="65" selection-start-column="40" selection-end-line="65" selection-end-column="40" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -121,19 +49,15 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="338" column="47" selection-start-line="338" selection-start-column="47" selection-end-line="338" selection-end-column="47" />
+            <state relative-caret-position="203">
+              <caret line="255" column="69" selection-start-line="255" selection-start-column="69" selection-end-line="255" selection-end-column="69" />
               <folding>
-                <element signature="e#9168#9247#0#HTML" expanded="true" />
-                <element signature="e#9428#9507#0#HTML" expanded="true" />
-                <element signature="e#12502#12568#0#HTML" expanded="true" />
-                <element signature="e#14240#14257#0#HTML" expanded="true" />
-                <element signature="e#14354#14433#0#HTML" expanded="true" />
-                <element signature="e#14614#14693#0#HTML" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#section#3;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#a#0;n#div#0;n#div#0;n#div#5;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#hr#0;n#div#0;n#div#0;n#section#4;n#!!top" expanded="true" />
-                <element signature="e#19181#19202#0#HTML" expanded="true" />
+                <element signature="n#style#0;n#a#0;n#div#1;n#div#0;n#div#4;n#!!top" expanded="true" />
+                <element signature="e#18755#18796#0#PHP" expanded="true" />
+                <element signature="e#19147#19224#0#PHP" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#section#6;n#!!top" expanded="true" />
+                <element signature="e#22033#23230#0#HTML" expanded="true" />
+                <element signature="n#style#0;n#a#0;n#figure#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#section#6;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -143,7 +67,7 @@
         <entry file="file://$PROJECT_DIR$/sidebar-menu.php">
           <provider selected="true" editor-type-id="text-editor">
             <state>
-              <caret column="19" selection-start-column="19" selection-end-column="19" />
+              <caret column="19" lean-forward="true" selection-start-column="19" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -151,8 +75,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/theme.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="487">
-              <caret line="218" column="14" selection-start-line="218" selection-start-column="14" selection-end-line="218" selection-end-column="14" />
+            <state relative-caret-position="227">
+              <caret line="250" column="12" selection-start-line="250" selection-start-column="1" selection-end-line="250" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -190,6 +114,8 @@
       <find>latest-news</find>
       <find>section-</find>
       <find>logo</find>
+      <find>video</find>
+      <find>magazine-te</find>
     </findStrings>
     <replaceStrings>
       <replace>container-fluid</replace>
@@ -230,12 +156,12 @@
         <option value="$PROJECT_DIR$/archive-noticia.php" />
         <option value="$PROJECT_DIR$/single-eventos.php" />
         <option value="$PROJECT_DIR$/footer.php" />
-        <option value="$PROJECT_DIR$/header.php" />
         <option value="$PROJECT_DIR$/functions.php" />
         <option value="$PROJECT_DIR$/js/sidebar_scripts.js" />
         <option value="$PROJECT_DIR$/sidebar.php" />
         <option value="$PROJECT_DIR$/sidebar-menu.php" />
         <option value="$PROJECT_DIR$/css/theme.css" />
+        <option value="$PROJECT_DIR$/header.php" />
         <option value="$PROJECT_DIR$/index.php" />
       </list>
     </option>
@@ -246,8 +172,9 @@
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 7.2" />
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="1366" />
-    <option name="width" value="1366" />
-    <option name="height" value="202" />
+    <option name="y" value="27" />
+    <option name="width" value="1600" />
+    <option name="height" value="873" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -274,41 +201,7 @@
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes>
-      <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="bsbempresas" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bsbempresas" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bsbempresas" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bsbempresas" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bsbempresas" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bsbempresas" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bsbempresas" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bsbempresas" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
-              <item name="header" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bsbempresas" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bsbempresas" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-    </panes>
+    <panes />
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -384,7 +277,8 @@
       <workItem from="1543840324041" duration="11611000" />
       <workItem from="1543925684310" duration="36202000" />
       <workItem from="1544013099203" duration="580000" />
-      <workItem from="1544014237092" duration="19561000" />
+      <workItem from="1544014237092" duration="20267000" />
+      <workItem from="1544099301336" duration="21515000" />
     </task>
     <task id="LOCAL-00001" summary="Added functions, dynamism to the news section">
       <created>1541628580667</created>
@@ -456,11 +350,18 @@
       <option name="project" value="LOCAL" />
       <updated>1543424987672</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Made complexes e deep changes to page's layout">
+      <created>1544044272817</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1544044272818</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="353586000" />
+    <option name="totallyTimeSpent" value="375807000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1366" y="0" width="1600" height="900" extended-state="6" />
@@ -640,17 +541,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/header.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="30" column="128" selection-start-line="30" selection-start-column="128" selection-end-line="30" selection-end-column="128" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/sidebar_scripts.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
           <caret line="22" column="8" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/platform-impl.jar!/resources/html5-schema/html5/common.rnc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="220" column="14" lean-forward="true" selection-start-line="220" selection-start-column="14" selection-end-line="220" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sidebar-menu.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="19" lean-forward="true" selection-start-column="19" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/theme.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="227">
+          <caret line="250" column="12" selection-start-line="250" selection-start-column="1" selection-end-line="250" selection-end-column="12" />
         </state>
       </provider>
     </entry>
@@ -661,35 +576,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sidebar-menu.php">
+    <entry file="file://$PROJECT_DIR$/header.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="19" selection-start-column="19" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/theme.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="487">
-          <caret line="218" column="14" selection-start-line="218" selection-start-column="14" selection-end-line="218" selection-end-column="14" />
+        <state relative-caret-position="420">
+          <caret line="65" column="40" selection-start-line="65" selection-start-column="40" selection-end-line="65" selection-end-column="40" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="338" column="47" selection-start-line="338" selection-start-column="47" selection-end-line="338" selection-end-column="47" />
+        <state relative-caret-position="203">
+          <caret line="255" column="69" selection-start-line="255" selection-start-column="69" selection-end-line="255" selection-end-column="69" />
           <folding>
-            <element signature="e#9168#9247#0#HTML" expanded="true" />
-            <element signature="e#9428#9507#0#HTML" expanded="true" />
-            <element signature="e#12502#12568#0#HTML" expanded="true" />
-            <element signature="e#14240#14257#0#HTML" expanded="true" />
-            <element signature="e#14354#14433#0#HTML" expanded="true" />
-            <element signature="e#14614#14693#0#HTML" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#section#3;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#div#0;n#div#0;n#div#5;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#hr#0;n#div#0;n#div#0;n#section#4;n#!!top" expanded="true" />
-            <element signature="e#19181#19202#0#HTML" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#div#1;n#div#0;n#div#4;n#!!top" expanded="true" />
+            <element signature="e#18755#18796#0#PHP" expanded="true" />
+            <element signature="e#19147#19224#0#PHP" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#section#6;n#!!top" expanded="true" />
+            <element signature="e#22033#23230#0#HTML" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#figure#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#section#6;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>

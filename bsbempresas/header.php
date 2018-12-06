@@ -23,25 +23,51 @@
 </head>
 
 <body <?php body_class(); ?>>
+<!--<div id="header-bg">-->
+<!--    <div class="container" style="height: 100%;">-->
+<!--        <div class="row" style="height: 100%;">-->
+<!--            <div id="magazine-wrapper" class="col-4">-->
+<!--                <a href="http://leituraestrategica.com.br" target="_blank">-->
+<!--                        <img id="header-magazine" src="--><?php //bloginfo('template_url')?><!--/images/header/capa.jpg" alt="magazine-img"/>-->
+<!--                </a>-->
+<!--            </div>-->
+<!--            <div class="col-8 d-flex align-items-center">-->
+<!--                <div class="col-12">-->
+<!--                    <img id="header-logo" src="--><?php //bloginfo('template_url')?><!--/images/header/logo.png"-->
+<!--                         alt="logo-bsb-empresas"-->
+<!--                    />-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</div>-->
+
 <div id="header-bg">
-    <div class="container" style="height: 100%;">
-        <div class="row" style="height: 100%;">
-            <div id="magazine-wrapper" class="col-4">
-                <a href="http://leituraestrategica.com.br" target="_blank">
-                    <img id="header-magazine" src="<?php bloginfo('template_url')?>/images/header/capa.jpg" alt="magazine-img"/>
+    <div class="container-fluid px-5" style="height: 100%;">
+        <div class="row h-100">
+            <div class="col-4 col-md-4">
+                <div class="row h-100 align-items-center">
+                    <div class="col-md-3">
+                        <a href="http://leituraestrategica.com.br" target="_blank">
+                            <img class="w-100" id="header-magazine" src="<?php bloginfo('template_url')?>/images/header/capa.jpg" alt="magazine-img"/>
+                        </a>
+                    </div>
+                    <div class="col-md-8 p-0">
+                        <a href="#" class="subscribe-button">Assinar</a>
+                        <p class="magazine-text pt-2">Leitura Estratégica</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 col-md-4 d-flex text-center align-items-center">
+                <a href="/" target="_blank">
+                    <img class="w-75" id="header-magazine" src="<?php bloginfo('template_url')?>/images/header/logo.png"/>
                 </a>
             </div>
-            <div class="col-8 d-flex align-items-center">
-                <div class="text-left pl-5">
-                    <img id="header-logo" src="<?php bloginfo('template_url')?>/images/header/logo.png"
-                         alt="logo-bsb-empresas"
-                    />
-                </div>
+            <div class="col-4 col-md-4">
             </div>
         </div>
     </div>
 </div>
-
 
 <div id="menu-wrapper">
     <div class="container-fluid">
