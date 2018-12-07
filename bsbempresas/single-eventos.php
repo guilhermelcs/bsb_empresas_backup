@@ -9,51 +9,76 @@
 
 get_header(); ?>
 
-<div id="primary" class="content-area">
-    <main id="main" class="site-main" role="main">
+	<div id="primary" class="content-area">
+		<main id="main" class="site-main" role="main">
 
-        <?php
-        // Start the loop.
-        while ( have_posts() ) : the_post(); ?>
+		<?php
+		// Start the loop.
+		while ( have_posts() ) : the_post(); ?>
 
-        <div class="container p-5">
-            <div class="row">
-                <div class="col-12">
-                    <h1> <?php echo the_title(); ?></h1>
-                </div>
-                <div class="col-12">
-                    <div class="text-center">
-                        <figure class="events-img-box">
-                            <?php echo the_post_thumbnail(); ?>
-                            <div class="excerpt-field"><?php the_excerpt(); ?></div>
-                        </figure>
+            <?php wp_reset_query(); ?>
+            <!-- Banner -->
+            <!--<div class="container-fluid px-5">
+                <div class="row mt-5">
+                    <div class="col-md-12">
+                        <div class="row">
+                            <div class="col-12 col-md-12 p-1' banner">
+                                <a href="<?php /*the_field('link_do_banner_noticia') */?>" target="_blank" class="banner"
+                                   style="background: url('<?php /*echo get_field('banner_noticia')*/?>') no-repeat center;"></a>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="col-12 pb-5">
-                    <?php echo the_content(); ?>
+            </div>-->
+
+            <div class="container-fluid p-5">
+                <div class="row">
+                    <div class="col-md-2">
+                    </div>
+                    <div class="col-md-8">
+                        <h1 class="text-left"><?php echo the_title(); ?></h1>
+                        <h3 class="excerpt-field"><?php the_excerpt(); ?></h3>
+                        <h3 class="author-field">Por: <?php the_author(); ?></h3>
+                        <hr>
+                        <div class="text-center">
+                             <img src="<?php echo the_post_thumbnail_url(); ?>">
+                        </div>
+                        <?php echo the_content(); ?>
+                    </div>
                 </div>
             </div>
 
-            <div class="navigation">
-
-                <?php previous_post_link('<button class="btn btn-primary py-2">Ver também: %link</button>', '%title'); ?>
-                <?php if(!get_adjacent_post(false, '', true)) {
-                    echo '<a href="/#"><button class="btn btn-warning py-2">Voltar à página inicial</button></a>';
-                } ?>
-
-                <?php next_post_link('<button class="btn btn-primary py-2">Ver também: %link</button>', '%title'); ?>
-                <?php if(!get_adjacent_post(false, '', false)) {
-                    echo '<a href="/#"><button class="btn btn-warning py-2">Voltar à página inicial</button></a>';
-                } ?>
-
-            </div>
-
+            <section id="recommended-section" class="mb-5">
+                <div class="container-fluid px-5">
+                    <div class="row">
+                        <div class="col-12 col-md-12">
+                            <div>
+                                <h2 class="section-title pt-5 pb-2"><span>Recomendado</span></h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row d-block d-flex align-items-start">
+                        <?php foreach(get_posts(['numberposts' => 4, 'post_type' => 'eventos']) as $post): ?>
+                            <div class="col-12 col-md-3 justify-content-around business-md mb-1 d-inline-block p-0" style="height: auto;">
+                                <div class="col-md-12 pr-1">
+                                    <figure>
+                                        <a href="<?php echo get_permalink($post->ID); ?>" style="background-image: url('<?php echo get_the_post_thumbnail_url($post->ID); ?>');"
+                                           class="business-md">
+                                        </a>
+                                    </figure>
+                                    <figcaption>
+                                        <a href="<?php echo get_permalink($post->ID); ?>"><div><h3><?php echo get_the_title($post->ID)?></h3></div></a>
+                                    </figcaption>
+                                </div>
+                            </div>
+                        <?php endforeach; ?>
+                    </div>
+                </div>
+            </section>
         </div>
     </main><!-- .site-main -->
+    <?php get_footer(); ?>
 </div><!-- .content-area -->
 
 <?php
-
-endwhile; ?>
-
-<?php get_footer(); ?>
+    endwhile; ?>

@@ -6,6 +6,7 @@
         console.log(menu)
         if (menu) {
             $(menu).toggleClass('show')
+            document.getElementById("sidebar-menu-backdrop").classList.toggle('sidebar-menu-wrapper');
         }
     })
 
@@ -22,5 +23,6 @@
         if (!container.is(e.target) && container.has(e.target).length === 0)
         {
             $(container).removeClass('show');
+            document.getElementById("sidebar-menu-backdrop").classList.remove('sidebar-menu-wrapper');
         }
     });

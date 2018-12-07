@@ -16,95 +16,20 @@
 
 get_header(); ?>
 
-<!--Sidebar Menu-->
-<div id="sidebar-menu" class="p-4">
-    <a href="#qtc-close-menu" class="float-right">
-        <img style="width: 20px;" src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHZlcnNpb249IjEuMSIgdmlld0JveD0iMCAwIDE1LjY0MiAxNS42NDIiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDE1LjY0MiAxNS42NDIiIHdpZHRoPSIyNHB4IiBoZWlnaHQ9IjI0cHgiPgogIDxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgZD0iTTguODgyLDcuODIxbDYuNTQxLTYuNTQxYzAuMjkzLTAuMjkzLDAuMjkzLTAuNzY4LDAtMS4wNjEgIGMtMC4yOTMtMC4yOTMtMC43NjgtMC4yOTMtMS4wNjEsMEw3LjgyMSw2Ljc2TDEuMjgsMC4yMmMtMC4yOTMtMC4yOTMtMC43NjgtMC4yOTMtMS4wNjEsMGMtMC4yOTMsMC4yOTMtMC4yOTMsMC43NjgsMCwxLjA2MSAgbDYuNTQxLDYuNTQxTDAuMjIsMTQuMzYyYy0wLjI5MywwLjI5My0wLjI5MywwLjc2OCwwLDEuMDYxYzAuMTQ3LDAuMTQ2LDAuMzM4LDAuMjIsMC41MywwLjIyczAuMzg0LTAuMDczLDAuNTMtMC4yMmw2LjU0MS02LjU0MSAgbDYuNTQxLDYuNTQxYzAuMTQ3LDAuMTQ2LDAuMzM4LDAuMjIsMC41MywwLjIyYzAuMTkyLDAsMC4zODQtMC4wNzMsMC41My0wLjIyYzAuMjkzLTAuMjkzLDAuMjkzLTAuNzY4LDAtMS4wNjFMOC44ODIsNy44MjF6IiBmaWxsPSIjRkZGRkZGIi8+Cjwvc3ZnPgo=" />
-    </a>
-    <ul class="nav">
-        <?php foreach (get_menu_items_by_registered_slug('lateral-menu') as $item): ?>
-            <li class="menu-item">
-                <a href="<?php echo $item->url ?>" target="<?php echo $item->target ?>"
-                   class="<?php echo implode(' ', $item->classes) ?>">
-                    <?php echo $item->title ?>
-                </a>
-            </li>
-        <?php endforeach; ?>
-
-<!--            <li class="nav-item">-->
-<!--                <a class="nav-link texto-menu" href="#">Home</a>-->
-<!--            </li>-->
-<!--            <li class="nav-item dropdown">-->
-<!--                <span class="nav-link texto-menu">Negócios-->
-<!--                    <img class="pl-2 dropdown-arrow" src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCAxMjkgMTI5IiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCAxMjkgMTI5IiB3aWR0aD0iMjRweCIgaGVpZ2h0PSIyNHB4Ij4KICA8Zz4KICAgIDxwYXRoIGQ9Im0xMjEuMywzNC42Yy0xLjYtMS42LTQuMi0xLjYtNS44LDBsLTUxLDUxLjEtNTEuMS01MS4xYy0xLjYtMS42LTQuMi0xLjYtNS44LDAtMS42LDEuNi0xLjYsNC4yIDAsNS44bDUzLjksNTMuOWMwLjgsMC44IDEuOCwxLjIgMi45LDEuMiAxLDAgMi4xLTAuNCAyLjktMS4ybDUzLjktNTMuOWMxLjctMS42IDEuNy00LjIgMC4xLTUuOHoiIGZpbGw9IiNGRkZGRkYiLz4KICA8L2c+Cjwvc3ZnPgo=" />-->
-<!--                </span>-->
-<!--                <div class="dropdown-content pl-3">-->
-<!--                    <a class="nav-link texto-submenu" href="#">Marketing</a>-->
-<!--                </div>-->
-<!--                <div class="dropdown-content pl-3">-->
-<!--                    <a class="nav-link texto-submenu" href="#">Meio Ambiente</a>-->
-<!--                </div>-->
-<!--                <div class="dropdown-content pl-3">-->
-<!--                    <a class="nav-link texto-submenu" href="#">Carreira</a>-->
-<!--                </div>-->
-<!--                <div class="dropdown-content pl-3">-->
-<!--                    <a class="nav-link texto-submenu" href="#">Economia</a>-->
-<!--                </div>-->
-<!--                <div class="dropdown-content pl-3">-->
-<!--                    <a class="nav-link texto-submenu" href="#">Financeiro</a>-->
-<!--                </div>-->
-<!--                <div class="dropdown-content pl-3">-->
-<!--                    <a class="nav-link texto-submenu" href="#">RH</a>-->
-<!--                </div>-->
-<!--            </li>-->
-        <li class="nav-item">
-            <a class="nav-link texto-menu" href="#">Tecnologia</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link texto-menu" href="#">Estilo de Vida</a>
-        </li>
-        <li class="nav-item dropdown">
-            <span class="nav-link texto-menu">Colunistas
-                <img class="pl-2 dropdown-arrow" src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCAxMjkgMTI5IiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCAxMjkgMTI5IiB3aWR0aD0iMjRweCIgaGVpZ2h0PSIyNHB4Ij4KICA8Zz4KICAgIDxwYXRoIGQ9Im0xMjEuMywzNC42Yy0xLjYtMS42LTQuMi0xLjYtNS44LDBsLTUxLDUxLjEtNTEuMS01MS4xYy0xLjYtMS42LTQuMi0xLjYtNS44LDAtMS42LDEuNi0xLjYsNC4yIDAsNS44bDUzLjksNTMuOWMwLjgsMC44IDEuOCwxLjIgMi45LDEuMiAxLDAgMi4xLTAuNCAyLjktMS4ybDUzLjktNTMuOWMxLjctMS42IDEuNy00LjIgMC4xLTUuOHoiIGZpbGw9IiNGRkZGRkYiLz4KICA8L2c+Cjwvc3ZnPgo=" />
-            </span>
-            <div class="dropdown-content pl-3">
-                <a class="nav-link texto-submenu" href="#">Colunista 1</a>
-            </div>
-            <div class="dropdown-content pl-3">
-                <a class="nav-link texto-submenu" href="#">Colunista 2</a>
-            </div>
-            <div class="dropdown-content pl-3">
-                <a class="nav-link texto-submenu" href="#">Colunista 3</a>
-            </div>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link texto-menu" href="#">Entrevistas</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link texto-menu" href="#">Especiais</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link texto-menu" href="#">Artigos</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link texto-menu" href="#">Fim de Semana</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link texto-menu" href="#">Eventos</a>
-        </li>
-    </ul>
-</div>
-
 <!-- Banner -->
 <div class="container-fluid px-5">
     <div class="row mt-5">
-        <div class="col-6 col-md-6 p-0 banner">
-            <a href="<?php echo get_field('link_do_banner_1') ?>" target="_blank" class="banner"
-               style="background: url('<?php echo get_field('banner_1')?>') no-repeat center;"></a>
-        </div>
-        <div class="col-6 col-md-6 p-0 banner">
-            <a href="<?php echo get_field('link_do_banner_2') ?>" target="_blank" class="banner"
-               style="background: url('<?php echo get_field('banner_2')?>') no-repeat center;"></a>
+        <div class="col-md-12">
+            <div class="row">
+                <div class="col-6 col-md-6 p-1 banner">
+                    <a href="<?php echo get_field('link_do_banner_1') ?>" target="_blank" class="banner"
+                       style="background: url('<?php echo get_field('banner_1')?>') no-repeat center;"></a>
+                </div>
+                <div class="col-6 col-md-6 p-1 banner">
+                    <a href="<?php echo get_field('link_do_banner_2') ?>" target="_blank" class="banner"
+                       style="background: url('<?php echo get_field('banner_2')?>') no-repeat center;"></a>
+                </div>
+            </div>
         </div>
     </div>
 </div>
@@ -150,13 +75,17 @@ get_header(); ?>
 <!-- Banner -->
 <div class="container-fluid px-5">
     <div class="row mt-5">
-        <div class="col-6 col-md-6 p-0 banner">
-            <a href="<?php echo get_field('link_do_banner_3') ?>" target="_blank" class="banner"
-               style="background: url('<?php echo get_field('banner_3')?>') no-repeat center;"></a>
-        </div>
-        <div class="col-6 col-md-6 p-0 banner">
-            <a href="<?php echo get_field('link_do_banner_4') ?>" target="_blank" class="banner"
-               style="background: url('<?php echo get_field('banner_4')?>') no-repeat center;"></a>
+        <div class="col-md-12">
+            <div class="row">
+                <div class="col-6 col-md-6 p-1 banner">
+                    <a href="<?php echo get_field('link_do_banner_3') ?>" target="_blank" class="banner"
+                       style="background: url('<?php echo get_field('banner_3')?>') no-repeat center;"></a>
+                </div>
+                <div class="col-6 col-md-6 p-1 banner">
+                    <a href="<?php echo get_field('link_do_banner_4') ?>" target="_blank" class="banner"
+                       style="background: url('<?php echo get_field('banner_4')?>') no-repeat center;"></a>
+                </div>
+            </div>
         </div>
     </div>
 </div>
@@ -251,13 +180,17 @@ get_header(); ?>
 <!-- Banner -->
 <div class="container-fluid px-5">
     <div class="row mt-5">
-        <div class="col-6 col-md-6 p-0 banner">
-            <a href="<?php echo get_field('link_do_banner_5') ?>" target="_blank" class="banner"
-               style="background: url('<?php echo get_field('banner_5')?>') no-repeat center;"></a>
-        </div>
-        <div class="col-6 col-md-6 p-0 banner">
-            <a href="<?php echo get_field('link_do_banner_6') ?>" target="_blank" class="banner"
-               style="background: url('<?php echo get_field('banner_6')?>') no-repeat center;"></a>
+        <div class="col-md-12">
+            <div class="row">
+                <div class="col-6 col-md-6 p-1 banner">
+                    <a href="<?php echo get_field('link_do_banner_5') ?>" target="_blank" class="banner"
+                       style="background: url('<?php echo get_field('banner_5')?>') no-repeat center;"></a>
+                </div>
+                <div class="col-6 col-md-6 p-1' banner">
+                    <a href="<?php echo get_field('link_do_banner_6') ?>" target="_blank" class="banner"
+                       style="background: url('<?php echo get_field('banner_6')?>') no-repeat center;"></a>
+                </div>
+            </div>
         </div>
     </div>
 </div>
@@ -425,7 +358,7 @@ get_header(); ?>
                     </div>
                 <?php endforeach; ?>
                 <div class="col-md-12 mb-5 d-flex justify-content-center">
-                    <a href="#">Ver Mais</a>
+                    <a href="#" class="videos-button">Ver Mais</a>
                 </div>
             </div>
         </div>
