@@ -12,6 +12,7 @@
 
     $("a[href='#qtc-close-menu']").on('click', function () {
         document.getElementById("sidebar-menu").classList.toggle('show')
+        document.getElementById("sidebar-menu-backdrop").classList.remove('sidebar-menu-wrapper');
         return false
     })
 

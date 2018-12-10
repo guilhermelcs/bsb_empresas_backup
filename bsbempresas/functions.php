@@ -67,7 +67,8 @@ function register_qtc_menus() {
     register_nav_menus(
         array(
             'header-menu' => __( 'Header Menu' ),
-            'lateral-menu' => __( 'Lateral Menu' )
+            'lateral-menu' => __( 'Lateral Menu' ),
+            'footer-menu' => __( 'Footer Menu' )
         )
     );
 }

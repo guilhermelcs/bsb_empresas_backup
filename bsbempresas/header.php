@@ -15,45 +15,26 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url')?>/css/theme.css">
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-    <?php wp_head(); ?>
 
     <link href="https://vjs.zencdn.net/7.3.0/video-js.css" rel="stylesheet">
 
 
+    <?php wp_head(); ?>
 </head>
 
 <body <?php body_class(); ?>>
-<!--<div id="header-bg">-->
-<!--    <div class="container" style="height: 100%;">-->
-<!--        <div class="row" style="height: 100%;">-->
-<!--            <div id="magazine-wrapper" class="col-4">-->
-<!--                <a href="http://leituraestrategica.com.br" target="_blank">-->
-<!--                        <img id="header-magazine" src="--><?php //bloginfo('template_url')?><!--/images/header/capa.jpg" alt="magazine-img"/>-->
-<!--                </a>-->
-<!--            </div>-->
-<!--            <div class="col-8 d-flex align-items-center">-->
-<!--                <div class="col-12">-->
-<!--                    <img id="header-logo" src="--><?php //bloginfo('template_url')?><!--/images/header/logo.png"-->
-<!--                         alt="logo-bsb-empresas"-->
-<!--                    />-->
-<!--                </div>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--    </div>-->
-<!--</div>-->
-
 <div id="header-bg">
     <div class="container-fluid px-5" style="height: 100%;">
         <div class="row h-100">
             <div class="col-4 col-md-4">
                 <div class="row h-100 align-items-center">
                     <div class="col-md-3">
-                        <a href="http://leituraestrategica.com.br" target="_blank">
+                        <a href="https://leituraestrategica.com.br" target="_blank">
                             <img class="w-100" id="header-magazine" src="<?php bloginfo('template_url')?>/images/header/capa.jpg" alt="magazine-img"/>
                         </a>
                     </div>
                     <div class="col-md-8 p-0">
-                        <a href="#" class="subscribe-button">Assinar</a>
+                        <a href="https://leituraestrategica.com.br" target="_blank" class="subscribe-button">Acessar</a>
                         <p class="magazine-text pt-2">Leitura Estratégica</p>
                     </div>
                 </div>
@@ -73,7 +54,7 @@
 <div id="sidebar-menu-backdrop" class="">
     <div id="sidebar-menu" class="p-4">
         <a href="#qtc-close-menu" class="float-right">
-            <img style="width: 20px;" src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHZlcnNpb249IjEuMSIgdmlld0JveD0iMCAwIDE1LjY0MiAxNS42NDIiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDE1LjY0MiAxNS42NDIiIHdpZHRoPSIyNHB4IiBoZWlnaHQ9IjI0cHgiPgogIDxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgZD0iTTguODgyLDcuODIxbDYuNTQxLTYuNTQxYzAuMjkzLTAuMjkzLDAuMjkzLTAuNzY4LDAtMS4wNjEgIGMtMC4yOTMtMC4yOTMtMC43NjgtMC4yOTMtMS4wNjEsMEw3LjgyMSw2Ljc2TDEuMjgsMC4yMmMtMC4yOTMtMC4yOTMtMC43NjgtMC4yOTMtMS4wNjEsMGMtMC4yOTMsMC4yOTMtMC4yOTMsMC43NjgsMCwxLjA2MSAgbDYuNTQxLDYuNTQxTDAuMjIsMTQuMzYyYy0wLjI5MywwLjI5My0wLjI5MywwLjc2OCwwLDEuMDYxYzAuMTQ3LDAuMTQ2LDAuMzM4LDAuMjIsMC41MywwLjIyczAuMzg0LTAuMDczLDAuNTMtMC4yMmw2LjU0MS02LjU0MSAgbDYuNTQxLDYuNTQxYzAuMTQ3LDAuMTQ2LDAuMzM4LDAuMjIsMC41MywwLjIyYzAuMTkyLDAsMC4zODQtMC4wNzMsMC41My0wLjIyYzAuMjkzLTAuMjkzLDAuMjkzLTAuNzY4LDAtMS4wNjFMOC44ODIsNy44MjF6IiBmaWxsPSIjRkZGRkZGIi8+Cjwvc3ZnPgo=" />
+            <img style="width: 15px;" src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMS4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDIyLjg4IDIyLjg4IiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCAyMi44OCAyMi44ODsiIHhtbDpzcGFjZT0icHJlc2VydmUiIHdpZHRoPSIzMnB4IiBoZWlnaHQ9IjMycHgiPgo8cGF0aCBkPSJNMC4zMjQsMS45MDljLTAuNDI5LTAuNDI5LTAuNDI5LTEuMTQzLDAtMS41ODdjMC40NDQtMC40MjksMS4xNDMtMC40MjksMS41ODcsMGw5LjUyMyw5LjUzOSAgbDkuNTM5LTkuNTM5YzAuNDI5LTAuNDI5LDEuMTQzLTAuNDI5LDEuNTcxLDBjMC40NDQsMC40NDQsMC40NDQsMS4xNTksMCwxLjU4N2wtOS41MjMsOS41MjRsOS41MjMsOS41MzkgIGMwLjQ0NCwwLjQyOSwwLjQ0NCwxLjE0MywwLDEuNTg3Yy0wLjQyOSwwLjQyOS0xLjE0MywwLjQyOS0xLjU3MSwwbC05LjUzOS05LjUzOWwtOS41MjMsOS41MzljLTAuNDQ0LDAuNDI5LTEuMTQzLDAuNDI5LTEuNTg3LDAgIGMtMC40MjktMC40NDQtMC40MjktMS4xNTksMC0xLjU4N2w5LjUyMy05LjUzOUwwLjMyNCwxLjkwOXoiIGZpbGw9IiMwMDAwMDAiLz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPC9zdmc+Cg==" />
         </a>
         <ul class="nav pt-5">
             <?php foreach (get_menu_items_by_registered_slug('lateral-menu') as $item): ?>

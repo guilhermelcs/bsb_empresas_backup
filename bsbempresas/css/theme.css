@@ -93,7 +93,7 @@ a:hover {
 
 #header-bg {
     background-color: #ffffff;
-    height: 23vh;
+    height: 18vh;
 }
 
 #header-logo {
@@ -286,16 +286,31 @@ a.subscribe-button:hover {
 /*Latest-News-Section*/
 
 a.banner {
-    background-size: cover !important;
+    background-size: 100% !important;
     background-repeat: no-repeat;
     background-position: center;
     display: block;
     width: 100%;
     height: 100%;
 }
+
 .banner {
     overflow: hidden;
-    height: 55vh;
+    height: 40vh;
+}
+
+a.latest-news-banner {
+    background-size: 100% !important;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.latest-news-banner {
+    overflow: hidden;
+    height: 25vh;
 }
 
 a.giant-banner {
@@ -333,7 +348,7 @@ a.big-banner {
 
 .latest-news-lg {
     overflow: hidden;
-    height: 80vh;
+    height: 82vh;
 }
 
 a.latest-news-lg {
@@ -379,7 +394,7 @@ a .title-backdrop h2:hover {
 
 .latest-news-md{
     overflow: hidden;
-    height: 40vh;
+    height: 27vh;
 }
 
 a.latest-news-md {
@@ -399,7 +414,7 @@ a.latest-news-md:hover {
 
 .latest-news-md h2 {
     position: absolute;
-    font-size: 28px;
+    font-size: 24px;
     font-weight: 600;
     color: #ffffff;
     text-shadow: 0 2px 4px rgba(0,0,0,.8);
@@ -432,6 +447,10 @@ a.latest-news-md:hover {
     font-size: 24px;
     font-weight: 700;
 
+}
+
+.news-wrapper {
+    overflow: hidden;
 }
 
 /*Columnist-Section*/
@@ -995,7 +1014,6 @@ figure.events-img-box img {
 div.text-center img {
     padding: 15px;
     width: 100%;
-    margin-bottom: 25px;
 }
 
 
