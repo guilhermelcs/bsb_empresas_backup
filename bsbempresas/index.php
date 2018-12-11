@@ -290,56 +290,24 @@ get_header(); ?>
 </section>
 
 <!--Videos Section-->
-<!--<section id="videos-section" class="bg-dark">-->
-<!--    <div class="container-fluid px-5 mt-3">-->
-<!--        <div class="row">-->
-<!--            <div class="col-12 col-md-12">-->
-<!--                <div>-->
-<!--                    <h2 class="section-title video-title no-span pt-5  pb-2"><span>Vídeos</span></h2>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--            --><?php
-//                $featured_video_id = 0;
-//                $cont = 0;
-//                $count_videos_posts = wp_count_posts('videos');
-//                $published_videos_posts = $count_videos_posts->publish;
-//            ?>
-<!--            <div class="col-8 col-md-8 d-flex align-items-center pb-4 mb-5">-->
-<!--                <div class="video-box">-->
-<!--                    --><?php //foreach (get_posts(['numberpost' => 1, 'post_type' => 'videos']) as $post):
-//                        $cont++;
-//                        $featured_video_id = $post->ID;
-//                        if($cont == $published_videos_posts): ?>
-<!--                            <figure>-->
-<!--                                <video-->
-<!--                                    class="video-js video-js-skin" id="qtcPlayer" controls width="740" height="460"-->
-<!--                                    data-url="--><?php //echo get_field('qtc_video_url', $post->ID); ?><!--">-->
-<!--                                </video>-->
-<!--                                <figcaption class="video_title">--><?php //echo get_the_title($post->ID);?><!--</figcaption>-->
-<!--                            </figure>-->
-<!--                    --><?php //endif; endforeach;?>
-<!--                </div>-->
-<!--            </div>-->
-<!--            <div class="col-4 col-md-4 text-left pb-4">-->
-<!--                <div class="next-videos-box bg-secondary rounded">-->
-<!--                    --><?php //foreach (get_posts(['numberpost' => 10, 'offset' => 1, 'post_type' => 'videos']) as $post): ?>
-<!--                        <figure>-->
-<!--                            <a href="--><?php //echo get_field('qtc_video_url', $post->ID); ?><!--" data-video-->
-<!--                               data-poster="--><?php //echo get_the_post_thumbnail_url($post->ID); ?><!--">-->
-<!--                                <img class="next-videos-img" src="--><?php //echo get_the_post_thumbnail_url($post->ID);?><!--"-->
-<!--                                     alt="--><?php //echo get_the_title($post->ID); ?><!--">-->
-<!--                                <figcaption class="next-videos-titles">--><?php //echo get_the_title($post->ID);?><!--</figcaption>-->
-<!--                            </a>-->
-<!--                        </figure>-->
-<!--                    --><?php //endforeach;?>
-<!--                </div>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--    </div>-->
-<!--</section>-->
 
+<!--Videos Modal-->
+<div class="modal fade" id="videos-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="
+        z-index: 999;
+        position: absolute;
+        top: 50px;
+        right: 50px; ">
+        <img src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCAxMjkgMTI5IiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCAxMjkgMTI5IiB3aWR0aD0iMzJweCIgaGVpZ2h0PSIzMnB4Ij4KICA8Zz4KICAgIDxwYXRoIGQ9Ik03LjYsMTIxLjRjMC44LDAuOCwxLjgsMS4yLDIuOSwxLjJzMi4xLTAuNCwyLjktMS4ybDUxLjEtNTEuMWw1MS4xLDUxLjFjMC44LDAuOCwxLjgsMS4yLDIuOSwxLjJjMSwwLDIuMS0wLjQsMi45LTEuMiAgIGMxLjYtMS42LDEuNi00LjIsMC01LjhMNzAuMyw2NC41bDUxLjEtNTEuMWMxLjYtMS42LDEuNi00LjIsMC01LjhzLTQuMi0xLjYtNS44LDBMNjQuNSw1OC43TDEzLjQsNy42QzExLjgsNiw5LjIsNiw3LjYsNy42ICAgcy0xLjYsNC4yLDAsNS44bDUxLjEsNTEuMUw3LjYsMTE1LjZDNiwxMTcuMiw2LDExOS44LDcuNiwxMjEuNHoiIGZpbGw9IiNGRkZGRkYiLz4KICA8L2c+Cjwvc3ZnPgo=">
+    </button>
+    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="vsc-controller vsc-hidden" data-vscid="ttbtviiwa"></div>
+            <video id="manifesto-video" class="video video-js vjs-16-9 vsc-initialized" preload="auto" width="100%" data-editable="" data-video="https://www.youtube.com/watch?v=OAqXvWtgM2Y" data-vscid="ttbtviiwa"></video>
+        </div>
+    </div>
+</div>
 
-<!--Videos Section-->
 <section id="videos-section" class="">
     <div class="container-fluid px-5 mt-3">
         <div class="row">
@@ -357,7 +325,7 @@ get_header(); ?>
                                 <img src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDQxLjk5OSA0MS45OTkiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDQxLjk5OSA0MS45OTk7IiB4bWw6c3BhY2U9InByZXNlcnZlIiB3aWR0aD0iMzJweCIgaGVpZ2h0PSIzMnB4Ij4KPHBhdGggZD0iTTM2LjA2OCwyMC4xNzZsLTI5LTIwQzYuNzYxLTAuMDM1LDYuMzYzLTAuMDU3LDYuMDM1LDAuMTE0QzUuNzA2LDAuMjg3LDUuNSwwLjYyNyw1LjUsMC45OTl2NDAgIGMwLDAuMzcyLDAuMjA2LDAuNzEzLDAuNTM1LDAuODg2YzAuMTQ2LDAuMDc2LDAuMzA2LDAuMTE0LDAuNDY1LDAuMTE0YzAuMTk5LDAsMC4zOTctMC4wNiwwLjU2OC0wLjE3N2wyOS0yMCAgYzAuMjcxLTAuMTg3LDAuNDMyLTAuNDk0LDAuNDMyLTAuODIzUzM2LjMzOCwyMC4zNjMsMzYuMDY4LDIwLjE3NnogTTcuNSwzOS4wOTVWMi45MDRsMjYuMjM5LDE4LjA5Nkw3LjUsMzkuMDk1eiIgZmlsbD0iI0ZGRkZGRiIvPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8L3N2Zz4K" />
                             </div>
                             <figure>
-                                <a href="<?php echo get_permalink($post->ID); ?>" style="background-image: url('<?php echo get_the_post_thumbnail_url($post->ID); ?>');"
+                                <a href="#videos-modal" data-toggle="modal" data-url="<?php the_field('qtc_video_url', $post->ID)?>" style="background-image: url('<?php echo get_the_post_thumbnail_url($post->ID); ?>');"
                                    class="business-md">
                                 </a>
                             </figure>
