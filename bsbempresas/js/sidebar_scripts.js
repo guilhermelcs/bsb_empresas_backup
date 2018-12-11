@@ -27,3 +27,24 @@
             document.getElementById("sidebar-menu-backdrop").classList.remove('sidebar-menu-wrapper');
         }
     });
+
+    //Checking if navbar is on top of the screen
+    var distance = $('#menu-wrapper').offset().top,
+        $window = $(window);
+
+    $window.scroll(function() {
+        if ( $window.scrollTop() >= distance && !$('#logo-menu-wrapper').hasClass('.logo-menu-wrapper-show')) {
+            console.log('OnTop');
+            $('#logo-menu-wrapper').addClass('logo-menu-wrapper-show');
+        }
+        else {
+            $('#logo-menu-wrapper').removeClass('logo-menu-wrapper-show');
+        }
+
+    });
+
+    //Toggle Searchbar Visibilty
+    $("#search-icon-link").on('click', function () {
+            document.getElementById("searchbar-section").classList.toggle('visible');
+        return false
+    });

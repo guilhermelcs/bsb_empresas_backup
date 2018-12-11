@@ -23,7 +23,7 @@ get_header(); ?>
             <div class="row">
                 <div class="col-md-1"></div>
                 <div class="col-6 col-md-10 p-1 latest-news-banner">
-                    <a href="<?php echo get_field('link_do_banner_1') ?>" target="_blank" class="latest-news-banner"
+                    <a href="<?php echo get_field('link_do_banner_1') ?>" target="_blank" class="latest-news-banner rounded"
                        style="background: url('<?php echo get_field('banner_1')?>') no-repeat center;"></a>
                 </div>
                 <div class="col-md-1"></div>
