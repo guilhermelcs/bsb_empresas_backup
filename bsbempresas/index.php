@@ -202,7 +202,7 @@ get_header(); ?>
                                            class="business-md">
                                         </a>
                                     </figure>
-                                    <h5 class="text-dark column-name pt-0 pl-1"><?php echo the_field('nome_da_coluna', $post->ID); ?></h5>
+                                    <h5 class="text-dark column-name pt-1 pl-1"><?php echo the_field('nome_da_coluna', $post->ID); ?></h5>
                                     <h4 class="text-dark columnist-name pt-0 pl-1"><?php echo the_field('colunista', $post->ID); ?></h4>
                                     <a href="<?php echo get_permalink($post->ID);?>"><h3 class="columnist-title pt-0 pb-3 pl-1"><?php echo get_the_title($post->ID); ?></h3></a>
                                 </a>
@@ -229,7 +229,7 @@ get_header(); ?>
 </div>
 
 <!--Business Section-->
-<section id="business-section">
+<section id="business-section" class="d-none d-md-block">
     <div class="container-fluid px-5 ">
         <div class="row d-block section-business" >
             <div class="col-12 col-md-12">
@@ -267,6 +267,40 @@ get_header(); ?>
                         </div>
                     </div>
                 <?php endforeach; ?>
+        </div>
+    </div>
+</section>
+
+<section id="business-section" class="d-md-none d-block pt-2">
+    <div class="container-fluid mt-3 p-0">
+        <div class="row">
+            <div class="col-12 col-md-12">
+                <div>
+                    <h2 class="section-title no-span pt-5 pb-2"><span>Negócios</span></h2>
+                </div>
+            </div>
+        </div>
+        <div class="columnist-wrapper-mobile d-flex align-items-start">
+            <div class="row d-block">
+                <div class="col-12 col-md-6">
+                    <?php foreach (get_posts(['numberposts' => 5, 'post_type' => 'colunista']) as $post): ?>
+                        <div class="row">
+                            <div class="col-12">
+                                <a href="<?php echo get_permalink($post->ID);?>">
+                                    <figure class="columnist-img-mobile mb-0">
+                                        <a href="<?php echo get_permalink($post->ID); ?>" style="background-image: url('<?php echo the_field('foto_do_colunista', $post->ID); ?>');"
+                                           class="business-md">
+                                        </a>
+                                    </figure>
+                                    <h5 class="text-dark column-name pt-1 pl-1"><?php echo the_field('nome_da_coluna', $post->ID); ?></h5>
+                                    <h4 class="text-dark columnist-name pt-0 pl-1"><?php echo the_field('colunista', $post->ID); ?></h4>
+                                    <a href="<?php echo get_permalink($post->ID);?>"><h3 class="columnist-title pt-0 pb-3 pl-1"><?php echo get_the_title($post->ID); ?></h3></a>
+                                </a>
+                            </div>
+                        </div>
+                    <?php endforeach;?>
+                </div>
+            </div>
         </div>
     </div>
 </section>
