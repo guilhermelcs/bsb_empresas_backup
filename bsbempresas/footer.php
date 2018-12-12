@@ -12,7 +12,7 @@
 
 <!--Footer Section-->
 <footer class="bg-dark pt-5 pb-3">
-    <div class="container">
+    <div class="container-fluid">
         <div class="row">
             <div class="col-12 col-md-3">
                 <img src="<?php bloginfo('template_url');?>/images/footer/logo_light.png" alt="footer-logo"

@@ -43,7 +43,7 @@ a:hover {
 }
 
 #videos-archive {
-    background: #fff;
+    background: #000;
 }
 
 #sidebar-menu {
@@ -154,6 +154,33 @@ a img.social-icon {
     top: 100px;
     left: 10px;
 }
+
+.logo-menu-wrapper-mobile {
+    position: absolute;
+    top: 10px;
+    right: 0px !important;
+}
+
+.logo-menu-mobile {
+    width: 30%;
+}
+
+.mobile-menu-icon {
+    position: absolute;
+    top: 20px;
+    left: 15px;
+}
+
+.mobile-logo img{
+    position: relative;
+}
+
+.mobile-search-icon img{
+    position: absolute;
+    top: 20px;
+    right: 12px;
+}
+
 
 .logo-menu {
     height: 35px;
@@ -274,6 +301,11 @@ h2.video-title span {
     padding: 15px 35px;
 }
 
+h2.video-description {
+    color: #fff;
+    font-size: 24px;
+}
+
 h2.video-title {
     font-size: 1.55rem;
     font-weight: 900;
@@ -380,6 +412,20 @@ a.latest-news-banner {
     height: 25vh;
 }
 
+a.latest-news-banner-mobile {
+    background-size: 100% !important;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.latest-news-banner-mobile {
+    overflow: hidden;
+    height: 25vh;
+}
+
 a.giant-banner {
     background-size: cover !important;
     background-repeat: no-repeat;
@@ -409,13 +455,18 @@ a.big-banner {
 
 .giant-banner {
     overflow: hidden;
-    height: 100vh;
+    height: 50vh;
 }
 
 
 .latest-news-lg {
     overflow: hidden;
     height: 82vh;
+}
+
+latest-news-mobile {
+    overflow: hidden;
+    height: 40vh;
 }
 
 a.latest-news-lg {
@@ -455,6 +506,17 @@ a.latest-news-lg:hover {
     z-index: 999;
 }
 
+.title-backdrop-mobile {
+    position: absolute;
+    overflow: visible;
+    padding: 8px;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.83));
+    height: 10vh;
+    width: 100%;
+    bottom: 0;
+    z-index: 999;
+}
+
 a .title-backdrop h2:hover {
     color: #c0c0c0;
 }
@@ -477,6 +539,16 @@ a.latest-news-md {
 a.latest-news-md:hover {
     transition: .5s;
     -webkit-transform: scale(1.08);
+}
+
+.latest-news-mobile h2 {
+    position: absolute;
+    font-size: 20px;
+    font-weight: 600;
+    color: #ffffff;
+    text-shadow: 0 2px 4px rgba(0,0,0,.8);
+    padding: 5px;
+    bottom: 0;
 }
 
 .latest-news-md h2 {
@@ -521,16 +593,9 @@ a.latest-news-md:hover {
 }
 
 /*Columnist-Section*/
-
-.columnist-img {
-    max-width: 100%;
-    width: 100%;
-    height: auto;
-}
-
 .columnist-title {
     font-size: 20px;
-    font-weight: 700;
+    font-weight: 500;
 }
 
 .columnist-subtitle {
@@ -543,13 +608,30 @@ a.latest-news-md:hover {
 }
 
 .columnist-description {
-    color: #707070;
+    color: rgba(120, 120, 120, 0.76);
     text-align: justify;
+}
+
+h5.column-name {
+    font-size: 14px;
+    padding-top: 3px;
+    color: #ff001f !important;
+    font-weight: 600;
+}
+
+h4.columnist-name {
+    color: #000000;
+    font-size: 16px;
 }
 
 ul .columnist-wrapper li {
     display: inline-block;
-    width: 20%;
+    width: 19.7%;
+    padding-right: 15px;
+}
+
+figure.columnist-img-mobile{
+    width: 100vw;
 }
 
 /*Business-Section*/
@@ -883,12 +965,26 @@ h3.excerpt-field p {
     color: #6b6b6b;
 }
 
-h3.author-field {
-    padding-top: 0px !important;
-    padding: 0px 15px 5px 15px;
+h3.by-author {
+    padding: 0 15px 0 15px;
     font-size: 18px !important;
-    color: #2e2e2e;
+    font-weight: 500;
+    color: #151515;
 }
+
+h3.author-field {
+    padding: 15px 15px 0 0px;
+    margin-top: 20px;
+    font-size: 39px !important;
+    font-weight: 500;
+    color: #151515;
+}
+
+/*.columnist-photo {*/
+    /*border-radius: 50%;*/
+    /*width: 100%;*/
+    /*height: 100%;*/
+/*}*/
 
 .single-noticia p {
     padding: 15px;

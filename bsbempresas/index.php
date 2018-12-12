@@ -17,16 +17,29 @@
 get_header(); ?>
 
 <!-- Banner -->
-<div class="container-fluid px-5">
+<div class="d-none d-md-block container-fluid px-5">
     <div class="row mt-5">
-        <div class="col-md-12">
+        <div class="col-12 col-md-12">
             <div class="row">
                 <div class="col-md-1"></div>
-                <div class="col-6 col-md-10 p-1 latest-news-banner">
+                <div class="col-12 col-md-10 p-1 latest-news-banner">
                     <a href="<?php echo get_field('link_do_banner_1') ?>" target="_blank" class="latest-news-banner rounded"
                        style="background: url('<?php echo get_field('banner_1')?>') no-repeat center;"></a>
                 </div>
                 <div class="col-md-1"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="d-block d-md-none container-fluid px-5">
+    <div class="row mt-5">
+        <div class="col-12 col-md-12">
+            <div class="row">
+                <div class="col-12 col-md-10 p-0 latest-news-banner-mobile">
+                    <a href="<?php echo get_field('link_do_banner_1') ?>" target="_blank" class="latest-news-banner-mobile rounded"
+                       style="background: url('<?php echo get_field('banner_1')?>') no-repeat center;"></a>
+                </div>
             </div>
         </div>
     </div>
@@ -64,8 +77,9 @@ get_header(); ?>
     ));
     $test = get_field('destaque_secundario');
 ?>
+
 <!--Latest News Section-->
-<section id="latest-news-section">
+<section id="latest-news-section" class="d-none d-md-block">
     <div class="container-fluid px-5">
         <div class="row d-block section-latest-news">
             <div class="col-12 col-md-12">
@@ -100,10 +114,44 @@ get_header(); ?>
     </div>
 </section>
 
+<section id="latest-news-section" class="d-block d-md-none">
+    <div class="container-fluid pl-3 pr-3">
+        <div class="row d-block section-latest-news">
+            <div class="col-12 col-md-12">
+                <div>
+                    <h2 class="section-title no-span pt-5 pb-2"><span>Destaques</span></h2>
+                </div>
+            </div>
+                <?php foreach($mainPost as $post): ?>
+                    <div class="col-12 col-md-12 latest-news-mobile justify-content-center mb-1 p-0">
+                        <a href="<?php echo get_permalink($post->ID); ?>"><div class="mt-auto title-backdrop-mobile"><h2><?php echo get_the_title($post->ID)?></h2></div></a>
+                        <a href="<?php echo get_permalink($post->ID); ?>" style="background-image: url('<?php echo get_the_post_thumbnail_url($post->ID); ?>');"
+                           class="latest-news-md">
+                        </a>
+                    </div>
+                <?php endforeach; ?>
+        </div>
+         <div class="row d-block">
+            <div class="col-12 col-md-6">
+                <?php foreach($secondaryPost as $post): ?>
+                    <div class="row">
+                        <div class="col-12 col-md-12 latest-news-mobile mb-1 mt-2 p-0">
+                            <a href="<?php echo get_permalink($post->ID); ?>"><div class="mt-auto title-backdrop-mobile"><h2><?php echo get_the_title($post->ID)?></h2></div></a>
+                                <a href="<?php echo get_permalink($post->ID); ?>" style="background-image: url('<?php echo get_the_post_thumbnail_url($post->ID); ?>');"
+                                   class="latest-news-md">
+                                </a>
+                        </div>
+                    </div>
+                <?php endforeach; ?>
+            </div>
+        </div>
+    </div>
+</section>
+
 <?php wp_reset_query(); ?>
 
 <!--Columnists Section-->
-<section id="columnists-section" class="pt-2">
+<section id="columnists-section" class="d-md-block d-none pt-2">
     <div class="container-fluid px-5 mt-3">
         <div class="row">
             <div class="col-12 col-md-12">
@@ -112,21 +160,57 @@ get_header(); ?>
                 </div>
             </div>
             <ul class="w-100 justify-self-center m-0 p-0">
-                <div class="columnist-wrapper">
+                <div class="columnist-wrapper d-flex align-items-start">
                     <?php foreach (get_posts(['numberposts' => 5, 'post_type' => 'colunista']) as $post): ?>
-                        <li class="col">
+                        <li class="">
                             <a href="<?php echo get_permalink($post->ID);?>">
-                                <figure>
-                                    <img class="columnist-img"
-                                         src="<?php echo get_the_post_thumbnail_url($post->ID);?>"
-                                         alt="<?php echo get_the_title($post->ID); ?>">
-                                    <figcaption class="text-dark columnist-title pt-3"><?php echo get_the_title($post->ID); ?></figcaption>
+                                <figure class="columnist-img mb-0">
+                                    <a href="<?php echo get_permalink($post->ID); ?>" style="background-image: url('<?php echo the_field('foto_do_colunista', $post->ID); ?>');"
+                                       class="business-md">
+                                    </a>
                                 </figure>
+                                <h5 class="text-dark column-name pt-0"><?php echo the_field('nome_da_coluna', $post->ID); ?></h5>
+                                <h4 class="text-dark columnist-name pt-0"><?php echo the_field('colunista', $post->ID); ?></h4>
+                                <a href="<?php echo get_permalink($post->ID);?>"><h3 class="columnist-title pt-0"><?php echo get_the_title($post->ID); ?></h3></a>
                             </a>
-                        <l1>
+                        </li>
                     <?php endforeach;?>
                 </div>
             </ul>
+        </div>
+    </div>
+</section>
+
+<section id="columnists-section" class="d-md-none d-block pt-2">
+    <div class="container-fluid mt-3 p-0">
+        <div class="row">
+            <div class="col-12 col-md-12">
+                <div>
+                    <h2 class="section-title no-span pt-5 pb-2"><span>Colunistas</span></h2>
+                </div>
+            </div>
+        </div>
+        <div class="columnist-wrapper-mobile d-flex align-items-start">
+            <div class="row d-block">
+                <div class="col-12 col-md-6">
+                    <?php foreach (get_posts(['numberposts' => 5, 'post_type' => 'colunista']) as $post): ?>
+                        <div class="row">
+                            <div class="col-12">
+                                <a href="<?php echo get_permalink($post->ID);?>">
+                                    <figure class="columnist-img-mobile mb-0">
+                                        <a href="<?php echo get_permalink($post->ID); ?>" style="background-image: url('<?php echo the_field('foto_do_colunista', $post->ID); ?>');"
+                                           class="business-md">
+                                        </a>
+                                    </figure>
+                                    <h5 class="text-dark column-name pt-0 pl-1"><?php echo the_field('nome_da_coluna', $post->ID); ?></h5>
+                                    <h4 class="text-dark columnist-name pt-0 pl-1"><?php echo the_field('colunista', $post->ID); ?></h4>
+                                    <a href="<?php echo get_permalink($post->ID);?>"><h3 class="columnist-title pt-0 pb-3 pl-1"><?php echo get_the_title($post->ID); ?></h3></a>
+                                </a>
+                            </div>
+                        </div>
+                    <?php endforeach;?>
+                </div>
+            </div>
         </div>
     </div>
 </section>
@@ -336,7 +420,7 @@ get_header(); ?>
                     </div>
                 <?php endforeach; ?>
                 <div class="col-md-12 mb-5 d-flex justify-content-center">
-                    <a href="#" class="videos-button">Ver Mais</a>
+                    <a href="/videos" class="videos-button">Ver Mais</a>
                 </div>
             </div>
         </div>

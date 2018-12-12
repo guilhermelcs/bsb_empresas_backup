@@ -38,12 +38,31 @@ get_header(); ?>
                     <div class="col-md-8">
                         <h1 class="text-left"><?php echo the_title(); ?></h1>
                         <h3 class="excerpt-field"><?php the_excerpt(); ?></h3>
-                        <h3 class="author-field">Por: <?php the_author(); ?></h3>
+                        <h3 class="by-author">Por: <?php the_author(); ?></h3>
                         <hr>
                         <div class="text-center">
                              <img src="<?php echo the_post_thumbnail_url(); ?>">
                         </div>
                         <?php echo the_content(); ?>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-fluid p-0">
+                <hr>
+                <div class="row">
+                    <div class="col-12 col-md-12 text-center">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <figure class="columnist-photo">
+                                    <img src="<?php the_field('foto_do_colunista');?>">
+                                </figure>
+                            </div>
+                            <div class="col-md-9 text-left">
+                                <h3 class="author-field"><?php the_field('colunista');?></h3>
+                                <p class="pl-1 pr-5"><?php the_field('curriculo_do_colunista');?></p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
