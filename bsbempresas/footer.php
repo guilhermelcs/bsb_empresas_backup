@@ -72,92 +72,38 @@
     window.HELP_IMPROVE_VIDEOJS = false;
 
     $(document).ready(function () {
-        if (!window.location.href.includes('/customizing/')) {
 
-            var group = $('.group-invalid');
-            var alert = $('.field-invalid');
-            var form = $('form[name=register]');
-            var errors =  {"global":[], "fields":[]};
+        let mPlayer = $('#manifesto-video');
 
-            if (Object.keys(errors.fields).length) {
-                Object.keys(errors.fields).forEach(function (field) {
-                    $('input[id$=' + field +']').wrap(group);
-                    $('input[id$=' + field +']').after($(alert).html(errors.fields[field]));
+        if (mPlayer) {
+            videojs('manifesto-video', {
+                controls: true,
+                techOrder: ["youtube", "html5"],
+                youtube: { "customVars": { "showinfo": 0, "iv_load_policy" : 3 }},
+                sources: [
+                    { "type": "video/youtube", "src": $(mPlayer).data('video') }
+                ]
+            }, function() {
+                var player = this;
+
+                $('a[data-url]').on('click', function (e) {
+                    e.preventDefault();
+                    player.src({ type: 'video/youtube', src: $(this).data('url') });
+                    player.play()
                 });
 
-                $("html, body").animate({ scrollTop: $(form).parent().offset().top }, 500);
-            }
+                $('#videos-modal').on('show.bs.modal', function () {
+                    player.play()
+                });
 
-            $(form).on('submit', function (e) {
-
-                $('.field-invalid').detach();
-                $('.group-invalid').find('input, select').unwrap('div.group-invalid');
-
-                var fields = $(this).find('input[required], textarea[required], select[required]');
-
-                $(fields).each(function (i, field) {
-                    if ($(field).val() === '') {
-                        e.preventDefault();
-                        $(field).wrap(group);
-                        $(field).after($(alert).html('Este campo é obrigatório'));
-                    }
-                })
+                $('#videos-modal').on('hide.bs.modal', function () {
+                    player.pause()
+                });
             });
-
-            let i = 0;
-            let mPlayer = $('#player');
-            let players = $('video[data-video]');
-
-            while (players[i] !== undefined) {
-                $(players[i]).addClass('video-js');
-                var controls = $(players[i]).data('video') ? $(players[i]).data('video') : true;
-                videojs(players[i], {
-                    controls: controls,
-                    techOrder: ["youtube", "html5"],
-                    youtube: { "customVars": { "showinfo": 0, "iv_load_policy" : 3 }},
-                    sources: [
-                        { "type": "video/youtube", "src": $(players[i]).data('video') }
-                    ]
-                });
-
-                i++;
-            }
-
-            if (mPlayer) {
-                videojs('player', {
-                    controls: true,
-                    techOrder: ["youtube", "html5"],
-                    youtube: { "customVars": { "showinfo": 0, "iv_load_policy" : 3 }},
-                    sources: [
-                        { "type": "video/youtube", "src": $(mPlayer).data('video') }
-                    ]
-                }, function() {
-                    var player = this;
-                    $('a[data-video]').on('click', function (e) {
-                        e.preventDefault();
-                        player.src({ type: 'video/youtube', src: $(this).attr('href') });
-                    });
-                });
-            }
         }
+
     });
 
-    $('a[data-url]').on('click', function () {
-        // $('#manifesto-video').data('video', $(this).data('url'))
-        var myVideo = videojs('my-video');
-        console.log($(this).data('url'));
-        myVideo.src([
-            {type: 'video/youtube', src: $(this).data('url')}
-        ])
-    });
-
-    $('#videos-modal').on('show.bs.modal', function () {
-        videojs('#manifesto-video').play()
-    });
-
-    $('#videos-modal').on('hide.bs.modal', function () {
-        videojs('#manifesto-video').pause()
-    });
 </script>
 <?php wp_footer(); ?>
 </body>

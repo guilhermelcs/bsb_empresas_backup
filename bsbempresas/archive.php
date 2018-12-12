@@ -14,7 +14,7 @@ $queried_object = get_queried_object();
 ?>
 
 <div class="row">
-    <div class="col-12 col-md-12">
+    <div class="col-12 col-md-12 mb-2">
         <div>
             <h2 class="section-title pt-5 pb-2 mb-0"><span>Últimos Posts</span></h2>
         </div>
