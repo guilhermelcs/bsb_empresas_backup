@@ -308,16 +308,29 @@ get_header(); ?>
 <?php wp_reset_query(); ?>
 
 <!-- Banner -->
-<div class="container-fluid px-5">
+<div class="container-fluid px-5 d-none d-md-block">
     <div class="row mt-5">
         <div class="col-md-12">
             <div class="row">
                 <div class="col-md-1"></div>
-                <div class="col-6 col-md-10 p-1 banner">
-                    <a href="<?php echo get_field('link_do_banner_5') ?>" target="_blank" class="banner"
-                       style="background: url('<?php echo get_field('banner_5')?>') no-repeat center;"></a>
+                <div class="col-12 col-md-10 p-1 banner">
+                    <a href="<?php echo get_field('link_do_banner_2') ?>" target="_blank" class="banner"
+                       style="background: url('<?php echo get_field('banner_2')?>') no-repeat center;"></a>
                 </div>
                 <div class="col-md-1"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="d-block d-md-none container-fluid px-5">
+    <div class="row mt-5">
+        <div class="col-12 col-md-12">
+            <div class="row">
+                <div class="col-12 col-md-10 p-0 latest-news-banner-mobile">
+                    <a href="<?php echo get_field('link_do_banner_2') ?>" target="_blank" class="latest-news-banner-mobile rounded"
+                       style="background: url('<?php echo get_field('banner_2')?>') no-repeat center;"></a>
+                </div>
             </div>
         </div>
     </div>
