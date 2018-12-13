@@ -38,7 +38,6 @@ get_header(); ?>
                     <div class="col-md-8">
                         <h1 class="text-left"><?php echo the_title(); ?></h1>
                         <h3 class="excerpt-field"><?php the_excerpt(); ?></h3>
-                        <h3 class="by-author">Por: <?php the_author(); ?></h3>
                         <hr>
                         <div class="text-center">
                              <img src="<?php echo the_post_thumbnail_url(); ?>">

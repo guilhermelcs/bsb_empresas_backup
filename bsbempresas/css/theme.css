@@ -46,20 +46,37 @@ a:hover {
     background: #000;
 }
 
-#sidebar-menu {
-    top: 0;
-    opacity: 0;
-    width: 400px;
-    left: -400px;
-    z-index: 1020;
-    height: 100vh;
-    position: fixed;
-    overflow-x: hidden;
-    transition: left .3s, opacity 7s;
-    background-color: #ffffff;
-    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+@media only screen and (max-width: 600px) {
+    #sidebar-menu {
+        top: 0;
+        opacity: 0;
+        left: -400px;
+        z-index: 1020;
+        width: 80vw;
+        height: 100vh;
+        position: fixed;
+        overflow-x: hidden;
+        transition: left .3s, opacity 7s;
+        background-color: #ffffff;
+        box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+    }
 }
 
+@media only screen and (min-width: 600px) {
+    #sidebar-menu {
+        top: 0;
+        opacity: 0;
+        left: -400px;
+        z-index: 1020;
+        width: 400px;
+        height: 100vh;
+        position: fixed;
+        overflow-x: hidden;
+        transition: left .3s, opacity 7s;
+        background-color: #ffffff;
+        box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+    }
+}
 #sidebar-menu.show {
     left: 0 !important;
     opacity: 1 !important;    transition: all .3s;
@@ -168,7 +185,7 @@ a img.social-icon {
 .mobile-menu-icon {
     position: absolute;
     top: 20px;
-    left: 15px;
+    left: 10px;
     z-index: 1020 !important;
 }
 
@@ -180,10 +197,8 @@ a img.social-icon {
 .mobile-search-icon img{
     position: absolute;
     top: 20px;
-    right: 12px;
-    z-index: 1020 !important;
+    right: 20px;
 }
-
 
 .logo-menu {
     height: 35px;
@@ -253,12 +268,23 @@ section#searchbar-section.visible {
     display: none;
 }
 
-.form-control {
-    caret-color: rgba(0, 0, 0, 0.71);
-    font-size: 40px;
-    height: 20vh;
-    text-align: center;
-    box-shadow: 1px 1px 10px #0000007d;
+@media only screen and (max-width: 600px) {
+    .form-control {
+        caret-color: rgba(0, 0, 0, 0.71);
+        font-size: 20px;
+        height: 20vh;
+        text-align: center;
+        box-shadow: 1px 1px 10px #0000007d;
+    }
+}
+@media only screen and (min-width: 600px) {
+    .form-control {
+        caret-color: rgba(0, 0, 0, 0.71);
+        font-size: 40px;
+        height: 20vh;
+        text-align: center;
+        box-shadow: 1px 1px 10px #0000007d;
+    }
 }
 
 .form-control:focus {
