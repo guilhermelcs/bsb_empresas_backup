@@ -498,15 +498,30 @@ latest-news-mobile {
     height: 40vh;
 }
 
-a.latest-news-lg {
-    display: block;
-    background-size: cover !important;
-    background-repeat: no-repeat;
-    background-position: center;
-    display: block;
-    width: 100%;
-    transition: .2s;
-    /*height: 100%;*/
+@media only screen and (max-width: 600px) {
+    a.latest-news-lg {
+        display: block;
+        background-size: cover !important;
+        background-repeat: no-repeat;
+        background-position: center top;
+        display: block;
+        width: 100%;
+        transition: .2s;
+        /*height: 100%;*/
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    a.latest-news-lg {
+        display: block;
+        background-size: cover !important;
+        background-repeat: no-repeat;
+        background-position: center;
+        display: block;
+        width: 100%;
+        transition: .2s;
+        /*height: 100%;*/
+    }
 }
 
 a.latest-news-lg:hover {
@@ -555,14 +570,30 @@ a .title-backdrop h2:hover {
     height: 27vh;
 }
 
-a.latest-news-md {
-    display: block;
-    background-size: cover !important;
-    background-repeat: no-repeat;
-    background-position: center;
-    display: block;
-    width: 100%;
-    transition: .2s;
+@media only screen and (max-width: 600px) {
+    a.latest-news-md {
+        position: relative;
+        display: block;
+        background-size: cover !important;
+        background-color: #707070;
+        background-repeat: no-repeat;
+        background-position: center top;
+        width: 100%;
+        transition: .2s;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    a.latest-news-md {
+        position: relative;
+        display: block;
+        background-size: cover !important;
+        background-color: #707070;
+        background-repeat: no-repeat;
+        background-position: 50% 25%;
+        width: 100%;
+        transition: .2s;
+    }
 }
 
 a.latest-news-md:hover {

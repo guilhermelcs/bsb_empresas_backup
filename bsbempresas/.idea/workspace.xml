@@ -4,15 +4,6 @@
     <list default="true" id="5aa90539-bba6-4941-b191-dbe8635c4841" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/theme.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/theme.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/header.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/sidebar_scripts.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/sidebar_scripts.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/single-artigos.php" beforeDir="false" afterPath="$PROJECT_DIR$/single-artigos.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/single-colunista.php" beforeDir="false" afterPath="$PROJECT_DIR$/single-colunista.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/single-entrevista.php" beforeDir="false" afterPath="$PROJECT_DIR$/single-entrevista.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/single-eventos.php" beforeDir="false" afterPath="$PROJECT_DIR$/single-eventos.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/single-fim_de_semana.php" beforeDir="false" afterPath="$PROJECT_DIR$/single-fim_de_semana.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/single-negocios.php" beforeDir="false" afterPath="$PROJECT_DIR$/single-negocios.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/single-noticia.php" beforeDir="false" afterPath="$PROJECT_DIR$/single-noticia.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -47,8 +38,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/theme.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="317">
-              <caret line="276" column="35" lean-forward="true" selection-start-line="276" selection-start-column="35" selection-end-line="276" selection-end-column="35" />
+            <state relative-caret-position="482">
+              <caret line="592" column="35" selection-start-line="592" selection-start-column="35" selection-end-line="592" selection-end-column="35" />
             </state>
           </provider>
         </entry>
@@ -75,7 +66,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>800</find>
       <find>menu-wra</find>
       <find>excer</find>
       <find>menu-wrap</find>
@@ -105,6 +95,7 @@
       <find>conso</find>
       <find>search</find>
       <find>form-con</find>
+      <find>background-size: cover !important;</find>
     </findStrings>
     <replaceStrings>
       <replace>container-fluid</replace>
@@ -307,7 +298,7 @@
       <workItem from="1544531784123" duration="25170000" />
       <workItem from="1544614980201" duration="36255000" />
       <workItem from="1544670701265" duration="3537000" />
-      <workItem from="1544706270093" duration="9245000" />
+      <workItem from="1544706270093" duration="11006000" />
     </task>
     <task id="LOCAL-00001" summary="Added functions, dynamism to the news section">
       <created>1541628580667</created>
@@ -456,11 +447,18 @@
       <option name="project" value="LOCAL" />
       <updated>1544708545188</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Made interns-pages modifications and add some responsive code to sections">
+      <created>1544723265952</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1544723265952</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="495577000" />
+    <option name="totallyTimeSpent" value="497338000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1366" y="0" width="1600" height="900" extended-state="6" />
@@ -718,8 +716,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/css/theme.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="317">
-          <caret line="276" column="35" lean-forward="true" selection-start-line="276" selection-start-column="35" selection-end-line="276" selection-end-column="35" />
+        <state relative-caret-position="482">
+          <caret line="592" column="35" selection-start-line="592" selection-start-column="35" selection-end-line="592" selection-end-column="35" />
         </state>
       </provider>
     </entry>
