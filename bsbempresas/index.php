@@ -169,7 +169,7 @@ get_header(); ?>
                                        class="business-md">
                                     </a>
                                 </figure>
-                                <h5 class="text-dark column-name pt-0"><?php echo the_field('nome_da_coluna', $post->ID); ?></h5>
+                                <h5 class="text-dark column-name pt-2 mb-1"><?php echo the_field('nome_da_coluna', $post->ID); ?></h5>
                                 <h4 class="text-dark columnist-name pt-0"><?php echo the_field('colunista', $post->ID); ?></h4>
                                 <a href="<?php echo get_permalink($post->ID);?>"><h3 class="columnist-title pt-0"><?php echo get_the_title($post->ID); ?></h3></a>
                             </a>
@@ -182,7 +182,7 @@ get_header(); ?>
 </section>
 
 <section id="columnists-section" class="d-md-none d-block pt-2">
-    <div class="container-fluid mt-3 p-0">
+    <div class="container-fluid mt-3">
         <div class="row">
             <div class="col-12 col-md-12">
                 <div>
@@ -190,7 +190,7 @@ get_header(); ?>
                 </div>
             </div>
         </div>
-        <div class="columnist-wrapper-mobile d-flex align-items-start">
+        <div class="col-xs-12">
             <div class="row d-block">
                 <div class="col-12 col-md-6">
                     <?php foreach (get_posts(['numberposts' => 5, 'post_type' => 'colunista']) as $post): ?>
@@ -272,7 +272,7 @@ get_header(); ?>
 </section>
 
 <section id="business-section" class="d-md-none d-block">
-    <div class="container-fluid mt-5 p-0">
+    <div class="container-fluid mt-5">
         <div class="row">
             <div class="col-12 col-md-12">
                 <div>
@@ -280,23 +280,25 @@ get_header(); ?>
                 </div>
             </div>
         </div>
-        <div class="columnist-wrapper-mobile d-flex align-items-start">
-            <div class="row d-block">
-                <div class="col-12 col-md-6">
-                    <?php foreach (get_posts(['numberposts' => 5, 'post_type' => 'negocios']) as $post): ?>
-                        <div class="row">
-                            <div class="col-12">
-                                <a href="<?php echo get_permalink($post->ID);?>">
-                                    <figure class="columnist-img-mobile mb-0">
-                                        <a href="<?php echo get_permalink($post->ID); ?>" style="background-image: url('<?php echo get_the_post_thumbnail_url($post->ID); ?>');"
-                                           class="business-md">
-                                        </a>
-                                    </figure>
-                                    <a href="<?php echo get_permalink($post->ID);?>"><h3 class="columnist-title pt-2 pb-3 pl-1"><?php echo get_the_title($post->ID); ?></h3></a>
-                                </a>
+        <div class="col-xs-12">
+            <div class="columnist-wrapper-mobile d-flex align-items-start">
+                <div class="row d-block">
+                    <div class="col-12 col-md-6">
+                        <?php foreach (get_posts(['numberposts' => 5, 'post_type' => 'negocios']) as $post): ?>
+                            <div class="row">
+                                <div class="col-12">
+                                    <a href="<?php echo get_permalink($post->ID);?>">
+                                        <figure class="columnist-img-mobile mb-0">
+                                            <a href="<?php echo get_permalink($post->ID); ?>" style="background-image: url('<?php echo get_the_post_thumbnail_url($post->ID); ?>');"
+                                               class="business-md">
+                                            </a>
+                                        </figure>
+                                        <a href="<?php echo get_permalink($post->ID);?>"><h3 class="columnist-title pt-2 pb-3 pl-1"><?php echo get_the_title($post->ID); ?></h3></a>
+                                    </a>
+                                </div>
                             </div>
-                        </div>
-                    <?php endforeach;?>
+                        <?php endforeach;?>
+                    </div>
                 </div>
             </div>
         </div>
@@ -351,7 +353,7 @@ get_header(); ?>
 </section>
 
 <section id="interviews-section" class="d-md-none d-block pt-2">
-    <div class="container-fluid mt-3 p-0">
+    <div class="container-fluid mt-3">
         <div class="row">
             <div class="col-12 col-md-12">
                 <div>
@@ -359,23 +361,25 @@ get_header(); ?>
                 </div>
             </div>
         </div>
-        <div class="columnist-wrapper-mobile d-flex align-items-start">
-            <div class="row d-block">
-                <div class="col-12 col-md-6">
-                    <?php foreach (get_posts(['numberposts' => 5, 'post_type' => 'entrevista']) as $post): ?>
-                        <div class="row">
-                            <div class="col-12">
-                                <a href="<?php echo get_permalink($post->ID);?>">
-                                    <figure class="columnist-img-mobile mb-0">
-                                        <a href="<?php echo get_permalink($post->ID); ?>" style="background-image: url('<?php echo get_the_post_thumbnail_url($post->ID); ?>');"
-                                           class="business-md">
-                                        </a>
-                                    </figure>
-                                    <a href="<?php echo get_permalink($post->ID);?>"><h3 class="columnist-title pt-2 pb-3 pl-1"><?php echo get_the_title($post->ID); ?></h3></a>
-                                </a>
+        <div class="col-xs-12">
+            <div class="columnist-wrapper-mobile d-flex align-items-start">
+                <div class="row d-block">
+                    <div class="col-12 col-md-6">
+                        <?php foreach (get_posts(['numberposts' => 5, 'post_type' => 'entrevista']) as $post): ?>
+                            <div class="row">
+                                <div class="col-12">
+                                    <a href="<?php echo get_permalink($post->ID);?>">
+                                        <figure class="columnist-img-mobile mb-0">
+                                            <a href="<?php echo get_permalink($post->ID); ?>" style="background-image: url('<?php echo get_the_post_thumbnail_url($post->ID); ?>');"
+                                               class="business-md">
+                                            </a>
+                                        </figure>
+                                        <a href="<?php echo get_permalink($post->ID);?>"><h3 class="columnist-title pt-2 pb-3 pl-1"><?php echo get_the_title($post->ID); ?></h3></a>
+                                    </a>
+                                </div>
                             </div>
-                        </div>
-                    <?php endforeach;?>
+                        <?php endforeach;?>
+                    </div>
                 </div>
             </div>
         </div>
@@ -438,7 +442,7 @@ get_header(); ?>
 </section>
 
 <section id="articles-section" class="d-md-none d-block">
-    <div class="container-fluid mt-0 p-0">
+    <div class="container-fluid mt-0 ">
         <div class="row">
             <div class="col-12 col-md-12 mt-0 p-0">
                 <div class="mt-0 p-0">
@@ -446,23 +450,25 @@ get_header(); ?>
                 </div>
             </div>
         </div>
-        <div class="columnist-wrapper-mobile d-flex align-items-start">
-            <div class="row d-block">
-                <div class="col-12 col-md-6">
-                    <?php foreach (get_posts(['numberposts' => 5, 'post_type' => 'artigos']) as $post): ?>
-                        <div class="row">
-                            <div class="col-12">
-                                <a href="<?php echo get_permalink($post->ID);?>">
-                                    <figure class="columnist-img-mobile mb-0">
-                                        <a href="<?php echo get_permalink($post->ID); ?>" style="background-image: url('<?php echo get_the_post_thumbnail_url($post->ID); ?>');"
-                                           class="business-md">
-                                        </a>
-                                    </figure>
-                                    <a href="<?php echo get_permalink($post->ID);?>"><h3 class="columnist-title pt-2 pb-3 pl-1"><?php echo get_the_title($post->ID); ?></h3></a>
-                                </a>
+        <div class="col-xs-12">
+            <div class="columnist-wrapper-mobile d-flex align-items-start">
+                <div class="row d-block">
+                    <div class="col-12 col-md-6">
+                        <?php foreach (get_posts(['numberposts' => 5, 'post_type' => 'artigos']) as $post): ?>
+                            <div class="row">
+                                <div class="col-12">
+                                    <a href="<?php echo get_permalink($post->ID);?>">
+                                        <figure class="columnist-img-mobile mb-0">
+                                            <a href="<?php echo get_permalink($post->ID); ?>" style="background-image: url('<?php echo get_the_post_thumbnail_url($post->ID); ?>');"
+                                               class="business-md">
+                                            </a>
+                                        </figure>
+                                        <a href="<?php echo get_permalink($post->ID);?>"><h3 class="columnist-title pt-2 pb-3 pl-1"><?php echo get_the_title($post->ID); ?></h3></a>
+                                    </a>
+                                </div>
                             </div>
-                        </div>
-                    <?php endforeach;?>
+                        <?php endforeach;?>
+                    </div>
                 </div>
             </div>
         </div>
@@ -536,7 +542,7 @@ get_header(); ?>
 </section>
 
 <section id="weekend-section" class="d-md-none d-block">
-    <div class="container-fluid mt-5 p-0">
+    <div class="container-fluid mt-5">
         <div class="row">
             <div class="col-12 col-md-12 mt-0 p-0">
                 <div class="mt-0 p-0">
@@ -544,23 +550,25 @@ get_header(); ?>
                 </div>
             </div>
         </div>
-        <div class="columnist-wrapper-mobile d-flex align-items-start">
-            <div class="row d-block">
-                <div class="col-12 col-md-6">
-                    <?php foreach (get_posts(['numberposts' => 5, 'post_type' => 'fim_de_semana']) as $post): ?>
-                        <div class="row">
-                            <div class="col-12">
-                                <a href="<?php echo get_permalink($post->ID);?>">
-                                    <figure class="columnist-img-mobile mb-0">
-                                        <a href="<?php echo get_permalink($post->ID); ?>" style="background-image: url('<?php echo get_the_post_thumbnail_url($post->ID); ?>');"
-                                           class="business-md">
-                                        </a>
-                                    </figure>
-                                    <a href="<?php echo get_permalink($post->ID);?>"><h3 class="columnist-title pt-2 pb-3 pl-1"><?php echo get_the_title($post->ID); ?></h3></a>
-                                </a>
+        <div class="col-xs-12">
+            <div class="columnist-wrapper-mobile d-flex align-items-start">
+                <div class="row d-block">
+                    <div class="col-12 col-md-6">
+                        <?php foreach (get_posts(['numberposts' => 5, 'post_type' => 'fim_de_semana']) as $post): ?>
+                            <div class="row">
+                                <div class="col-12">
+                                    <a href="<?php echo get_permalink($post->ID);?>">
+                                        <figure class="columnist-img-mobile mb-0">
+                                            <a href="<?php echo get_permalink($post->ID); ?>" style="background-image: url('<?php echo get_the_post_thumbnail_url($post->ID); ?>');"
+                                               class="business-md">
+                                            </a>
+                                        </figure>
+                                        <a href="<?php echo get_permalink($post->ID);?>"><h3 class="columnist-title pt-2 pb-3 pl-1"><?php echo get_the_title($post->ID); ?></h3></a>
+                                    </a>
+                                </div>
                             </div>
-                        </div>
-                    <?php endforeach;?>
+                        <?php endforeach;?>
+                    </div>
                 </div>
             </div>
         </div>
@@ -611,7 +619,7 @@ get_header(); ?>
 </section>
 
 <section id="events-section" class="d-md-none d-block">
-    <div class="container-fluid mt-0 p-0">
+    <div class="container-fluid mt-0">
         <div class="row">
             <div class="col-12 col-md-12 mt-0 p-0">
                 <div class="mt-0 p-0">

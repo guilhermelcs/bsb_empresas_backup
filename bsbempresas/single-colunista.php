@@ -48,7 +48,7 @@ get_header(); ?>
                 </div>
             </div>
 
-            <div class="container-fluid p-0">
+            <div class="container-fluid">
                 <hr>
                 <div class="row">
                     <div class="col-12 col-md-12 text-center">
