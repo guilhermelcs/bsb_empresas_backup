@@ -1025,6 +1025,18 @@ h3.excerpt-field p {
     color: #6b6b6b;
 }
 
+h3.excerpt-field-mobile p {
+    padding-top: 0px !important;
+    font-size: 20px !important;
+    color: #6b6b6b;
+}
+
+p.columnist-content-mobile {
+    padding-top: 0 !important;
+    margin-top: 0 !important;
+    font-size: 12px;
+}
+
 h3.by-author {
     padding: 0 15px 0 15px;
     font-size: 18px !important;

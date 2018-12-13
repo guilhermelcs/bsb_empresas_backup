@@ -31,11 +31,11 @@ get_header(); ?>
                 </div>
             </div>-->
 
-            <div class="container-fluid p-5">
+            <div class="container-fluid p-5 d-none do-md-block">
                 <div class="row">
                     <div class="col-md-2">
                     </div>
-                    <div class="col-md-8">
+                    <div class="col-12 col-md-8">
                         <h1 class="text-left"><?php echo the_title(); ?></h1>
                         <h3 class="excerpt-field"><?php the_excerpt(); ?></h3>
                         <hr>
@@ -47,7 +47,21 @@ get_header(); ?>
                 </div>
             </div>
 
-            <div class="container-fluid">
+             <div class="container-fluid pt-5 d-block d-none">
+                <div class="row">
+                    <div class="col-12">
+                        <h3 class="text-left pl-3"><?php echo the_title(); ?></h3>
+                        <h3 class="excerpt-field-mobile"><?php the_excerpt(); ?></h3>
+                        <hr>
+                        <div class="text-center">
+                             <img src="<?php echo the_post_thumbnail_url(); ?>">
+                        </div>
+                        <p class="columnist-content-mobile"><?php echo the_content(); ?>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-fluid d-none d-md-block">
                 <hr>
                 <div class="row">
                     <div class="col-12 col-md-12 text-center">
@@ -66,7 +80,27 @@ get_header(); ?>
                 </div>
             </div>
 
-            <section id="recommended-section" class="mb-5">
+            <div class="container-fluid d-block d-md-none">
+                <hr>
+                <div class="row">
+                    <div class="col-12 col-12 col-md-12 text-center">
+                        <div class="row">
+                            <div class="col-12 col-md-3">
+                                <figure class="columnist-photo mb-0">
+                                    <img src="<?php the_field('foto_do_colunista');?>" style="width: 80%;">
+                                </figure>
+                            </div>
+                            <div class="col-12 col-md-9 text-center">
+                                <h3 class="author-field"><?php the_field('colunista');?></h3>
+                                <p class="pl-4 text-left text-dark" style="font-size: 15px"><?php the_field('curriculo_do_colunista');?></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <section id="recommended-section" class="mb-5 d-none d-md-block">
                 <div class="container-fluid px-5">
                     <div class="row">
                         <div class="col-12 col-md-12">
@@ -85,6 +119,34 @@ get_header(); ?>
                                         </a>
                                     </figure>
                                     <figcaption>
+                                        <a href="<?php echo get_permalink($post->ID); ?>"><div><h3><?php echo get_the_title($post->ID)?></h3></div></a>
+                                    </figcaption>
+                                </div>
+                            </div>
+                        <?php endforeach; ?>
+                    </div>
+                </div>
+            </section>
+
+            <section id="recommended-section" class="mb-5 d-block d-md-none">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-12 col-md-12">
+                            <div>
+                                <h2 class="section-title text-center pt-5 pb-2"><span>Recomendado</span></h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row d-block">
+                        <?php foreach(get_posts(['numberposts' => 4, 'post_type' => 'eventos']) as $post): ?>
+                            <div class="col-12 col-md-3 justify-content-around business-md mb-1 d-inline-block p-0" style="height: auto;">
+                                <div class="col-md-12">
+                                    <figure>
+                                        <a href="<?php echo get_permalink($post->ID); ?>" style="background-image: url('<?php echo get_the_post_thumbnail_url($post->ID); ?>');"
+                                           class="business-md">
+                                        </a>
+                                    </figure>
+                                    <figcaption class="mb-5">
                                         <a href="<?php echo get_permalink($post->ID); ?>"><div><h3><?php echo get_the_title($post->ID)?></h3></div></a>
                                     </figcaption>
                                 </div>
