@@ -1,3 +1,37 @@
+    window.HELP_IMPROVE_VIDEOJS = false;
+
+    $(document).ready(function () {
+
+        let mPlayer = $('#manifesto-video');
+
+        if (mPlayer) {
+            videojs('manifesto-video', {
+                controls: true,
+                techOrder: ["youtube", "html5"],
+                youtube: { "customVars": { "showinfo": 0, "iv_load_policy" : 3 }},
+                sources: [
+                    { "type": "video/youtube", "src": $(mPlayer).data('video') }
+                ]
+            }, function() {
+                var player = this;
+
+                $('a[data-url]').on('click', function (e) {
+                    e.preventDefault();
+                    player.src({ type: 'video/youtube', src: $(this).data('url') });
+                    player.play()
+                });
+
+                $('#videos-modal').on('show.bs.modal', function () {
+                    player.play()
+                });
+
+                $('#videos-modal').on('hide.bs.modal', function () {
+                    player.pause()
+                });
+            });
+        }
+
+    });
 
     $("a[href='#qtc-open-menu']").on('click', function(e) {
         e.preventDefault()

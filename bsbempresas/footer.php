@@ -14,39 +14,15 @@
 <footer class="bg-dark pt-5 pb-3">
     <div class="container-fluid">
         <div class="row">
-            <div class="col-12 col-md-3">
-                <img src="<?php bloginfo('template_url');?>/images/footer/logo_light.png" alt="footer-logo"
+            <div class="col-12 col-md-12 text-center">
+                <img src="<?php bloginfo('template_url');?>/images/header/logo-footer.png" alt="footer-logo"
                      id="footer-logo">
-            </div>
-            <div class="col-12 col-md-3">
-                <div class="footer-links">
-                    <small>Nossos Links</small>
-                    <a href="">Assine Já</a>
-                    <a href="">Termos e Condições</a>
-                    <a href="">Política de Privacidade</a>
-                    <a href=""></a>
-                </div>
-            </div>
-            <div class="col-12 col-md-3">
-                <div class="footer-links">
-                    <small>Revistas</small>
-                    <a href="">Veja</a>
-                    <a href="">Abril</a>
-                    <a href="">Mundo Estranho</a>
-                    <a href="">Correio Brasiliense</a>
-                </div>
-
-            </div>
-            <div class="col-12 col-md-3 d-flex align-items-center">
-                <a href="" id="footer-sign-link">Assine Já</a>
-                <img id="footer-magazine" class="align-self-end"
-                     src="<?php bloginfo('template_url');?>/images/header/magazine-img.jpg" alt="magazine-img"/>
             </div>
             <div class="col-12">
                 <hr>
             </div>
-            <div class="col-12 col-md-6">
-                <small class="d-block text-left">© <?php echo date('Y'); ?> - Todos os Direitos Reservados</small>
+            <div class="col-12 col-md-12">
+                <small class="d-block text-center">© <?php echo date('Y'); ?> - Todos os Direitos Reservados</small>
             </div>
             <div class="col-12 col-md-6 text-right">
                 <a href=""><img class="footer-social-icon" src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTYuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgd2lkdGg9IjMycHgiIGhlaWdodD0iMzJweCIgdmlld0JveD0iMCAwIDk2LjEyNCA5Ni4xMjMiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDk2LjEyNCA5Ni4xMjM7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4KPGc+Cgk8cGF0aCBkPSJNNzIuMDg5LDAuMDJMNTkuNjI0LDBDNDUuNjIsMCwzNi41Nyw5LjI4NSwzNi41NywyMy42NTZ2MTAuOTA3SDI0LjAzN2MtMS4wODMsMC0xLjk2LDAuODc4LTEuOTYsMS45NjF2MTUuODAzICAgYzAsMS4wODMsMC44NzgsMS45NiwxLjk2LDEuOTZoMTIuNTMzdjM5Ljg3NmMwLDEuMDgzLDAuODc3LDEuOTYsMS45NiwxLjk2aDE2LjM1MmMxLjA4MywwLDEuOTYtMC44NzgsMS45Ni0xLjk2VjU0LjI4N2gxNC42NTQgICBjMS4wODMsMCwxLjk2LTAuODc3LDEuOTYtMS45NmwwLjAwNi0xNS44MDNjMC0wLjUyLTAuMjA3LTEuMDE4LTAuNTc0LTEuMzg2Yy0wLjM2Ny0wLjM2OC0wLjg2Ny0wLjU3NS0xLjM4Ny0wLjU3NUg1Ni44NDJ2LTkuMjQ2ICAgYzAtNC40NDQsMS4wNTktNi43LDYuODQ4LTYuN2w4LjM5Ny0wLjAwM2MxLjA4MiwwLDEuOTU5LTAuODc4LDEuOTU5LTEuOTZWMS45OEM3NC4wNDYsMC44OTksNzMuMTcsMC4wMjIsNzIuMDg5LDAuMDJ6IiBmaWxsPSIjOGU4ZThlIi8+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPC9zdmc+Cg=="></a>
@@ -57,54 +33,7 @@
 
 </footer>
 
-
-<!--<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>-->
-<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-<script src="https://vjs.zencdn.net/7.3.0/video.min.js"></script>
-<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-<script src="/wp-content/themes/bsbempresas/js/youtube.min.js"></script>
-<script src="/wp-content/themes/bsbempresas/js/sidebar_scripts.js"></script>
-
-<script>
-
-    window.HELP_IMPROVE_VIDEOJS = false;
-
-    $(document).ready(function () {
-
-        let mPlayer = $('#manifesto-video');
-
-        if (mPlayer) {
-            videojs('manifesto-video', {
-                controls: true,
-                techOrder: ["youtube", "html5"],
-                youtube: { "customVars": { "showinfo": 0, "iv_load_policy" : 3 }},
-                sources: [
-                    { "type": "video/youtube", "src": $(mPlayer).data('video') }
-                ]
-            }, function() {
-                var player = this;
-
-                $('a[data-url]').on('click', function (e) {
-                    e.preventDefault();
-                    player.src({ type: 'video/youtube', src: $(this).data('url') });
-                    player.play()
-                });
-
-                $('#videos-modal').on('show.bs.modal', function () {
-                    player.play()
-                });
-
-                $('#videos-modal').on('hide.bs.modal', function () {
-                    player.pause()
-                });
-            });
-        }
-
-    });
-
-</script>
 <?php wp_footer(); ?>
+
 </body>
 </html>

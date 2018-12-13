@@ -64,24 +64,19 @@ $queried_object = get_queried_object();
         <div class="row">
             <div class="col-12 col-md-12 text-center">
                 <div class="row">
-                    <div class="col-md-4 mb-2">
-                        <div class="col-md-12">
-                            <figure>
-                                <a href="<?php echo get_permalink($post->ID); ?>" style="background-image: url('<?php echo get_the_post_thumbnail_url($post->ID); ?>');"
-                                   class="business-md">
-                                </a>
-                            </figure>
-                        </div>
-                    </div>
-                    <div class="col-md-5 d-flex mt-5 justify-content-center text-left">
-                        <div>
-                            <a href="<?php echo get_permalink($post->ID); ?>" >
-                                <h2><?php the_title(); ?></h2>
+                    <div class="col-12 mb-0">
+                        <figure class="mb-0 pb-1">
+                            <a href="<?php echo get_permalink($post->ID); ?>" style="background-image: url('<?php echo get_the_post_thumbnail_url($post->ID); ?>');"
+                               class="business-md">
                             </a>
-                            <h3 class="news_post_data"><?php echo the_date(); ?></h3>
-                        </div>
+                        </figure>
                     </div>
-                    <div class="col-md-3"></div>
+                    <div class="col-12 mt-0 mb-3">
+                        <a href="<?php echo get_permalink($post->ID); ?>" >
+                            <h4><?php the_title(); ?></h4>
+                        </a>
+                        <h3 class="news_post_data"><?php echo the_date(); ?></h3>
+                    </div>
                 </div>
             </div>
         </div>

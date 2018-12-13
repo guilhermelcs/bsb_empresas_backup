@@ -7,11 +7,39 @@
  */
 
 function wpb_add_google_fonts() {
+    wp_enqueue_style( 'wpb-google-fonts', 'https://fonts.googleapis.com/css?family=Roboto:400,700,800', false );
     wp_enqueue_style( 'wpb-google-fonts', 'https://fonts.googleapis.com/css?family=Raleway:400,700,800', false );
     wp_enqueue_style( 'wpb-google-fonts', 'https://use.typekit.net/zmz2hey.css', false );
 }
 
 add_action( 'wp_enqueue_scripts', 'wpb_add_google_fonts' );
+// Stylesheets and Scripts
+function bsb_empresas_scripts() {
+
+    // Styles
+    wp_enqueue_style( 'bootstrap', 'https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css', array(), '4.1.1' );
+    wp_enqueue_style( 'blog', get_template_directory_uri() . '/css/theme.css' );
+    wp_enqueue_style( 'slick-carousel', '//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css', array(), '1.8.1' );
+
+    // Scripts
+    wp_enqueue_script( 'popper', 'https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js', array(), '1.14.3', true );
+    wp_enqueue_script( 'bootstrap', 'https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js', array('jquery'), '4.1.1', true );
+    wp_enqueue_script( 'videojs', 'https://vjs.zencdn.net/7.3.0/video.min.js', array(), '7.3.0', true );
+    wp_enqueue_script( 'youtube',  get_template_directory_uri(). '/js/youtube.min.js', array(), '1.0', true );
+    wp_enqueue_script( 'sidebar',  get_template_directory_uri() . '/js/sidebar_scripts.js', array(), '1.0', true );
+    wp_enqueue_script( 'slick', '//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js', array('jquery'), '1.8.1', true );
+}
+
+function modify_jquery() {
+    if ( !is_admin() ) {
+        wp_deregister_script('jquery');
+        wp_register_script('jquery', 'https://code.jquery.com/jquery-3.3.1.min.js', array(), '3.1.1');
+        wp_enqueue_script('jquery');
+    }
+}
+
+add_action('init', 'modify_jquery');
+add_action( 'wp_enqueue_scripts', 'bsb_empresas_scripts' );
 
 //Funcao que varre o menu e lista seus itens
 function get_menu_items_by_registered_slug($menu_slug, $args = []) {
