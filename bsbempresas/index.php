@@ -308,14 +308,14 @@ get_header(); ?>
 <?php wp_reset_query(); ?>
 
 <!-- Banner -->
-<div class="container-fluid px-5 d-none d-md-block">
+<div class="d-none d-md-block container-fluid px-5">
     <div class="row mt-5">
-        <div class="col-md-12">
+        <div class="col-12 col-md-12">
             <div class="row">
                 <div class="col-md-1"></div>
-                <div class="col-12 col-md-10 p-1 banner">
-                    <a href="<?php echo get_field('link_do_banner_2') ?>" target="_blank" class="banner"
-                       style="background: url('<?php echo get_field('banner_2_mobile')?>') no-repeat center;"></a>
+                <div class="col-12 col-md-10 p-1 latest-news-banner">
+                    <a href="<?php echo get_field('link_do_banner_2') ?>" target="_blank" class="latest-news-banner rounded"
+                       style="background: url('<?php echo get_field('banner_2')?>') no-repeat center;"></a>
                 </div>
                 <div class="col-md-1"></div>
             </div>
@@ -329,7 +329,7 @@ get_header(); ?>
             <div class="row">
                 <div class="col-12 col-md-10 p-0 latest-news-banner-mobile">
                     <a href="<?php echo get_field('link_do_banner_2') ?>" target="_blank" class="latest-news-banner-mobile rounded"
-                       style="background: url('<?php echo get_field('banner_2')?>') no-repeat center;"></a>
+                       style="background: url('<?php echo get_field('banner_2_mobile')?>') no-repeat center;"></a>
                 </div>
             </div>
         </div>
@@ -675,7 +675,7 @@ get_header(); ?>
     <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
         <div class="modal-content">
             <div class="vsc-controller vsc-hidden" data-vscid="ttbtviiwa"></div>
-            <video id="manifesto-video" class="video video-js vjs-16-9 vsc-initialized" preload="auto" width="100%" data-editable="" data-video="https://www.youtube.com/watch?v=OAqXvWtgM2Y" data-vscid="ttbtviiwa"></video>
+            <video id="manifesto-video" class="video video-js vjs-16-9 vsc-initialized" preload="auto" width="100%" data-editable="" data-video="https://www.youtube.com/" data-vscid="ttbtviiwa"></video>
         </div>
     </div>
 </div>
