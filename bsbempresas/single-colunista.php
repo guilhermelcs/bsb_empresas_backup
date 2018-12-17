@@ -31,7 +31,7 @@ get_header(); ?>
                 </div>
             </div>-->
 
-            <div class="container-fluid p-5 d-none do-md-block">
+            <div class="container-fluid p-5 d-none d-md-block">
                 <div class="row">
                     <div class="col-md-2">
                     </div>
@@ -44,10 +44,11 @@ get_header(); ?>
                         </div>
                         <?php echo the_content(); ?>
                     </div>
+                    <div class="col-md-2"></div>
                 </div>
             </div>
 
-             <div class="container-fluid pt-5 d-block d-none">
+             <div class="container-fluid pt-5 d-block d-md-none">
                 <div class="row">
                     <div class="col-12">
                         <h3 class="text-left pl-3"><?php echo the_title(); ?></h3>

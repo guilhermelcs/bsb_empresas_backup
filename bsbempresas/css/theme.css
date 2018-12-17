@@ -596,9 +596,11 @@ a .title-backdrop h2:hover {
     }
 }
 
-a.latest-news-md:hover {
-    transition: .5s;
-    -webkit-transform: scale(1.08);
+@media only screen and (min-width: 600px) {
+    a.latest-news-md:hover {
+        transition: .5s;
+        -webkit-transform: scale(1.08);
+    }
 }
 
 .latest-news-mobile h2 {
@@ -916,16 +918,6 @@ figcaption a div h3 {
     color: #ffffff;
 }
 
-.next-videos-box {
-    padding: 10px;
-    height: 460px;
-    overflow-y: scroll;
-
-}
-
-.next-videos-img {
-    width: 100%;
-}
 
 .next-videos-titles {
     color: #ffffff;
@@ -934,24 +926,16 @@ figcaption a div h3 {
     font-weight: 100;
 }
 
-.play-icon {
-    position: absolute;
-    height: 40px;
-    width: 40px;
-    right: 5px;
-    overflow: hidden;
+span.play-backdrop {
+    background-color: rgba(0, 0, 0, 0.55);
+    height: 55px;
+    width: 55px;
+    border-radius: 5em;
+    transition: 1s;
 }
 
-div .play-icon img {
-    width: 25px;
-    height: 25px;
-    padding: 0;
-}
-
-a.videos-button {
-    padding: 10px 25px;
-    color: #ffffff;
-    border: 1px solid #ffffff;
+span.play-backdrop:hover{
+    .co
 }
 
 /*Weekend Section*/

@@ -78,9 +78,9 @@
 
     //Toggle Searchbar Visibilty
     $("#search-icon-link").on('click', function () {
-            document.getElementById("searchbar-section").classList.toggle('visible');
-            console.log('in');
-        return false
+        document.getElementById("searchbar-section").classList.toggle('visible');
+        console.log('in');
+        return false;
     });
 
     //Toggle Searchbar Visibilty

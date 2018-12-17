@@ -143,12 +143,11 @@ PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8v
         </ul>
     </div>
 </div>
-
-<section id="searchbar-section">
-    <div id="searchbar-wrapper">
-        <?php get_search_form(); ?>
-    </div>
-</section>
+    <section id="searchbar-section">
+        <div id="searchbar-wrapper">
+            <?php get_search_form(); ?>
+        </div>
+    </section>
 
 
 
