@@ -204,6 +204,12 @@ a img.social-icon {
     height: 35px;
 }
 
+.sidebar-social-icons {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+}
+
 #columnist-section {
     background: #eee;
 }
