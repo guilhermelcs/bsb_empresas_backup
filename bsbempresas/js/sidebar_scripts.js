@@ -85,5 +85,5 @@
     //Toggle Searchbar Visibilty
     $("#search-icon-link-mobile").on('click', function () {
         document.getElementById("searchbar-section-mobile").classList.toggle('visible');
-        return false
+        return false;
     });
