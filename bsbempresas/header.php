@@ -140,6 +140,11 @@ PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8v
             </li>
         </ul>
     </div>
+    <section id="searchbar-section" class="p-0">
+        <div id="searchbar-wrapper">
+            <?php get_search_form(); ?>
+        </div>
+    </section>
 </div>
 
 <div id="menu-wrapper" class="d-block d-md-none sticky-top">
@@ -162,12 +167,12 @@ PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8v
             </li>
         </ul>
     </div>
-</div>
-    <section id="searchbar-section">
-        <div id="searchbar-wrapper">
+    <section id="searchbar-section-mobile" class="p-0">
+        <div id="searchbar-wrapper-mobile">
             <?php get_search_form(); ?>
         </div>
     </section>
+</div>
 
 
 

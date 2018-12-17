@@ -79,13 +79,11 @@
     //Toggle Searchbar Visibilty
     $("#search-icon-link").on('click', function () {
         document.getElementById("searchbar-section").classList.toggle('visible');
-        console.log('in');
         return false;
     });
 
     //Toggle Searchbar Visibilty
     $("#search-icon-link-mobile").on('click', function () {
-        document.getElementById("searchbar-section").classList.toggle('visible');
-        console.log('in');
+        document.getElementById("searchbar-section-mobile").classList.toggle('visible');
         return false
     });

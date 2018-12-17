@@ -5,10 +5,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/theme.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/theme.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/header.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/sidebar_scripts.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/sidebar_scripts.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/search.php" beforeDir="false" afterPath="$PROJECT_DIR$/search.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/single-colunista.php" beforeDir="false" afterPath="$PROJECT_DIR$/single-colunista.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -33,8 +30,14 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/header.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="563">
-              <caret line="145" selection-start-line="145" selection-end-line="149" selection-end-column="14" />
+            <state relative-caret-position="630">
+              <caret line="170" column="41" selection-start-line="170" selection-start-column="41" selection-end-line="170" selection-end-column="41" />
+              <folding>
+                <element signature="n#src#0;n#img#0;n#a#0;n#div#1;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#src#0;n#img#0;n#a#1;n#div#1;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#src#0;n#img#0;n#a#2;n#div#1;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#src#0;n#img#0;n#a#3;n#div#1;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -51,7 +54,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/search.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="315">
@@ -63,17 +66,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/theme.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="212">
-              <caret line="597" selection-start-line="597" selection-end-line="597" />
+            <state relative-caret-position="287">
+              <caret line="273" column="32" selection-start-line="273" selection-start-column="32" selection-end-line="273" selection-end-column="32" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/sidebar_scripts.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="80" column="81" lean-forward="true" selection-start-line="80" selection-start-column="81" selection-end-line="81" selection-end-column="26" />
+            <state relative-caret-position="262">
+              <caret line="66" column="28" lean-forward="true" selection-start-line="66" selection-start-column="28" selection-end-line="66" selection-end-column="28" />
             </state>
           </provider>
         </entry>
@@ -91,14 +94,9 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>banner</find>
-      <find>columnist-img</find>
-      <find>p-0</find>
       <find>100vw</find>
       <find>row</find>
       <find>videos-modal</find>
-      <find>logo-menu</find>
-      <find>searchbar</find>
       <find>columnist-wrapper</find>
       <find>figure.col</find>
       <find>sidebar</find>
@@ -119,8 +117,13 @@
       <find>conso</find>
       <find>footer</find>
       <find>play-ico</find>
-      <find>con</find>
       <find>a.lates</find>
+      <find>logo-menu</find>
+      <find>hid</find>
+      <find>logo-</find>
+      <find>searchba</find>
+      <find>con</find>
+      <find>searchbar</find>
     </findStrings>
     <replaceStrings>
       <replace>container-fluid</replace>
@@ -134,8 +137,8 @@
   <component name="Git.Settings">
     <option name="PREVIOUS_COMMIT_AUTHORS">
       <list>
-        <option value="Guilherme &lt;guilherme.evandf@gmail.com&gt;" />
         <option value="guilhermelcs &lt;guilherme.evandf@gmail.com&gt;" />
+        <option value="Guilherme &lt;guilherme.evandf@gmail.com&gt;" />
         <option value="gui" />
       </list>
     </option>
@@ -171,10 +174,10 @@
         <option value="$PROJECT_DIR$/footer.php" />
         <option value="$PROJECT_DIR$/single-colunista.php" />
         <option value="$PROJECT_DIR$/index.php" />
-        <option value="$PROJECT_DIR$/js/sidebar_scripts.js" />
-        <option value="$PROJECT_DIR$/css/theme.css" />
-        <option value="$PROJECT_DIR$/header.php" />
         <option value="$PROJECT_DIR$/search.php" />
+        <option value="$PROJECT_DIR$/header.php" />
+        <option value="$PROJECT_DIR$/css/theme.css" />
+        <option value="$PROJECT_DIR$/js/sidebar_scripts.js" />
       </list>
     </option>
   </component>
@@ -325,7 +328,7 @@
       <workItem from="1544670701265" duration="3537000" />
       <workItem from="1544706270093" duration="20489000" />
       <workItem from="1544792365470" duration="10627000" />
-      <workItem from="1545050993006" duration="2096000" />
+      <workItem from="1545050993006" duration="8222000" />
     </task>
     <task id="LOCAL-00001" summary="Added functions, dynamism to the news section">
       <created>1541628580667</created>
@@ -502,11 +505,25 @@
       <option name="project" value="LOCAL" />
       <updated>1544802124184</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="Made interns-pages modifications and add some responsive code to sections">
+      <created>1545053910518</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1545053910518</updated>
+    </task>
+    <task id="LOCAL-00027" summary="Sidebar menu modifications: &#10;-Added Logo;&#10;-Added Social Icons.">
+      <created>1545064365410</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1545064365410</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="519544000" />
+    <option name="totallyTimeSpent" value="525670000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1366" y="0" width="1600" height="900" extended-state="6" />
@@ -571,7 +588,8 @@
     <MESSAGE value="Made some css addictions" />
     <MESSAGE value="Made various header modifications" />
     <MESSAGE value="Made interns-pages modifications and add some responsive code to sections" />
-    <option name="LAST_COMMIT_MESSAGE" value="Made interns-pages modifications and add some responsive code to sections" />
+    <MESSAGE value="Sidebar menu modifications: &#10;-Added Logo;&#10;-Added Social Icons." />
+    <option name="LAST_COMMIT_MESSAGE" value="Sidebar menu modifications: &#10;-Added Logo;&#10;-Added Social Icons." />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/screenshot.png">
@@ -750,6 +768,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/search.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="30" column="36" lean-forward="true" selection-start-line="30" selection-start-column="36" selection-end-line="30" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/footer.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="435">
@@ -757,27 +782,6 @@
           <folding>
             <element signature="e#6#186#0#PHP" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/sidebar_scripts.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="80" column="81" lean-forward="true" selection-start-line="80" selection-start-column="81" selection-end-line="81" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/theme.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="212">
-          <caret line="597" selection-start-line="597" selection-end-line="597" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/header.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="563">
-          <caret line="145" selection-start-line="145" selection-end-line="149" selection-end-column="14" />
         </state>
       </provider>
     </entry>
@@ -791,10 +795,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/search.php">
+    <entry file="file://$PROJECT_DIR$/header.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="30" column="36" lean-forward="true" selection-start-line="30" selection-start-column="36" selection-end-line="30" selection-end-column="36" />
+        <state relative-caret-position="630">
+          <caret line="170" column="41" selection-start-line="170" selection-start-column="41" selection-end-line="170" selection-end-column="41" />
+          <folding>
+            <element signature="n#src#0;n#img#0;n#a#0;n#div#1;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#src#0;n#img#0;n#a#1;n#div#1;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#src#0;n#img#0;n#a#2;n#div#1;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#src#0;n#img#0;n#a#3;n#div#1;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/theme.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="287">
+          <caret line="273" column="32" selection-start-line="273" selection-start-column="32" selection-end-line="273" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/sidebar_scripts.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="262">
+          <caret line="66" column="28" lean-forward="true" selection-start-line="66" selection-start-column="28" selection-end-line="66" selection-end-column="28" />
         </state>
       </provider>
     </entry>
